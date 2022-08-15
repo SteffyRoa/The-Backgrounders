@@ -1,3 +1,7 @@
+/*Fuentes*/
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap');
+
 /* Cuerpo */
 body{
     background: #eee;
@@ -27,4 +31,16 @@ margin-bottom: 30px;
 .form-signin input[type="text"], .form-signin input[type="password"]{
     margin-bottom:20px;
 }
+
+
+
+html {
+    font-size: 100%;
+} /*16px*/
+
+
+.navbar-custom {
+    background-color:rgba(35, 54, 84, 1);
+}
+
 
