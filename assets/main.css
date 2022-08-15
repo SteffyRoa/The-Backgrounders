@@ -1,0 +1,59 @@
+* fonts */
+@import url(...);
+html {
+    font-size: 100%;
+} /*16px*/
+
+:root {
+
+}
+
+body {
+
+}
+
+p {
+
+}
+
+h1,
+h2,
+h4 {
+
+}
+
+.img-carrosel {
+
+}
+
+.btn {
+
+}
+
+.btn:hover {
+
+}
+
+.navbar {
+
+}
+
+.nav-link {
+
+}
+
+/* Footer */
+.page-footer {
+
+}
+
+/* Servicios */
+.servicios-container {
+
+}
+
+/* Error */
+
+.pagina-error {
+    
+}
