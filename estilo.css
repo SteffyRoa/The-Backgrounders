@@ -28,3 +28,72 @@ margin-bottom: 30px;
     margin-bottom:20px;
 }
 
+* fonts /
+@import url(...);
+html {
+    font-size: 100%;
+} /16px/
+
+:root {
+
+}
+
+body {
+
+}
+
+p {
+
+}
+
+h1,
+h2,
+h4 {
+
+}
+
+.img-carrosel {
+
+}
+
+.btn {
+
+}
+
+.btn:hover {
+
+}
+
+.navbar-custom {
+    background-color:rgba(35, 54, 84, 1);
+}
+
+.contenedor{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+padding-bottom: 5px;
+}
+.item1{
+    background-color: black;
+}
+
+
+
+
+
+
+.itemubicacion{
+    text-align: center;
+    
+}
+
+.container2{
+    background-color: black;
+    text-align: center;
+}
+
+.container2 p{
+    margin-bottom: 0
+}
