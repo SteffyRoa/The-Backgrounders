@@ -1,3 +1,7 @@
+/*Fuentes*/
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap');
+
 /* Cuerpo */
 body{
     background: #eee;
@@ -28,6 +32,7 @@ margin-bottom: 30px;
     margin-bottom:20px;
 }
 
+<<<<<<< HEAD
 * fonts /
 @import url(...);
 html {
@@ -63,11 +68,20 @@ h4 {
 .btn:hover {
 
 }
+=======
+
+
+html {
+    font-size: 100%;
+} /*16px*/
+
+>>>>>>> 37a99a12c674fc00f794d5af78d95c88fd1114d3
 
 .navbar-custom {
     background-color:rgba(35, 54, 84, 1);
 }
 
+<<<<<<< HEAD
 .contenedor{
     background-color: black;
     display: flex;
@@ -97,3 +111,17 @@ padding-bottom: 5px;
 .container2 p{
     margin-bottom: 0
 }
+=======
+
+/*IMAGEN AVATAR*/
+.avatar{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    position:absolute;
+    top: -50px;
+  left:calc(50% - 50px);
+  
+}
+
+>>>>>>> 37a99a12c674fc00f794d5af78d95c88fd1114d3
