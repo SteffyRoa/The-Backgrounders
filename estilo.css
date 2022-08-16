@@ -32,56 +32,23 @@ margin-bottom: 30px;
     margin-bottom:20px;
 }
 
-<<<<<<< HEAD
-* fonts /
-@import url(...);
+
 html {
     font-size: 100%;
-} /16px/
+} 
 
-:root {
 
-}
-
-body {
-
-}
-
-p {
-
-}
-
-h1,
-h2,
-h4 {
-
-}
-
-.img-carrosel {
-
-}
-
-.btn {
-
-}
-
-.btn:hover {
-
-}
-=======
 
 
 html {
     font-size: 100%;
 } /*16px*/
 
->>>>>>> 37a99a12c674fc00f794d5af78d95c88fd1114d3
-
 .navbar-custom {
     background-color:rgba(35, 54, 84, 1);
 }
 
-<<<<<<< HEAD
+
 .contenedor{
     background-color: black;
     display: flex;
@@ -111,7 +78,7 @@ padding-bottom: 5px;
 .container2 p{
     margin-bottom: 0
 }
-=======
+
 
 /*IMAGEN AVATAR*/
 .avatar{
@@ -124,4 +91,3 @@ padding-bottom: 5px;
   
 }
 
->>>>>>> 37a99a12c674fc00f794d5af78d95c88fd1114d3
