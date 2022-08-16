@@ -10,7 +10,7 @@ body{
 
 /*Caja de Login */
 .wrapper{
-    margin: 80px;
+    margin: 75px;
 }
 
 /* Formulario*/
@@ -86,8 +86,13 @@ padding-bottom: 5px;
     height:100px;
     border-radius: 50%;
     position:absolute;
-    top: -50px;
+    top: 90px;
   left:calc(50% - 50px);
+  border-color: rgb(21, 21, 166);
   
 }
 
+/*Boton */
+button{
+    border-radius: 30%;
+}
