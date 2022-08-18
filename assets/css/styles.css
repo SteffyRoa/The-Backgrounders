@@ -1,0 +1,36 @@
+.img-card {
+    height: 160px;
+    object-fit: cover;
+}
+
+.contenedor{
+
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+}
+    
+.item1{
+    background-color: black;
+}
+
+.itemubicacion{
+
+    text-align: center;
+}
+    
+.container2{
+
+    background-color: black;
+    text-align: center;
+
+}
+    
+.container2 p{
+    margin-bottom: 0
+}
+    
+    
