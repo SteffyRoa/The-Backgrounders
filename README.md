@@ -24,8 +24,8 @@ Java <br>
 Springboot <br>
 MySQL <br>
 
-Trello >>
-Figma >>
+Trello >> <br>
+Figma >> <br>
 
 
 
