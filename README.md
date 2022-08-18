@@ -5,6 +5,13 @@ Generation-ch16 Team
 
 Equipo: Consultorio - Dentista
 
+HTML
+CSS
+JavaScript
+Java
+Springboot
+MySQL
+
 Equipo:
 
 Tammy Gutierrez <br>
