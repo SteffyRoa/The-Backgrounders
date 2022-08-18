@@ -3,14 +3,7 @@ Generation-ch16 Team
 
 ![image](https://user-images.githubusercontent.com/85137930/184547592-df4ccd4a-f605-45b1-a137-ca8c08feb6b8.png)
 
-Equipo: Consultorio - Dentista
-
-HTML
-CSS
-JavaScript
-Java
-Springboot
-MySQL
+Consultorio - Dentista
 
 Equipo:
 
@@ -23,6 +16,16 @@ Heliot Efrain Leon Canto  <br>
 Luis Antonio Diaz Martinez  <br>
 Rafael Andony Argote  <br>
 
+Tecnologias:
+HTML <br>
+CSS <br>
+JavaScript <br>
+Java <br>
+Springboot <br>
+MySQL <br>
+
+Trello >>
+Figma >>
 
 
 
