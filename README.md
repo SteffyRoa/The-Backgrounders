@@ -7,14 +7,14 @@ Equipo: Consultorio - Dentista
 
 Equipo:
 
-Tammy Gutierrez
-Rosalba Serrano
-Steffany Roa
-David Castellanos Guzman
-Fernando Rochin
-Heliot Efrain Leon Canto
-Luis Antonio Diaz Martinez
-Rafael Andony Argote 
+Tammy Gutierrez <br>
+Rosalba Serrano <br>
+Steffany Roa  <br>
+David Castellanos Guzman  <br>
+Fernando Rochin  <br>
+Heliot Efrain Leon Canto  <br>
+Luis Antonio Diaz Martinez  <br>
+Rafael Andony Argote  <br>
 
 
 
