@@ -16,7 +16,8 @@ Heliot Efrain Leon Canto  <br>
 Luis Antonio Diaz Martinez  <br>
 Rafael Andony Argote  <br>
 
-Tecnologias:
+
+Tecnologias:<br>
 HTML <br>
 CSS <br>
 JavaScript <br>
