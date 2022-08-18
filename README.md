@@ -5,4 +5,19 @@ Generation-ch16 Team
 
 Equipo: Consultorio - Dentista
 
+Equipo:
+
+Tammy Gutierrez
+Rosalba Serrano
+Steffany Roa
+David Castellanos Guzman
+Fernando Rochin
+Heliot Efrain Leon Canto
+Luis Antonio Diaz Martinez
+Rafael Andony Argote 
+
+
+
+
+
 
