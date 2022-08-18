@@ -1,0 +1,120 @@
+{
+    "consejos":[
+        {
+            "titulo": "Cepillarse al menos dos veces al día",
+            "informacion":"Hay que cepillarse los dientes por lo menos, dos veces al día, cada mañana y noche. Si es posible también después de cada comida para prevenir la acumulación de bacterias. Usted debe cepillarse por un total de 2 a 3 minutos."
+        },
+        {
+            "titulo": "Cepillarse con cuidado",
+            "informacion":"La Asociación Dental Americana tiene instrucciones específicas sobre cómo cepillarse los dientes. Se sugiere que debe colocar su cepillo de dientes en un ángulo de 45 grados a sus encías y mover suavemente el cepillo de ida y vuelta en pequeños círculos. Cepille las superficies externas, las superficies internas y las superficies por encima de los dientes. Sin embargo, al limpiar las superficies interiores de los dientes delanteros incline su cepillo verticalmente y haga varios movimientos hacia arriba y hacia abajo."
+        
+        },
+        {
+            "titulo": "Adquirir el apropiado cepillo de dientes",
+            "informacion":"Hay cepillos de dientes blandos, medios y duros. La mayoría de dentistas recomiendan un cepillo de dientes blando o mediano ya que las cerdas duras pueden dañar el esmalte de los dientes o el tejido de las encías con el tiempo. Siempre elija un cepillo con cerdas nylon sobre naturales y remplaza su cepillo de dientes cada 3 meses o después de alguna enfermedad como el resfriado o gripa."
+        
+        },
+        {
+            "titulo": "Utilice productos con fluoruro",
+            "informacion":"El uso de un enjuague bucal, pasta dental e hilo dental que contienen fluoruro ayudan a endurecer el esmalte de los dientes haciéndolos más resistentes a la placa ya a la azúcar reduciendo el riesgo de caries dentales."
+        
+        },
+        {
+            "titulo":"Cepillar la lengua",
+            "informacion":"Las bacterias se acumulan en las pequeñas grietas de la lengua, ya que no es una superficie lisa. Las bacterias permanecen allí hasta que la lengua sea raspada. Por lo tanto, cepillar la lengua es esencial para mantener dientes sanos así como para detener el mal aliento."
+        },
+        {
+            "titulo":"Utilice Hilo dental diariamente",
+            "informacion":"El uso diario de hilo dental ayuda a eliminar las bacterias y la placa que se acumula entre los dientes. Si usted nota sangre o inflamación debido al uso de hilo dental visite a su dentista. Para usar hilo dental adecuadamente, envuelva los extremos del hilo dental alrededor de los dedos índice de cada mano y use el hilo dental entre cada diente y alrededor de ellos."
+        },
+        {
+            "titulo":"Límite Ingestión de bebidas ácidas",
+            "informacion":"Algunas bebidas ácidas incluyen refrescos, jugos de frutas y vino. Las bebidas ácidas disuelven el esmalte de sus dientes que conducen a sensibilidad y cavidades. Si usted consume  bebidas ácidas, es recomendable usar un popote, y tomar agua después para naturalizar algo del ácido."
+        },
+        {
+            "titulo":" Límite los alimentos azucarados",
+            "informacion":"Los alimentos azucarados conducen a las caries dentales. Sea consciente de lo que consume leyendo los datos nutricionales y las etiquetas, tomando decisiones prudentes y eligiendo opciones con bajos contenidos de azúcares. Tenga en cuenta que los alimentos ricos en almidón como la pasta y el pan se descomponen en azúcar con el contacto de la saliva."
+        },
+        {
+            "titulo":"Consuma las vitaminas esenciales",
+            "informacion":"Las vitaminas A, C, D y K, y los minerales de calcio, magnesio y fósforo apoyan los músculos sanos, el cabello, los huesos, los sistemas inmunológicos y también son muy buenos para mantener los dientes y las encías en forma superior. Consumir los nutrientes adecuados ayudara a resistir infecciones y reducir la probabilidad de caries y enfermedad de las encías."
+        },
+        {
+            "titulo":"Sólo use los dientes para masticar los alimentos",
+            "informacion":"No use los dientes para romper nueces, morderse las uñas, abrir paquetes o quitar las tapas de las botellas. De lo contrario, corre el riesgo de romper, y erosionar los dientes debido a la presión expuesta."
+        },
+        {
+            "titulo":"Proteja sus dientes de lesiones",
+            "informacion":"Se recomienda usar un protector bucal, una jaula facial o un casco cuando juegue deportes o intente una actividad peligrosa. Si por alguna razón algún diente se ha caído, enjuáguelo y colóquelo en su lugar si es posible, o manténgalo dentro de su boca."
+        },
+        {
+            "titulo":"Visite el dentista cada 6 meses",
+            "informacion":"Es recomendado que visite a su dentista al menos 2 veces al año para una limpieza, y más frecuentemente si usted tiene problemas en las encías o caries extensas.  Si usted está sufriendo de dolor de muelas o sangrado de encías haga una cita lo más pronto posible, su dentista puede ayudar a controlar y tratar los síntomas y causas."
+        }
+    ],
+    "beneficios":[
+        {
+            "titulo":"Mantiene los dientes perfectos y protegidos frente a enfermedades bucales",
+            "informacion":"Una limpieza bucal profesional mantiene nuestros dientes perfectos; sin sarro, manchas o bacterias además, refuerza el esmalte. Esto se traduce en unos dientes sanos y protegidos frente a enfermedades bucales como la gingivitis, la caries o la periodontitis."
+        },
+        {
+            "titulo":"Contribuye a un buen estado de salud general",
+            "informacion":"Las enfermedades sistémicas como la diabetes o los problemas cardiovasculares están relacionados de forma muy directa con las enfermedades periodontales. Por lo tanto, es muy importante llevar una higiene bucal profesional, especialmente, en estos casos."
+        },
+        {
+            "titulo":"Se elimina el mal aliento",
+            "informacion":"La halitosis es un problema que sufre hasta un 50 % de la población. En muchos casos, puede estar relacionada con el sarro y la acumulación de bacterias. Una buena forma de controlarla es con una limpieza bucal profesional."
+        },
+        {
+            "titulo":"Los dientes lucen mejor",
+            "informacion":"La limpieza bucal profesional no solo es buena para la salud bucal, también otorga unos dientes más blancos y relucientes al quitar las manchas derivadas de hábitos como el consumo de café, té, tabaco u otros alimentos que manchan los dientes."
+        },
+        {
+            "titulo":"El sentido del gusto y la sensación de placer en nuestra boca se realza",
+            "informacion":"El sentido del gusto se ve alterado cuando tenemos residuos en nuestra boca. Unos dientes limpios y por ende, una boca sana ayudan a tener un mejor sentido del gusto y a tener una sensación de limpieza en nuestra boca muy placentera."
+        },
+        {
+            "titulo":"Se evitan males mayores una ventaja para el bolsillo a largo plazo",
+            "informacion":"Una limpieza bucal profesional evita futuras extracciones, implantes u otros tratamientos derivados de una mala higiene bucal. Beneficio para la salud bucal y el bolsillo."
+        }
+
+    ],
+    "riesgos":[
+        {
+            "titulo":"Estética",
+            "informacion":"no vas a lucir una sonrisa bonita debido a la cantidad de sarro posado en tus dientes."
+        },
+        {
+            "titulo":"Caries",
+            "informacion":"no realizar limpiezas bucales puede dar lugar a la aparición de caries dentales."
+        },
+        {
+            "titulo":"Gingivitis",
+            "informacion":" genera problemas periodontales más graves"
+        }
+
+    ],
+    "cuidados":[
+        {
+            "titulo":"Limpiar dientes",
+            "informacion":"Comienza a limpiar los dientes de tu niño en cuanto le salga el primero."
+        },
+        {
+            "titulo":"Enseñanza",
+            "informacion":"Enséñale a cepillarse los dientes dos veces al día."
+        },
+        {
+            "titulo":"Proteccion",
+            "informacion":"Protege los dientes de tu niño con flúor."
+        },
+        {
+            "titulo":"Comida saludable",
+            "informacion":"Dale alimentos y bebidas saludables que contengan poca azúcar."
+        },
+        {
+            "titulo":"Chequeos",
+            "informacion":"Llévalo al dentista a chequeos con regularidad."
+        }
+    ]
+
+}
