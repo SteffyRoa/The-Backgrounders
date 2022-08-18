@@ -6,7 +6,7 @@ let min = 1;
 
 let icono = Math.random() * (max-min) + min;
 icono = parseInt(icono);
-imgIcono.src = `img/icono/${icono}.png` 
+imgIcono.src = `assets/images/icono/${icono}.png` 
 
 async function obtenerSugerencias(url) {
     try {
