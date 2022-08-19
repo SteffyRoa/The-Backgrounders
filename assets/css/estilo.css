@@ -100,4 +100,16 @@ padding-bottom: 5px;
 button{
     border-radius: 30%;
 }
-
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.footer{
+   
+    position:absolute;
+    padding: 1em 0;
+    text-align: center;
+    margin-top:auto;
+    
+}
