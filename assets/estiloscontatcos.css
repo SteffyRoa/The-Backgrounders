@@ -1,0 +1,49 @@
+/* clases de imag doctores*/
+.imagenDoct{
+    width: 20rem;
+}
+.imagenDoct1{
+    width: 23rem;
+}
+.imagenDoct2{
+width: 22rem;
+}
+.imagenDoct2{
+    width: 22rem;
+}
+.imagenDoct3{
+    height: 22rem;
+    width: 22rem;
+}
+
+/* estilos de cards informacion imagenes*/
+.img-box{
+    width: 480px;
+    height: 250px;
+    
+}
+.element-style {
+    width: 80px;
+    height: 10px;
+}
+/* textos titulos */
+ .texto-tamañoo{
+    font-size: 600rem;
+} 
+.texto-servicio{
+    font-size: 150px;
+}
+/* mas informacion */
+.facebook{
+    height: 17rem;
+    width: 18rem; 
+}
+.texto-Info{
+    font-size: 100rem;
+}
+/* comentarios */
+.comentarios{
+    border: 50rem solid #000000;
+    color: blue;
+   
+}
