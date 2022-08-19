@@ -59,6 +59,7 @@ h4 {
 
 }
 
+
 .contenedor{
     background-color: black;
     display: flex;
@@ -69,10 +70,6 @@ padding-bottom: 5px;
 .item1{
     background-color: black;
 }
-
-
-
-
 
 
 .itemubicacion{
