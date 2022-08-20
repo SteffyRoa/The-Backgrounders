@@ -56,6 +56,11 @@ width: 22rem;
     color: blue;
    
 }
+/* comentarios caja */
+.caja-comentarios{
+    border: solid rgb(64, 214, 231);
+    background-color: azure;
+}
 .footer{
     background-color: black;
     display: flex;
