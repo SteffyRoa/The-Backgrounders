@@ -1,3 +1,11 @@
+
+/* body{ 
+    background-color: rgb(205, 145, 229);
+}
+.color{
+    background-color: rgb(205, 145, 229);
+} */
+
 /* clases de imag doctores*/
 .imagenDoct{
     width: 20rem;
@@ -17,15 +25,15 @@ width: 22rem;
 }
 
 /* estilos de cards informacion imagenes*/
-.img-box{
-    width: 480px;
-    height: 250px;
-    
+.imagen-instagram{
+    width: 300px;
+    height: 300px;
 }
-.element-style {
-    width: 80px;
-    height: 10px;
+.imagen-facebook{
+    width: 280px;
+    height: 280px;
 }
+
 /* textos titulos */
  .texto-tamañoo{
     font-size: 400rem;
@@ -41,6 +49,7 @@ width: 22rem;
 .texto-Info{
     font-size: 100rem;
 }
+
 /* comentarios */
 .comentarios{
     border: 50rem solid #000000;
