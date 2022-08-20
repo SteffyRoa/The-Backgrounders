@@ -28,10 +28,10 @@ width: 22rem;
 }
 /* textos titulos */
  .texto-tamañoo{
-    font-size: 600rem;
+    font-size: 400rem;
 } 
 .texto-servicio{
-    font-size: 150px;
+    font-size: 25px;
 }
 /* mas informacion */
 .facebook{
@@ -46,4 +46,20 @@ width: 22rem;
     border: 50rem solid #000000;
     color: blue;
    
+}
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+padding-bottom: 5px;
+
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.contactanostxt{
+    font-size: 25px;
 }

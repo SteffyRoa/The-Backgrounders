@@ -26,14 +26,24 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link text-white" href="../index.html">Inicio</a>
-            <a class="nav-link text-white" href="./servicios.html">Servicios </a>
-            <a class="nav-link text-white" href="./AgendarCita.html">Agendar cita</a>
-            <a class="nav-link text-white" href="./contactos.html">Contacto</a>
-            <a class="nav-link text-white" href="./login.html">Login</a>
-          </div>
+            <a class="nav-link text-white" href="/index.html">Inicio</a>
+            <a class="nav-link text-white" href="/pages/servicios.html">Servicios </a>
+            <a class="nav-link text-white" href="/pages/AgendarCita.html">Agendar cita</a>
+            <a class="nav-link text-white" href="/pages/contactos.html">Contacto</a>
+            <a class="nav-link text-white" href="/pages/Registro.html">Registrarse</a>
+            <a class="nav-link text-white" href="/pages/login.html">Login</a>
+          </div> 
         </div>
       </nav>
+
+
+      <div class="container-fluid">
+        <div class="justify-content-center row">
+          <div class="col bg-dark">
+            <h1 class="text-white textologin text-center">Mi cuenta</h1>
+          </div>
+        </div>
+      </div>
      <!--LOGIN-->
    
     <div class="wrapper">
@@ -41,21 +51,22 @@
         <br>
       <form class="form-signin">
         <h2 class="form-signin-heading text-center">Login Form</h2>
-        <input
+        <input id="username"
           type="text"
           class="form-control"
-          name="username"
-          placeholder="Email"
+          
+          placeholder="Usuario/Email"
           required=""
           autofocus=""
         />
-        <input
+        <input id="password"
           type="password"
           class="form-control"
-          name="password"
+       
           placeholder="Contraseña"
           required=""
         />
+<!--
         <label class="checkbox">
           <input
             type="checkbox"
@@ -63,12 +74,15 @@
             id="rememberMe" 
             name="remeberMe"
           /> Recordar Contraseña</label><br>
-        <button class="btn btn-lg btn-primary btn-block">Entrar</button>
-        <a class="" href="./paginaSesionInicio.html">Usuario</a>
+        -->
+       
+        <button  class="btn btn-lg btn-dark btn-block" onclick="validar()" >Entrar</button><br>
+        
+        <a class="Cuenta" href="./Registro.html">¿No tienes Cuenta? Registrate</a>
       </form>
     </div>
 
-    <footer class="contenedor">
+    <footer class="footer">
       <div class="item0">
         <img class="item1 rounded mx-auto d-block" width="60xp" src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png" alt="" srcset="">
         <img height="24px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt="">
@@ -88,7 +102,7 @@
         <p>Calle Palmas 32, La Condesa, CDMX</p>
       </div>    
          </footer> 
-         
+      <script src="../assets/js/login.js"></script>   
   </body>
 </html>
 

@@ -1,63 +1,9 @@
-* fonts */
-@import url(...);
-html {
-    font-size: 100%;
-} /*16px*/
 
-:root {
-
-}
-
-body {
-
-}
-
-p {
-
-}
-
-h1,
-h2,
-h4 {
-
-}
-
-.img-carrosel {
-
-}
-
-
-.btn {
-
-}
-
-.btn:hover {
-
-}
 
 .navbar-custom {
     background-color:rgba(35, 54, 84, 1);
 }
 
-.nav-link {
-
-}
-
-/* Footer */
-.page-footer {
-
-}
-
-/* Servicios */
-.servicios-container {
-
-}
-
-/* Error */
-
-.pagina-error {
-
-}
 
 
 .contenedor{
@@ -84,4 +30,25 @@ padding-bottom: 5px;
 
 .container2 p{
     margin-bottom: 0
+}
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+padding-bottom: 5px;
+
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.container{
+    
+    min-height: 38vh;
+
+}
+.textocita{
+    font-size: 25px;
 }

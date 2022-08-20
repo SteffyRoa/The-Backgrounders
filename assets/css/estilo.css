@@ -11,21 +11,21 @@ body{
 
 /*Caja de Login */
 .wrapper{
-    margin: 75px;
+    margin-block: -500px;
 }
 
 /* Formulario*/
 .form-signin{
-    max-width:380px;
+    max-width:500px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: rgb(136, 136, 136);
     padding:15px 40px 50px;
     border: 1px solid #e5e5e5;
     border-radius: 10px;
 }
 /* Formulario login -Cabeza --Formulario --Caja checkbox*/
 .form-signin .form-signin-heading, .form-signin .checkbox{
-margin-bottom: 30px;
+margin-bottom: 10px;
 }
 
 /*Cajas de texto --Correo --Password */
@@ -35,14 +35,9 @@ margin-bottom: 30px;
 
 
 html {
-    font-size: 100%;
+    font-size: 85%;
 } 
 
-
-
-html {
-    font-size: 100%;
-} 
 
 
 
@@ -52,13 +47,7 @@ html {
 }
 
 
-.contenedor{
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
-padding-bottom: 5px;
-}
+
 .item1{
     background-color: black;
 }
@@ -79,7 +68,7 @@ padding-bottom: 5px;
 }
 
 .container2 p{
-    margin-bottom: 0
+    margin-bottom: -10;
 }
 
 
@@ -89,7 +78,7 @@ padding-bottom: 5px;
     height:100px;
     border-radius: 50%;
     position:absolute;
-    top: 90px;
+    top: 140px;
   left:calc(50% - 50px);
   border-color: rgb(21, 21, 166);
   
@@ -100,16 +89,22 @@ padding-bottom: 5px;
 button{
     border-radius: 30%;
 }
+
+    
 body{
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
 }
 .footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+padding-bottom: 5px;
    
-    position:absolute;
-    padding: 1em 0;
-    text-align: center;
-    margin-top:auto;
     
+}
+.textologin{
+    font-size: 25px;
 }
