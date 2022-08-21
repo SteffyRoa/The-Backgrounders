@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap');
+
+
+html{
+    background-size: 85%;
+  }
 /* clases de imag doctores*/
 .imagenDoct{
     width: 20rem;
@@ -53,7 +59,7 @@ width: 22rem;
     justify-content: space-around;
     padding-top: 10px;
 padding-bottom: 5px;
-
+font-family: 'Roboto';
 }
 body{
     display: grid;

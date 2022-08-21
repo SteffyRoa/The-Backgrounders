@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap');
 
 
+html{
+    background-size: 85%;
+  }
 /* Cuerpo */
 body{
     background: #eee;
@@ -11,7 +14,7 @@ body{
 
 /*Caja de Login */
 .wrapper{
-    margin-block: -500px;
+    margin-block: 300px;
 }
 
 /* Formulario*/
@@ -91,19 +94,19 @@ button{
 }
 
     
-body{
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
-}
 .footer{
     background-color: black;
     display: flex;
     justify-content: space-around;
     padding-top: 10px;
 padding-bottom: 5px;
-   
-    
+font-family: 'Roboto';
+
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
 .textologin{
     font-size: 25px;
