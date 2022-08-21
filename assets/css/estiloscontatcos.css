@@ -1,11 +1,11 @@
-<<<<<<< HEAD
+
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap');
 
 
 html{
     background-size: 85%;
   }
-=======
+
 
 /* body{ 
     background-color: rgb(205, 145, 229);
@@ -14,7 +14,7 @@ html{
     background-color: rgb(205, 145, 229);
 } */
 
->>>>>>> 29beda37e560943e64c40d858d3b919b54fb8537
+
 /* clases de imag doctores*/
 .imagenDoct{
     width: 20rem;
