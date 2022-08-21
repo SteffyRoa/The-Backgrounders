@@ -1,9 +1,20 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap');
 
 
 html{
     background-size: 85%;
   }
+=======
+
+/* body{ 
+    background-color: rgb(205, 145, 229);
+}
+.color{
+    background-color: rgb(205, 145, 229);
+} */
+
+>>>>>>> 29beda37e560943e64c40d858d3b919b54fb8537
 /* clases de imag doctores*/
 .imagenDoct{
     width: 20rem;
@@ -23,15 +34,15 @@ width: 22rem;
 }
 
 /* estilos de cards informacion imagenes*/
-.img-box{
-    width: 480px;
-    height: 250px;
-    
+.imagen-instagram{
+    width: 300px;
+    height: 300px;
 }
-.element-style {
-    width: 80px;
-    height: 10px;
+.imagen-facebook{
+    width: 280px;
+    height: 280px;
 }
+
 /* textos titulos */
  .texto-tamañoo{
     font-size: 400rem;
@@ -47,11 +58,17 @@ width: 22rem;
 .texto-Info{
     font-size: 100rem;
 }
+
 /* comentarios */
 .comentarios{
     border: 50rem solid #000000;
     color: blue;
    
+}
+/* comentarios caja */
+.caja-comentarios{
+    border: solid rgb(64, 214, 231);
+    background-color: azure;
 }
 .footer{
     background-color: black;
@@ -69,3 +86,11 @@ body{
 .contactanostxt{
     font-size: 25px;
 }
+/* googleMaps */
+.map {
+    background-color: rgb(39, 193, 193);
+    height: 200px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
