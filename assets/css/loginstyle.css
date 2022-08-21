@@ -1,0 +1,80 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap');
+
+html{
+  background-size: 85%;
+}
+
+
+    
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+padding-bottom: 5px;
+font-family: 'Roboto';
+
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.textologin{
+    font-size: 25px;
+}
+
+
+.avatar{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    position:absolute;
+    top: 140px;
+  left:calc(50% - 50px);
+  border-color: rgb(21, 21, 166);
+  
+}
+/*Caja de Login */
+.wrapper{
+    margin-block: 300px;
+}
+
+/* Formulario*/
+.form-signin{
+    max-width:500px;
+    margin: 0 auto;
+    background-color: rgb(223, 228, 255);
+    padding:15px 40px 50px;
+    border: 1px solid #5a5656;
+    border-radius: 10px;
+}
+/* Formulario login -Cabeza --Formulario --Caja checkbox*/
+.form-signin .form-signin-heading, .form-signin .checkbox{
+margin-bottom: 10px;
+}
+
+/*Cajas de texto --Correo --Password */
+.form-signin input[type="text"], .form-signin input[type="password"]{
+    margin-bottom:20px;
+}
+
+
+html {
+    font-size: 85%;
+} 
+
+button{
+    border-radius: 30%;
+}
+.lotti{
+    border-radius: 10%;
+    margin-top: -22%;
+    left: 40%;
+    position:absolute;
+    width: 240px; 
+    height: 240px;
+    border-color: #5a5656;
+    
+}
