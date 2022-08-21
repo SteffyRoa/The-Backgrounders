@@ -77,3 +77,11 @@ body{
 .contactanostxt{
     font-size: 25px;
 }
+/* googleMaps */
+.map {
+    background-color: rgb(39, 193, 193);
+    height: 200px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
