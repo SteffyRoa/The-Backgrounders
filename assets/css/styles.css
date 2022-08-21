@@ -1,6 +1,22 @@
 .img-card {
     height: 160px;
+    transition: height 1s;
     object-fit: cover;
+}
+
+.img-card:hover {
+    height: 170px;
+}
+
+.card {
+    height: 23rem;
+    transition: height 2s;
+}
+
+.card:hover {
+    height: 23.5rem;
+    color: #ffffff;
+    background-color: rgba(35, 54, 84, 1);
 }
 
 .contenedor{
