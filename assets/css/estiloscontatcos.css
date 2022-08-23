@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
 html{
     background-size: 85%;
@@ -94,3 +94,7 @@ body{
     width: 100%;
     /* The width is the width of the web page */
   }
+  .textonav{
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+}
