@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
 html{
     background-size: 85%;
@@ -87,10 +87,18 @@ body{
     font-size: 25px;
 }
 /* googleMaps */
-.map {
-    background-color: rgb(39, 193, 193);
+/*  .map {
+    text-align-last: justify;
     height: 200px;
     /* The height is 400 pixels */
-    width: 100%;
+    width: 200rem;
     /* The width is the width of the web page */
+<<<<<<< Updated upstream
   }
+  .textonav{
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+}
+=======
+  }  */
+>>>>>>> Stashed changes
