@@ -6,8 +6,19 @@
 /* Cuerpo */
 body{
     background: #eee;
+    cursor:url(./imgs/brush-teeth\ \(1\).png), auto;}
 
-}
+    a{
+        cursor:url(./imgs/teeth-brushing.png), auto
+    }
+
+
+
+  
+   
+
+
+
 
 /*Caja de Login */
 .wrapper{
@@ -50,6 +61,7 @@ html {
 .navbar-custom {
     background-color:rgba(35, 54, 84, 1);
 }
+
 
 
 .contenedor{
