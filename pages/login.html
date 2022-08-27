@@ -10,18 +10,19 @@
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/loginstyle.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
-<!--Nav-->
-<!--Nav-->
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark navbar-custom">
-  <a class="navbar-brand" href="#"><img width="90px" src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png" alt="Logo dientes limpios"></a>
-  <a class="navbar-brand"><img height="28px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt=""></a>
+
+ <!-- Barra de Navegacion -->
+ <nav class="navbar navbar-expand-lg sticky-top navbar-dark navbar-custom">
+  <a class="navbar-brand" href="/index.html"><img width="90px" src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png" alt="Logo dientes limpios"></a>
+  <a class="navbar-brand" ><img height="28px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt=""></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
+    <div class="navbar-nav textonav">
       <a class="nav-link text-white" href="/index.html">Inicio</a>
       <a class="nav-link text-white" href="/pages/servicios.html">Servicios </a>
       <a class="nav-link text-white" href="/pages/AgendarCita.html">Agendar cita</a>
@@ -42,34 +43,36 @@
         </div>
       </div>
      <!--LOGIN-->
-   
-    <div class="wrapper">
-      <lottie-player class="lotti" src="https://assets5.lottiefiles.com/private_files/lf30_GguZcb.json" background="transparent"  speed="2"   loop  autoplay></lottie-player>
-        <br>
-      <form class="form-signin">
-        <h2 class="form-signin-heading text-center">Iniciar Sesión</h2>
-        <input id="username"
-          type="text"
-          class="form-control"
-          
-          placeholder="Usuario/Email"
-          required=""
-          autofocus=""
-        />
-        <input id="password"
-          type="password"
-          class="form-control"
-       
-          placeholder="Contraseña"
-          required=""
-        />
+     <div class="contenedorlogin">
+     <div class="hey">
+     <div class="login-div">
+      <div class="logo">
+          <img src="../assets/images/welcome.png" alt="">
+      </div>
+    
+      <form th:action="@{/logout}" method="post">
+      <div class="title">Inicia Sesión</div>
 
-       
-        <button  class="btn btn-lg btn-dark btn-block" onclick="validar()" >Entrar</button><br>
-        
-        <a class="Cuenta" href="./Registro.html">¿No tienes Cuenta? Registrate</a>
-      </form>
-    </div>
+      <div class="fields">
+          <div class="username">
+              <i class="far fa-envelope"></i>
+              <input type="username" class="user-input" placeholder="Correo Electronico">
+          </div>
+
+          <div class="password">
+              <i class="fas fa-lock"></i>
+              <input type="password" class="pass-input" placeholder="Contraseña">
+          </div>
+      </div>
+<div class="btnsesion"><button class="signin-button">Iniciar Sesión</button></div>
+      
+
+      <div class="link">
+          <a href="#">Olvidaste tu Contraseña?</a> o <a href="#">Registrate</a>
+      </div>
+  </div>
+</div>  
+</div>
 
     <footer class="footer">
       <div class="item0">

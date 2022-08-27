@@ -23,14 +23,14 @@
 
 <body>
 <!--Nav-->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-expand-md sticky-top navbar-dark navbar-custom">
         <a class="navbar-brand" href="#"><img width="90px" src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png" alt="Logo dientes limpios"></a>
-        <a class="navbar-brand"><img height="28px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt=""></a>
+        <a class="navbar-brand"><img height="28px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt="" href="/index.html"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+          <div class="navbar-nav textonav">
             <a class="nav-link text-white" href="/index.html">Inicio</a>
             <a class="nav-link text-white" href="/pages/servicios.html">Servicios </a>
             <a class="nav-link text-white" href="/pages/AgendarCita.html">Agendar cita</a>
@@ -42,18 +42,24 @@
       </nav>
 
 <!--Carrusel-->
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-      <div id="carouselExampleFade" class="carousel slide carousel-fade col-md-8 col-sm-11" data-ride="carousel">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade col-md-8 col-sm-12" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="...">
+            <div class="embeded-responsive">
+            <video autoplay loop muted class="embed-responsive-item carousel-img" src="assets/images/imagenes-proyecto/Video-dientes-amarillo-2.mp4"></video>
+          </div>
           </div>
           <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1642977195677-e3533a97b9c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="...">
+            <div class="embeded-responsive">
+            <video autoplay loop muted class="embed-responsive-item carousel-img" src="assets/images/imagenes-proyecto/Video-dientes-azul.mp4"></video>
+          </div>
           </div>
           <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1609840113564-ab4aba4956c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="...">
+            <div class="embeded-responsive">
+            <video autoplay loop muted class="embed-responsive-item carousel-img" src="assets/images/imagenes-proyecto/Video-dientes-verde.mp4"></video>
+          </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
@@ -67,51 +73,145 @@
       </div>
 
 <!--Tarjetas promociones-->
-<div class="col-md-4 col-sm-12 aling-self-center promociones">
-    <div class="card text-white bg-info mb-3 aling-self-center"style="width: 23rem; margin: 2% auto">
-    <div class="card-header"><h2>Promociones</h2></div>
-    <div class="card-body">
-      <h5 class="card-title">
-        Descubre nuestras increibles promociones que tenemos para ti.
-      </h5>
-    </div>
-  </div>
 
-  <div class="card text-white bg-info mb-3 aling-self-center" style="width: 23rem; margin: 2% auto">
+<div class="col-md-4 col-sm-12 aling-self-center promociones">
+  <a href="servicios.html"><div class="card text-white bg-info mb-3 aling-self-center"style="width: 23rem; margin: 2% auto">
     <div class="card-header"><h2>Promociones</h2></div>
+
     <div class="card-body">
-      <h5 class="card-title">
-        Descubre nuestras increibles promociones que tenemos para ti.
-      </h5>
+      <img class="card-img" src="assets/images/imagenes-proyecto/carrusel-img4.jpg" alt="">
     </div>
   </div>
+</a>
+
+  <a href="servicios.html"><div class="card text-white  mb-3 aling-self-center" style="width: 23rem; margin: 2% auto; background-color: rgba(181, 232, 243, 1);">
+    <div class="card-header"><h3>Promociones</h3></div>
+    <div class="card-body">
+      <img class="card-img" src="assets/images/imagenes-proyecto/carrusel-img5.jpg" alt="">
+    </div>
+  </div>
+</a>
 </div>
 </div>
 </div>
       
 <!--Contenido-->
-<div id="contenido" class="container">
+<div class="container contenido">
   <div class="row">
     <div class="col-md-4 col-sm-12">
-      <img id="imgvision" src="assets/images/imagenes-proyecto/duda03 1.png" alt=""></div>
+      <img class="imgvision" src="assets/images/imagenes-proyecto/duda03 1.png" alt=""></div>
     <div class="col-md-8 col-sm-12"><h3>Nuestra misión/visión</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel similique a reiciendis, deserunt, voluptatum dignissimos magnam vero ipsum hic error suscipit sequi eligendi id minus quasi dolor est fugiat iusto iste? Laborum, blanditiis fugit assumenda aliquid sapiente quae! Iure debitis sit numquam suscipit molestiae sed maiores maxime ut tempore facere, totam quae ipsa enim, labore fugit repudiandae nemo aut iusto quia, doloremque voluptatibus harum omnis inventore delectus! Autem quidem explicabo accusamus commodi possimus earum consequuntur repudiandae saepe, quaerat repellat? Non deleniti fugit omnis vel. Dolorum, natus hic illo quibusdam velit ut ducimus aliquid vel quas non amet atque quia nostrum sit rem similique libero earum architecto animi molestias? Fugit vero, iusto alias perspiciatis, error laborum animi architecto voluptas quidem quia dolor blanditiis nesciunt in numquam explicabo veniam tempora cupiditate impedit illum et velit commodi odio excepturi doloribus? Aut consequatur architecto, minima vel delectus nulla similique labore deleniti, voluptates vero repudiandae.</p></div>
   </div>
-  <div class="row">
-    <h3>Testimonios</h3>
   </div>
-  <div class="row">
-    <div class="col">
-      <h5>Luis H. Sandoval</h5>
-      <p><i>
-        "Excelente atención e instalaciones, y además... son seguidores del gordeo. <br> Apoyemos a la banda emprendedora. Súper recomendado."
-      </i>
-      </p>
-    </div>
-    <div class="col">
-      <img class="imgtestimonio img-fluid"  src="assets/images/imagenes-proyecto/persona1 1.png" alt="">
+  
+  <header class="EncabezadoCuidados"><h2>¿Por qué cuidar nuestros dientes?</h2></header>
+  <div class="container castor">
+    <div class="row">
+      <div class="col-md-9 contenidocol-sm-12">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptas et porro optio quibusdam nemo vero atque, non similique nulla, at omnis labore eius eos cupiditate quaerat vitae consequuntur rerum ab accusamus quia consequatur? Eveniet veritatis nulla deserunt beatae recusandae non nam possimus, ab voluptatibus corrupti labore incidunt cum earum sunt, a dolorum dolorem officiis eligendi. Consectetur molestiae aperiam, aspernatur natus ad vero cum, minima facilis eius consequuntur, voluptates quod nihil voluptas! Voluptate sit a omnis. Natus, dolores dolore iure voluptatum maiores obcaecati! Perspiciatis tenetur rerum dolores voluptate placeat, aliquid at officiis ab sit sequi excepturi velit dolore ratione! Eaque!</p>
+      </div>
+        <div class="col-md-3 col-sm-12">
+        <img class="imgvision" src="assets/images/imagenes-proyecto/1.png" alt="">
+      </div>
     </div>
   </div>
-</div>
+  
+
+  <!-- Container Testimonios -->
+  <div class="container-fluid fondos">
+    <div class="row">
+      <!-- Testimonios -->
+      <div class="col-md-12">
+        <header class="section_header align-center">
+          <h2 class="section_header_h text-white div_testi">
+            <span> Testimonios </span>
+          </h2>
+        </header>
+      </div>
+    </div>
+    <div class="row">
+      <div class="section_header_h"></div>
+    </div>
+    <!-- Tarjetas de Testimonios -->
+    <div
+      class="row align-items-center"
+    >
+      <div id="col" class="col-sm-12 col-md-3">
+        <article class="card card-1 TarjetasTestimonios">
+          <div class="card_content div_testi">
+            <h3 class="card_title">Luis Sandoval</h3>
+            <span class="card_subtitle">Testimonio de Facebook</span>
+            <p class="card_description">
+              "Excelente atención e instalaciones, y además... son seguidores
+              del gordeo...
+            </p>
+          </div>
+        </article>
+      </div>
+      <div id="col" class="col-sm-12 col-md-3">
+        <article class="card card-2 TarjetasTestimonios">
+          <div class="card_content">
+            <h3 class="card_title">Luis Sandoval</h3>
+            <span class="card_subtitle">Testimonio de Facebook</span>
+            <p class="card_description">
+              "Excelente atención e instalaciones, y además... son seguidores
+              del gordeo...
+            </p>
+          </div>
+        </article>
+      </div>
+      <div id="col" class="col-sm-12 col-md-3">
+        <article class="card card-3 TarjetasTestimonios">
+          <div class="card_content">
+            <h3 class="card_title">Luis Sandoval</h3>
+            <span class="card_subtitle">Testimonio de Facebook</span>
+            <p class="card_description">
+              "Excelente atención e instalaciones, y además... son seguidores
+              del gordeo...
+            </p>
+          </div>
+        </article>
+      </div>
+      <div id="col" class="col-sm-12 col-md-3">
+        <article class="card card-4 TarjetasTestimonios">
+          <div class="card_content">
+            <h3 class="card_title">Luis Sandoval</h3>
+            <span class="card_subtitle">Testimonio de Facebook</span>
+            <p class="card_description">
+              "Excelente atención e instalaciones, y además... son seguidores
+              del gordeo...
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Link para agregar reseña -->
+    <div class="row align-items-center">
+      <div class="col-md-12 link">
+        <h5>
+          <a href="" class="text-white">Comparte tu reseña con nosotros...</a>
+        </h5>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md12">
+        <p>
+          <hr>
+          <h2>Los beneficios que tener una cuenta con nosotros ofrece</h2>
+          <br>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi qui dicta, aliquam sequi commodi et. Deleniti culpa ut ad quo ullam vitae sit sed iste temporibus facere, doloribus necessitatibus laboriosam molestiae? Neque commodi esse suscipit cumque accusantium veritatis praesentium, dolorum alias sit? Maxime mollitia accusamus veniam esse minus quisquam nesciunt!
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+
 
 <!--Footer-->
     <footer class="footer">
