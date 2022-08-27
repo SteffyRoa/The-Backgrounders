@@ -53,7 +53,13 @@ body{
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
+    background: #eee;
+    cursor:url(../images/imgs/brush-teeth\ \(1\).png), auto;
 }
+
+a {cursor:url(../images/imgs/teeth-brushing.png), auto;
+}
+
 .container{
     
     min-height: 38vh;
