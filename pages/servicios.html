@@ -62,15 +62,36 @@
     </div>
     <!-- Contenedor del contenedor de las Cards -->
     <div class="container servicios">
+      
       <!-- Contenedor de las Cards -->
-      <div class="container my-5">
+      <div id="cards-container" class="container my-5">
+
         <!-- Primer Fila -->
-        <div id="cards-container" class="row align-items-center row-cols-1 row-cols-md-2 row-cols-xl-3">
+        <div  class="row align-items-center row-cols-1 row-cols-md-2 row-cols-xl-3">
+
           <!-- Primer Card -->
+          <div class="col my-4">
+            <div class="card shadow">
+              <img
+                src="../assets/images/obturacion_con_resina1.jpg"
+                class="card-img-top img-card"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Resinas y amalgamas</h5>
+                <p class="card-text">
+                  Si tienes caries dental o grietas en tus dientes, elimínalos rellenando los huecos con materiales biocompatibles.
+                </p>
+                <a class="enlace" href="#" onclick="mostrarInformacion()">Más información</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Segunda Card -->
           <div class="col my-4">
             <div  id="card1" class="card shadow rounded">
               <img
-                src="../assets/images/coronas_de_porcelana.jpg"
+                src="../assets/images/coronas_de_porcelana1.jpg"
                 class="card-img-top img-card"
                 alt="..."
               />
@@ -79,29 +100,11 @@
                 <p class="card-text">
                   Si tus dientes están muy maltratados por caries o desgastes, les devolvemos la forma, tamaño y color.
                 </p>
-                <a class="enlace" href="#">Más información</a>
+                <a class="enlace" href="#" onclick="mostrarInformacion()">Más información</a>
               </div>
             </div>
           </div>
-
-          <!-- Segunda Card -->
-          <div class="col my-4">
-            <div class="card shadow rounded">
-              <img
-                src="../assets/images/obturacion_con_resina.jpg"
-                class="card-img-top img-card"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Obturaciones con Resinas</h5>
-                <p class="card-text">
-                  Si tienes caries dental o grietas en tus dientes, elimínalos rellenando los huecos con materiales biocompatibles.
-                </p>
-                <a class="enlace" href="#">Más información</a>
-              </div>
-            </div>
-          </div>
-
+          
           <!-- Tercera Card -->
           <div class="col my-4">
             <div class="card shadow rounded">
@@ -115,7 +118,7 @@
                 <p class="card-text">
                   Blanquea tus dientes y renueva su color original.
                 </p>
-                <a class="enlace" href="#">Más información</a>
+                <a class="enlace" href="#" onclick="mostrarInformacion()">Más información</a>
               </div>
             </div>
           </div>
@@ -133,7 +136,7 @@
                 <p class="card-text">
                   Elimina la suciedad de tus dientes con un raspado radicular de forma localizada.
                 </p>
-                <a class="enlace" href="#">Más información</a>
+                <a class="enlace" href="#" onclick="mostrarInformacion()">Más información</a>
               </div>
             </div>
           </div>
@@ -151,7 +154,7 @@
                 <p class="card-text">
                   Reconstruye nuevamente tu dentadura, ya sea que te falte un diente o varios, incluso todos.
                 </p>
-                <a class="enlace" href="#">Más información</a>
+                <a class="enlace" href="#" onclick="mostrarInformacion()">Más información</a>
               </div>
             </div>
           </div>
@@ -160,7 +163,7 @@
           <div class="col my-4">
             <div class="card shadow rounded">
               <img
-                src="../assets/images/ortodoncia.jpg"
+                src="../assets/images/ortodoncia1.jpg"
                 class="card-img-top img-card"
                 alt="..."
               />
@@ -169,7 +172,7 @@
                 <p class="card-text">
                   Obtén una mejor estética dental y corrige problemas de mordida que pueden afectar tu salud en general.
                 </p>
-                <a class="enlace" href="#">Más información</a>
+                <a class="enlace" href="#" onclick="mostrarInformacion()">Más información</a>
               </div>
             </div>
           </div>
@@ -178,7 +181,7 @@
           <div class="col my-4">
             <div class="card shadow rounded">
               <img
-                src="../assets/images/periodoncia.jpg"
+                src="../assets/images/periodoncia2.jpg"
                 class="card-img-top img-card"
                 alt="..."
               />
@@ -187,7 +190,7 @@
                 <p class="card-text">
                   Prevención, diagnóstico y tratamiento de las enfermedades que afectan a tus encías.
                 </p>
-                <a class="enlace" href="#">Más información</a>
+                <a class="enlace" href="#" onclick="mostrarInformacion()">Más información</a>
               </div>
             </div>
           </div>
@@ -205,7 +208,7 @@
                 <p class="card-text">
                   Retiro de piezas dentales de su cavidad alveolar del hueso maxilar o mandibular.
                 </p>
-                <a class="enlace" href="#">Más información</a>
+                <a class="enlace" href="#" onclick="mostrarInformacion()">Más información</a>
               </div>
             </div>
           </div>
@@ -223,7 +226,7 @@
                 <p class="card-text">
                   Corrige la posición de tus dientes o mal formación de las encías.
                 </p>
-                <a class="enlace" href="#">Más información</a>
+                <a class="enlace" href="#" onclick="mostrarInformacion()">Más información</a>
               </div>
             </div>
           </div>
@@ -235,7 +238,7 @@
     <div class="container my-5">
       <div class="row justify-content-center">
         <div class="col-4">
-          <button type="button" class="btn btn-primary btn-lg btn-block">
+          <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/pages/AgendarCita.html'">
             Agendar Cita
           </button>
         </div>

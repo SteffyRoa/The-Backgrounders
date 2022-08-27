@@ -5,24 +5,24 @@ html{
   }
 
 .img-card {
-    height: 160px;
+    height: 250px;
     transition: height 500ms;
     object-fit: cover;
 }
 
 .img-card:hover {
-    height: 170px;
+    height: 260px;
 }
 
 .card {
-    height: 21rem;
+    height: 445px;
     transition: height 1s;
 }
 
 .card:hover {
-    height: 21.5rem;
+    height: 450px;
     color: #ffffff;
-    background-color: rgba(35, 54, 84, 1);
+    background-color: #020381;
 }
 
 .enlace {
@@ -32,6 +32,30 @@ html{
 .enlace:hover {
     color: rgb(219, 130, 27);
 }
+
+.img-service {
+    height: 18rem;
+    transition: height 500ms;
+    object-fit: cover;
+}
+
+.img-service:hover {
+    height: 18.5rem;
+}
+
+
+.card-service {
+    height: 32rem;
+    transition: height 1s;
+}
+
+.card-service:hover {
+    height: 32.5rem;
+    color: #ffffff;
+    background-color: #020381;
+}
+
+
 
 .contenedor{
 
