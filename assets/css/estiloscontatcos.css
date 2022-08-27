@@ -4,7 +4,7 @@
 
 html{
     background-size: 85%;
-  }
+    }
 
 
 /* body{ 
@@ -43,6 +43,35 @@ width: 22rem;
 /* sombras de doctores */
 .sombra{
     box-shadow: 0 0 19px 3px rgb(35, 54, 84, 1);
+}
+.margin-doct-rigth{
+ margin-right: 10px;
+ margin-top: 3%;
+}
+.margin-doct-left{
+    margin-left: 10px;
+    margin-top: 3%;
+}
+
+/* efectos de cards doct */
+.efectos-cards:hover{
+    box-shadow: 5px 15px 30px  rgb(9, 48, 72);
+}
+.color-div-doct{
+    background-color: rgb(8, 48, 91);
+}
+
+/* colores para separar secciones */
+.color-div{
+    background-color: rgb(35, 54, 84, 1);
+}
+
+/* .margin{
+    margin-left: 40rem;
+} */
+/* sombras de doctores */
+.sombra{
+    box-shadow: 0 1px 10px  rgb(35, 54, 84, 1);
 }
 .margin-doct-rigth{
  margin-right: 10px;
