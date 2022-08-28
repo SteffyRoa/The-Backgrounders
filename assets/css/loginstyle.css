@@ -148,11 +148,11 @@ html {
 }
 
 .signin-button:hover {
-    background: rgb(5, 86, 215);
+    background: #8ED1FC;
 }
 
 .signin-button:active {
-    background: rgba(35, 54, 84, 1);
+    background: #020381;
 }
 
 .link {
