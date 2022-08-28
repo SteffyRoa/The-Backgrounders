@@ -5,10 +5,29 @@ hr {
     border-top: 1px solid rgba(235, 193, 194);
   }
 
-.carousel .carousel-item {
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(235, 193, 194);
+    
+  }
+.carousel-item {
+
     height: 400px;
     margin: 2%;
+    
   }
+  .carousel-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .card-img{
+    object-fit: scale-down;
+  }
+
 
 .carousel-img{
     width: 100%;
@@ -37,8 +56,18 @@ hr {
     text-align: justify;
 }
 
+#carouselExampleFade{
+    display: inline-block;
+}
+.imgvision{
+    width: 85%;
+}
+.contenido{
+    margin-top: 2%;
+    text-align: justify;
+}
 .EncabezadoCuidados{
-    background-color: #8ed1fc;
+    background-color: rgba(210, 157, 51, 1);
     margin-top: 2%;
     margin-bottom: 2%;
     text-align: center;
@@ -48,11 +77,25 @@ hr {
 .castor1{
     display: flex;
     justify-content: space-around;
+}
+
+.EncabezadoCuidados{
+    background-color: #8ed1fc;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    color: white;
+    padding: 1%;
+}
+
+.castor1{
+    display: flex;
+    justify-content: space-around;
     height: 45vh;
 }
 
 
-/* *********************************************************************************************** */
+
 .fondos {
     background-color: #8ed1fc;
     animation: gradient 15s ease infinite;
@@ -104,7 +147,7 @@ header{
     box-sizing: border-box;
 }
 
-.card {
+.TarjetasTestimonios {
     position: relative;
     padding: 2;
     width: 250px;
@@ -203,22 +246,20 @@ header{
     text-align: center;
 }
 
-/* **************************************************************************************************** */
-
-
 
 .agendador{
     margin-top: 3%;
-    margin-bottom: 3%;
+    margin-bottom: 20%;
     padding: 2%;
-    background-color: rgba(138, 176, 220, 1);
+   
+    
 }
 .btn-agendar {
     background-color:  rgba(35, 54, 84, 1);
 
 }
 
-.contenedor{
+.pie{
     background-color: black;
     display: flex;
     justify-content: space-around;
@@ -246,4 +287,24 @@ padding-bottom: 5px;
 
 .container2 p{
     margin-bottom: 0
+}
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+padding-bottom: 5px;
+
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.textocita{
+    font-size: 25px;
+}
+.textonav{
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
 }

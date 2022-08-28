@@ -1,7 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap');
+
+html{
+    background-size: 85%;
+  }
+
 .img-card {
-    height: 160px;
+    height: 250px;
+    transition: height 500ms;
     object-fit: cover;
 }
+
+.img-card:hover {
+    height: 260px;
+}
+
+.card {
+    height: 445px;
+    transition: height 1s;
+}
+
+.card:hover {
+    height: 450px;
+    color: #ffffff;
+    background-color: #020381;
+}
+
+.enlace {
+    color: #ffffff;
+}
+
+.enlace:hover {
+    color: rgb(219, 130, 27);
+}
+
+.img-service {
+    height: 18rem;
+    transition: height 500ms;
+    object-fit: cover;
+}
+
+.img-service:hover {
+    height: 18.5rem;
+}
+
+
+.card-service {
+    height: 32rem;
+    transition: height 1s;
+}
+
+.card-service:hover {
+    height: 32.5rem;
+    color: #ffffff;
+    background-color: #020381;
+}
+
+
 
 .contenedor{
 
@@ -33,4 +87,22 @@
     margin-bottom: 0
 }
     
-    
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+padding-bottom: 5px;
+font-family: 'Roboto';
+
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.textoservicio{
+    font-size: 25px;
+
+}

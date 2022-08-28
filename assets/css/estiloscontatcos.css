@@ -1,3 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+html{
+    background-size: 85%;
+    }
+
+
+/* body{ 
+    background-color: rgb(205, 145, 229);
+}
+.color{
+    background-color: rgb(205, 145, 229);
+} */
+
+
 /* clases de imag doctores*/
 .imagenDoct{
     width: 20rem;
@@ -15,23 +32,71 @@ width: 22rem;
     height: 22rem;
     width: 22rem;
 }
+/* colores para separar secciones */
+.color-div{
+    background-color: rgb(35, 54, 84, 1);
+}
 
+/* .margin{
+    margin-left: 40rem;
+} */
+/* sombras de doctores */
+.sombra{
+    box-shadow: 0 0 19px 3px rgb(35, 54, 84, 1);
+}
+.margin-doct-rigth{
+ margin-right: 10px;
+ margin-top: 3%;
+}
+.margin-doct-left{
+    margin-left: 10px;
+    margin-top: 3%;
+}
+
+/* efectos de cards doct */
+.efectos-cards:hover{
+    box-shadow: 5px 15px 30px  rgb(9, 48, 72);
+}
+.color-div-doct{
+    background-color: rgb(33, 134, 241);
+}
+
+/* colores para separar secciones */
+.color-div{
+    background-color: #2d6689;
+}
+
+/* .margin{
+    margin-left: 40rem;
+} */
+/* sombras de doctores */
+.sombra{
+    box-shadow: 0 1px 10px  rgb(35, 54, 84, 1);
+}
+.margin-doct-rigth{
+ margin-right: 10px;
+ margin-top: 3%;
+}
+.margin-doct-left{
+    margin-left: 10px;
+    margin-top: 3%;
+}
 /* estilos de cards informacion imagenes*/
-.img-box{
-    width: 480px;
-    height: 250px;
-    
+.imagen-instagram{
+    width: 300px;
+    height: 300px;
 }
-.element-style {
-    width: 80px;
-    height: 10px;
+.imagen-facebook{
+    width: 280px;
+    height: 280px;
 }
+
 /* textos titulos */
  .texto-tamañoo{
-    font-size: 600rem;
+    font-size: 400rem;
 } 
 .texto-servicio{
-    font-size: 150px;
+    font-size: 25px;
 }
 /* mas informacion */
 .facebook{
@@ -41,9 +106,45 @@ width: 22rem;
 .texto-Info{
     font-size: 100rem;
 }
+
 /* comentarios */
 .comentarios{
     border: 50rem solid #000000;
     color: blue;
    
+}
+/* comentarios caja */
+.caja-comentarios{
+   
+    
+}
+/* .sombra-caja{
+    box-shadow: 0 0 4px 2px rgb(7, 93, 106);
+} */
+/* footer */
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+padding-bottom: 5px;
+font-family: 'Roboto';
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.contactanostxt{
+    font-size: 25px;
+}
+/* googleMaps */
+/*  .map {
+    text-align-last: justify;
+    height: 200px;
+    /* The height is 400 pixels */
+    /* The width is the width of the web page */
+.textonav{
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
 }
