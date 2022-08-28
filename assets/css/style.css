@@ -3,14 +3,6 @@ hr {
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid rgba(235, 193, 194);
-  }
-
-
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(235, 193, 194);
     
   }
 .carousel-item {
@@ -19,15 +11,6 @@ hr {
     margin: 2%;
     
   }
-  .carousel-img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  .card-img{
-    object-fit: scale-down;
-  }
-
 
 .carousel-img{
     width: 100%;
@@ -39,21 +22,9 @@ hr {
     display: inline-block;
 }
 
+
 .card-img{
     object-fit: scale-down;
-  }
-
-#carouselExampleFade{
-    display: inline-block;
-}
-
-.imgvision{
-    width: 85%;
-}
-
-.contenido{
-    margin-top: 2%;
-    text-align: justify;
 }
 
 #carouselExampleFade{
@@ -74,10 +45,6 @@ hr {
     color: white;
     padding: 1%;
 }
-.castor1{
-    display: flex;
-    justify-content: space-around;
-}
 
 .EncabezadoCuidados{
     background-color: #8ed1fc;
@@ -91,7 +58,7 @@ hr {
 .castor1{
     display: flex;
     justify-content: space-around;
-    height: 45vh;
+    object-fit: cover;
 }
 
 
@@ -99,7 +66,6 @@ hr {
 .fondos {
     background-color: #8ed1fc;
     animation: gradient 15s ease infinite;
-    height: 70vh;
 }
 
 .div_testi {
@@ -157,6 +123,7 @@ header{
     border-radius: 20px;
     overflow: hidden;
 }
+
 
 .card-1{
     background: url(../images/imagenes-proyecto/Testi-1.png);
