@@ -12,7 +12,7 @@ Steffany Roa  <br>
 David Castellanos Guzman  <br>
 Fernando Rochin  <br>
 Heliot Efrain Leon Canto  <br>
-Luis Antonio Diaz Martinez [Linkedin] (!https://www.linkedin.com/in/luis-adiazm/) [GitHub] (!https://github.com/Unodetantosluises) <br>
+Luis Antonio Diaz Martinez [Linkedin](https://www.linkedin.com/in/luis-adiazm/) | [GitHub](https://github.com/Unodetantosluises) <br>
 Rafael Andony Argote  <br>
 
 ## Tecnologias:<br>
