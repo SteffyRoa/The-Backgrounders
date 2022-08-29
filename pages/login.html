@@ -1,15 +1,19 @@
-<!--PRUEBA-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- CSS Main -->
     <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- CSS Style -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- CSS Logn de Steffy -->
     <link rel="stylesheet" href="../assets/css/loginstyle.css">
+    <!-- Font Awesome -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
@@ -31,40 +35,47 @@
       </div> 
     </div>
   </nav>
+  <!-- Barra de Navegacion -->
   <!-- Banner de Inicio de Sesión -->
   <div class="container-fluid">
     <div class="justify-content-center row">
       <div class="col bg-dark">
-        <h1 class="text-white textologin text-center">Plataforma</h1>
+        <h1 class="text-white textocita text-center">Inicia Sesion</h1>
       </div>
     </div>
   </div>
-  <!--LOGIN-->
+  <!-- Banner de Inicion de Sesion -->
   <div class="contenedorlogin">
     <div class="hey">
       <div class="login-div">
+        <!-- Logotipo de Inicio de Sesion -->
         <div class="logo">
           <img src="../assets/images/welcome.png" alt="">
         </div>
-        <form th:action="@{/logout}" method="post">
+        <!-- Logotipo de Incio de Sesion-->
+        <form th:action="@{/logout}" method="post"><!-- Supongo que es un elemento de Spring -->
           <div class="title">
             Inicia Sesión
           </div>
           <div class="fields">
+            <!-- Campo Correo -->
             <div class="username">
               <i class="far fa-envelope"></i>
               <input type="username" class="user-input" placeholder="Correo Electronico">
             </div>
+            <!-- Campo Contraseña -->
             <div class="password">
               <i class="fas fa-lock"></i>
               <input type="password" class="pass-input" placeholder="Contraseña">
             </div>
           </div>
+          <!-- Boton de Inicio de Sesion -->
           <div class="btnsesion">
             <button class="signin-button">
               Iniciar Sesión
             </button>
           </div>
+          <!-- Link de Contraseña -->
           <div class="link">
             <a href="#">Olvidaste tu Contraseña?</a> o <a href="#">Registrate</a>
           </div>
@@ -82,6 +93,7 @@
       <img width="60xp" src="https://www.clinicapronova.com/wp-content/uploads/2021/08/white-instagram-icon-png-14.png" alt="">
       <img width="60xp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEUKg92Ak7tI8ni4LxAlIW7gzCwknHCmVFTUfZUs8fNo1T_vKbTTMIEPeHaKwmVpFV-ms&usqp=CAU" alt="">
     </class>
+    <!-- Texto Footer -->
     <div class="item text-white">
       <strong>Contactanos</strong>
       <br>
@@ -93,8 +105,19 @@
       <p>Calle Palmas 32, La Condesa, CDMX</p>
     </div>    
   </footer>
-  <!-- JavaScript --> 
+  <!-- Footer -->
+   <!-- Copyright -->
+   <div class="container2 bg-secondary">
+    <p>© 2022 Todos los derechos reservados | Dientes Limpios</p>
+  </div>
+  <!-- Copyright -->
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <!-- Script Login Steffy -->
   <script src="../assets/js/login.js"></script>  
+  <!-- ????? -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- JavaScript -->
 </body>
 </html>

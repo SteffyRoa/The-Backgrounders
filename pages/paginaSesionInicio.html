@@ -5,226 +5,233 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- CSS Main -->
     <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
-    
-    <!-- Inicio Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark navbar-custom">
-        <a class="navbar-brand" href="#"><img width="90px" src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png" alt="Logo dientes limpios"></a>
-        <a class="navbar-brand"><img height="28px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav textonav">
-            <a class="nav-link text-white" href="/index.html">Inicio</a>
-            <a class="nav-link text-white" href="/pages/servicios.html">Servicios </a>
-            <a class="nav-link text-white" href="/pages/AgendarCita.html">Agendar cita</a>
-            <a class="nav-link text-white" href="/pages/contactos.html">Contacto</a>
-            <a class="nav-link text-white" href="/pages/Registro.html">Registrarse</a>
-            <a class="nav-link text-white" href="/pages/login.html">Login</a>
-          </div> 
-        </div>
-    </nav>
-    <!-- FIn Navbar -->
-
-    <!-- Titulo -->
-    <div class="container-fluid bg-secondary m-0">
-      <h2 class="m-0 text-center py-2">Bienvenido</h2>
+  <!-- Barra de Navegacion -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark navbar-custom">
+    <a class="navbar-brand" href="#"><img width="90px" src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png" alt="Logo dientes limpios"></a>
+    <a class="navbar-brand"><img height="28px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav textonav">
+        <a class="nav-link text-white" href="/index.html">Inicio</a>
+        <a class="nav-link text-white" href="/pages/servicios.html">Servicios </a>
+        <a class="nav-link text-white" href="/pages/AgendarCita.html">Agendar cita</a>
+        <a class="nav-link text-white" href="/pages/contactos.html">Contacto</a>
+        <a class="nav-link text-white" href="/pages/Registro.html">Registrarse</a>
+        <a class="nav-link text-white" href="/pages/login.html">Login</a>
+        </div> 
+      </div>
+  </nav>
+  <!-- Barra Navegacion -->
+  <!-- Banner de Perfil -->
+  <div class="container-fluid">
+    <div class="justify-content-center row">
+      <div class="col bg-dark">
+        <h1 class="text-white textocita text-center">Bienvenido</h1>
+      </div>
     </div>
-    <!-- fin titulo -->
-
-
-    <div class="container">
-      
-      <!-- Div imagen de perfil -->
-      <div class="row p-2">
-        <div class="mx-auto">  
-          <img id="img-icono" src="" alt="Icono para usuario"  class='mx-auto shadow imgRedonda'>
-          <button type="button" class="cambio bg-light " data-toggle="modal" data-target="#modalFondo" id="btn"><img src="../assets/images/icono/img-galeria.png" width="40px" height="25px"></button>
-        </div>
+  </div>
+  <!-- Fin del Banner de Perfil -->
+  <div class="container">
+    <!-- Div imagen de perfil -->
+    <div class="row p-2">
+      <div class="mx-auto">  
+        <img id="img-icono" src="" alt="Icono para usuario"  class='mx-auto shadow imgRedonda'>
+        <button type="button" class="cambio bg-light " data-toggle="modal" data-target="#modalFondo" id="btn"><img src="../assets/images/icono/img-galeria.png" width="40px" height="25px"></button>
       </div>
- 
-      <!-- Div nombre de usuario -->
-      <div class="row justify-content-center p-2">
-        <h1 id="nombreUsuario">Usuario</h1>
-      </div>
-
-      <!-- Tabla -->
-      <div class="row p-2">
-        <h3>Citas</h3>
-        <div class="col-12 col-sm-12 col-md-12 align-middle">
-          <table class="table table-hover table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">id</th>
-                <th scope="col">Servicio</th>
-                <th scope="col">Fecha</th>
-                <th scope="col">Consultorio</th>
-                <th scope="col">Estado</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="col">1</th>
+    </div>
+    <!-- Nombre de Usuario -->
+    <div class="row justify-content-center p-2">
+      <h1 id="nombreUsuario">Usuario</h1>
+    </div>
+    <!-- Tabla de Citas-->
+    <div class="row p-2">
+      <!-- Titulo Tabla -->
+      <h3>Citas</h3>
+      <div class="col-12 col-sm-12 col-md-12 align-middle">
+        <table class="table table-hover table-bordered">
+          <!-- Fila de la Tabla -->
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">Servicio</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Consultorio</th>
+              <th scope="col">Estado</th>
+            </tr>
+          </thead>
+          <!-- Contenido -->
+          <tbody>
+            <tr>
+              <!-- Contenido Fila 1 -->
+              <th scope="col">1</th>
                 <td>Muela</td>
                 <td>24/08/22</td>
                 <td>4</td>
-                <td class="bg-success text-white">Pendiente</td>
-              </tr>
-              <tr>
-                <th scope="col">2</th>
+              <td class="bg-success text-white">Pendiente</td>
+            </tr>
+            <tr>
+              <!-- Contenido Fila 2 -->
+              <th scope="col">2</th>
                 <td>Limpieza</td>
                 <td>22/08/22</td>
                 <td>5</td>
-                <td class="bg-danger text-white">No asistio</td>
-              </tr>
-             
-            </tbody>
-          </table>
-        </div>
+              <td class="bg-danger text-white">No asistio</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
-      <!-- Botones  -->
-      <div class="row p-5">
-        <div class="mx-auto">
-          <a href="/pages/AgendarCita.html"><img id="img-icono" src="../assets/images/icono/botonCita.png" alt="Icono para usuario" width="150" height="150"></a> 
-          <h3>Agendar cita</h3>
-        </div>
-
-        <div class="mx-auto">
-          <a data-toggle="modal" data-target="#exampleModal"><img id="img-icono" src="../assets/images/icono/botonCancel.png" alt="Icono para usuario" width="150" height="150"></a> 
-          <h3>Cancelar cita</h3>
-        </div>
-      </div>
-      <!-- fin de botones -->
-
-      <!-- Modal  Cancelar cita-->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">                        
-              <h5 class="modal-title" id="exampleModalLabel">Seleccionar cita para borrar</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-12">
-                  <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Muela</a>
-                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Limpieza</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="borrar()">Borrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- Modal  Seleccionar fondo-->
-        <div class="modal fade" id="modalFondo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">                        
-                <h5 class="modal-title" id="exampleModalLabel">Seleccionar foto</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="row">
-                  <div class="col-12">
-                    <div  id="fondos">
-                      <img class="img seleccionado" id="1" src="../assets/images/icono/1.png" alt="Icono para usuario" width="150" height="150">
-                      <img class="img" id="2" src="../assets/images/icono/2.png" alt="Icono para usuario" width="150" height="150">
-                      <img class="img" id="3" src="../assets/images/icono/3.png" alt="Icono para usuario" width="150" height="150">
-                      <img class="img" id="4" src="../assets/images/icono/4.png" alt="Icono para usuario" width="150" height="150">
-                      <img class="img" id="5" src="../assets/images/icono/5.png" alt="Icono para usuario" width="150" height="150">
-                      <img class="img" id="6" src="../assets/images/icono/6.png" alt="Icono para usuario" width="150" height="150">
-                      <img class="img" id="7" src="../assets/images/icono/7.png" alt="Icono para usuario" width="150" height="150">
-                      <img class="img" id="8" src="../assets/images/icono/8.png" alt="Icono para usuario" width="150" height="150">
-                      <img class="img" id="9" src="../assets/images/icono/9.png" alt="Icono para usuario" width="150" height="150">
-                      <img class="img" id="10" src="../assets/images/icono/10.png" alt="Icono para usuario" width="150" height="150">
-                     
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="actualizar()">Actualizar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      
     </div>
-
-    <!-- Consejos -->
-
-      <div class="row">
-        <div class="col-2 col-sm-2 col-md-2">
-
-        </div>
-        <div class="col-8 col-sm-8 col-md-8 ">
-          <div class="bg-info m-0">
-            <h3 class="m-0 text-center py-4 text-white">
-              Importante llegar 5 minutos antes
-            </h3>
+    <!-- Tabla de Citas -->
+    <!-- Botones Tabla -->
+    <div class="row p-5">
+      <!-- Boton de Agendar -->
+      <div class="mx-auto">
+        <a href="/pages/AgendarCita.html"><img id="img-icono" src="../assets/images/icono/botonCita.png" alt="Icono para usuario" width="150" height="150"></a> 
+        <h3>Agendar cita</h3>
+      </div>
+      <!-- Boton de Cancelar -->
+      <div class="mx-auto">
+        <a data-toggle="modal" data-target="#exampleModal"><img id="img-icono" src="../assets/images/icono/botonCancel.png" alt="Icono para usuario" width="150" height="150"></a> 
+        <h3>Cancelar cita</h3>
+      </div>
+    </div>
+    <!-- Botones Tabla -->
+    <!-- Modal  Cancelar-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!-- Titulo del Modal -->    
+          <div class="modal-header">                    
+            <h5 class="modal-title" id="exampleModalLabel">Seleccionar cita para borrar</h5>
+            <!-- Bton de Modal -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="list-group" id="list-tab" role="tablist">
+                  <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Muela</a>
+                  <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Limpieza</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="borrar()">Borrar</button>
           </div>
         </div>
-        
       </div>
+    </div>
+    <!-- Modal Cancelar -->
+    <!-- Modal  Seleccionar Foto Perfil -->
+    <div class="modal fade" id="modalFondo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!-- Titulo del Modal -->
+          <div class="modal-header">                        
+            <h5 class="modal-title" id="exampleModalLabel">Seleccionar foto</h5>
+            <!-- Boton de Modal -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12">
+                <!-- Fotos de Perfil -->
+                <div  id="fondos">
+                  <img class="img seleccionado" id="1" src="../assets/images/icono/1.png" alt="Icono para usuario" width="150" height="150">
+                  <img class="img" id="2" src="../assets/images/icono/2.png" alt="Icono para usuario" width="150" height="150">
+                  <img class="img" id="3" src="../assets/images/icono/3.png" alt="Icono para usuario" width="150" height="150">
+                  <img class="img" id="4" src="../assets/images/icono/4.png" alt="Icono para usuario" width="150" height="150">
+                  <img class="img" id="5" src="../assets/images/icono/5.png" alt="Icono para usuario" width="150" height="150">
+                  <img class="img" id="6" src="../assets/images/icono/6.png" alt="Icono para usuario" width="150" height="150">
+                  <img class="img" id="7" src="../assets/images/icono/7.png" alt="Icono para usuario" width="150" height="150">
+                  <img class="img" id="8" src="../assets/images/icono/8.png" alt="Icono para usuario" width="150" height="150">
+                  <img class="img" id="9" src="../assets/images/icono/9.png" alt="Icono para usuario" width="150" height="150">
+                  <img class="img" id="10" src="../assets/images/icono/10.png" alt="Icono para usuario" width="150" height="150">   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Modal -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="actualizar()">Actualizar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Recomendacion -->
+  <div class="row">
+    <div class="col-2 col-sm-2 col-md-2">
+    </div>
+    <div class="col-8 col-sm-8 col-md-8 ">
+      <div class="bg-info m-0">
+        <h3 class="m-0 text-center py-4 text-white">
+          Importante llegar 5 minutos antes
+        </h3>
+      </div>
+    </div>    
+  </div>
+  <br>  
+  <!-- Recomendacion -->
+  <!-- GIF de Castor -->
+  <div class="row">
+    <div class="col-4">
+    </div>
+    <div class="col-4">
+    </div>
+    <div class="col-4">
+      <img class="rounded float-right" src="../assets/images/videoC.gif" alt="" width="100%" height="190px">
+    </div>
+  </div>
+  <!-- GIF de Castor -->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="item0">
+      <img class="item1 rounded mx-auto d-block" width="60xp" src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png" alt="" srcset="">
+      <img height="24px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt="">
+    </div>
+    <class class="item3 ">
+      <img width="60xp" src="https://www.clinicapronova.com/wp-content/uploads/2021/08/white-instagram-icon-png-14.png" alt="">
+      <img width="60xp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEUKg92Ak7tI8ni4LxAlIW7gzCwknHCmVFTUfZUs8fNo1T_vKbTTMIEPeHaKwmVpFV-ms&usqp=CAU" alt="">
+    </class>
+    <!-- Texto Footer -->
+    <div class="item text-white">
+      <strong>Contactanos</strong>
       <br>
-  
-    <!-- fin de consejos -->
-
-      <div class="row">
-        <div class="col-4">
-
-        </div>
-        <div class="col-4">
-
-        </div>
-        <div class="col-4">
-          <img class="rounded float-right" src="../assets/images/videoC.gif" alt="" width="100%" height="190px">
-        </div>
+      (55) 3428 6213
       </div>
- 
-    <!-- Inicio de pie de pagina -->
-    <footer class="footer">
-        <div class="item0">
-          <img class="item1 rounded mx-auto d-block" width="60xp" src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png" alt="" srcset="">
-          <img height="24px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt="">
-        </div>
-        <class class="item3 ">
-        <img width="60xp" src="https://www.clinicapronova.com/wp-content/uploads/2021/08/white-instagram-icon-png-14.png" alt="">
-          <img width="60xp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEUKg92Ak7tI8ni4LxAlIW7gzCwknHCmVFTUfZUs8fNo1T_vKbTTMIEPeHaKwmVpFV-ms&usqp=CAU" alt="">
-        </class>
-        <div class="item text-white">
-          <strong>Contactanos</strong>
-          <br>
-          (55) 3428 6213
-        </div>
-        <div class="itemubicacion text-white ">
-          <strong> Ubicación</strong>
-          <br>
-          <p>Calle Palmas 32, La Condesa, CDMX</p>
-        </div>    
-      </footer> 
-      <div class="container2 bg-secondary">
-        <p>© 2022 Todos los derechos reservados | Dientes Limpios</p>
-      </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <script src="../assets/js/paginaUsuario.js"></script>
+      <div class="itemubicacion text-white ">
+        <strong> Ubicación</strong>
+        <br>
+        <p>Calle Palmas 32, La Condesa, CDMX</p>
+      </div>    
+  </footer>
+  <!-- Footer -->
+  <!-- Copyright -->
+  <div class="container2 bg-secondary">
+    <p>© 2022 Todos los derechos reservados | Dientes Limpios</p>
+  </div>
+  <!-- Copyright -->
+  <!-- JavaScripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <!-- Script Pagina Usuario -->
+  <script src="../assets/js/paginaUsuario.js"></script>
+  <!-- JavaScripts -->
 </body>
 </html>

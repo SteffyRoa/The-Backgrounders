@@ -5,155 +5,193 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- CSS Main -->
     <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- CSS Style -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
-<!--Nav-->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark navbar-custom">
-        <a class="navbar-brand" href="#"><img width="90px" src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png" alt="Logo dientes limpios"></a>
-        <a class="navbar-brand"><img height="28px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav textonav">
-            <a class="nav-link text-white" href="/index.html">Inicio</a>
-            <a class="nav-link text-white" href="/pages/servicios.html">Servicios </a>
-            <a class="nav-link text-white" href="/pages/AgendarCita.html">Agendar cita</a>
-            <a class="nav-link text-white" href="/pages/contactos.html">Contacto</a>
-            <a class="nav-link text-white" href="/pages/Registro.html">Registrarse</a>
-            <a class="nav-link text-white" href="/pages/login.html">Login</a>
-          </div> 
-        </div>
-      </nav>
-   <!-- Banner de Agendar cita -->
-   <div class="container-fluid">
+  <!-- Barra Navegacion -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark navbar-custom">
+    <a class="navbar-brand" href="#"><img width="90px" src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png" alt="Logo dientes limpios"></a>
+    <a class="navbar-brand"><img height="28px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav textonav">
+        <a class="nav-link text-white" href="/index.html">Inicio</a>
+        <a class="nav-link text-white" href="/pages/servicios.html">Servicios </a>
+        <a class="nav-link text-white" href="/pages/AgendarCita.html">Agendar cita</a>
+        <a class="nav-link text-white" href="/pages/contactos.html">Contacto</a>
+        <a class="nav-link text-white" href="/pages/Registro.html">Registrarse</a>
+        <a class="nav-link text-white" href="/pages/login.html">Login</a>
+      </div> 
+    </div>
+  </nav>
+  <!-- Barra de Navegacion -->
+  <!-- Banner de Agendar cita -->
+  <div class="container-fluid">
     <div class="justify-content-center row">
       <div class="col bg-dark">
         <h1 class="text-white textocita text-center">Agendar Cita</h1>
       </div>
     </div>
   </div>
-<!--Contenido-->
-
-<div class="hey">
-  <div class="fields">
-<div class="container col-8 agendador rounded">
-    <form>
-        <div class="form-row">
-          <div class="form-group col-sm-6">
-            <label for="inputEmail4">Nombre</label>
-            <input type="email" class="form-control" id="inputEmail4">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Apellido</label>
-            <input type="password" class="form-control" id="inputPassword4">
-          </div>
-        </div>
-        <div class="form-row">
+  <!-- Banner de Agendar Cita -->
+  <div class="hey">
+    <div class="fields">
+      <!-- Container -->
+      <div class="container col-8 agendador rounded">
+        <!-- Form -->
+        <form>
+          <!-- Primera Fila del Form -->
+          <div class="form-row">
+            <!-- Campo Nombre -->
+            <div class="form-group col-sm-6">
+              <!-- Icono -->
+              <i class="fas fa-user"></i>
+              <label for="inputEmail4">Nombre(s):</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Juan Carlos">
+            </div>
+            <!-- Campo Apellido -->
             <div class="form-group col-md-6">
-                <label for="inputAddress">Servicio</label>
-                
-                    <select id="inputState" class="form-control">
-                        <option selected>Escoge una...</option>
-                        <option selected>Amalgamas/Resinas</option>
-                        <option selected>Limpieza dental</option>
-                        <option selected>Endodoncias</option>
-                        <option selected>Ortodoncia</option>
-                        <option selected>Endodoncias</option>
-                    </select>
-    
-              </div>
-              <div class="form-group col-md-6">
-                  <label for="inputState">Fechas disponibles</label>
-                  <select id="inputState" class="form-control">
-                    <option selected>Escoge una...</option>
-                    <option selected>Septiembre</option>
-                    <option selected>Octubre</option>
-                    <option selected>Noviembre</option>
-                    <option>...</option>
-                  </select>
+              <!-- Icono -->
+              <i class="far fa-user"></i>
+              <label for="inputPassword4">Apellido(s):</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Vasquez Mota">
+            </div>
+          </div>
+          <!-- Segunda Fila del form -->
+          <div class="form-row">
+          <!-- Campo Servicios -->
+            <div class="form-group col-md-6">
+              <!-- Icono -->
+              <i class="fas fa-tooth"></i>
+              <label for="inputAddress">Servicio</label>
+              <!-- Lista de Servicios -->
+              <select id="inputState" class="form-control">
+                <option selected>Escoge una...</option>
+                <option selected>Amalgamas/Resinas</option>
+                <option selected>Limpieza dental</option>
+                <option selected>Endodoncias</option>
+                <option selected>Ortodoncia</option>
+                <option selected>Endodoncias</option>
+              </select>
+            </div>
+            <!-- Campo Calendario -->
+            <div class="form-group col-md-6">
+              <!-- Icono -->
+              <i class="far fa-calendar-alt"></i>
+              <label for="inputState">Fechas disponibles</label>
+              <!-- Lista de Fechas -->
+              <select id="inputState" class="form-control">
+                <option selected>Escoge una...</option>
+                <option selected>Septiembre</option>
+                <option selected>Octubre</option>
+                <option selected>Noviembre</option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+          <!-- Tercera Fila del Form -->
+          <div class="form-row">
+            <!-- Campo Correo -->
+            <div class="form-group col-md-6">
+              <!-- Icono -->
+              <i class="far fa-envelope"></i>
+              <label for="inputCity">Correo Electrónico </label>
+              <input type="text" class="form-control" id="inputCity" placeholder="hola@gmail.com">
+            </div>
+            <!-- Campo Telefono -->
+            <div class="form-group col-md-6">
+              <!-- Icono -->
+              <i class="fas fa-mobile-alt"></i>
+              <label for="inputZip">Teléfono</label>
+              <input type="text" class="form-control" id="inputZip" placeholder="(52)5555555">
+            </div>
+          </div>
+          <!-- Boton de Agendar -->
+          <button type="button" class="btn btn-agendar text-white aling-center" data-toggle="modal" data-target="#confirmaModal">
+            Agendar Cita
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="confirmaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- Titulo del Modal -->
+                  <h5 class="modal-title" id="exampleModalLabel">Cita Confirmada</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-        </div>
-        
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">Correo Electrónico </label>
-            <input type="text" class="form-control" id="inputCity">
+                <!-- Texto del Modal -->
+                <div class="modal-body">
+                  Su cita ha sido, confimada receibira un correo con los datos de su cita.
+                </div>
+                <div class="modal-footer">
+                  <!-- Boton del Nodal -->
+                  <button type="button" class="btn btn-secondary"   data-dismiss="modal" onclick="ir()">Cerrar</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputZip">Teléfono</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-        </div>
-        <!-- <button type="button" class="btn btn-agendar text-white aling-center" data-target="#exampleModal">Agendar Cita</button> -->
-      <button type="button" class="btn btn-agendar text-white aling-center" data-toggle="modal" data-target="#confirmaModal">
-        Agendar Cita
-      </button>
-  <!-- Modal -->
-    <div class="modal fade" id="confirmaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Cita Confirmada</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Su cita ha sido, confimada receibira un correo con los datos de su cita.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="ir()">Cerrar</button>
-          </div>
-        </div>
+        <!-- Modal -->
+        </form>
+        <!-- Form Registro -->
       </div>
+      <!-- Container -->
     </div>
-  </form>
-</div>
-<!-- Termina del Form -->
-
-<div class="row">
-  <div class="col-4">
-
   </div>
-  <div class="col-4">
-
+  <!-- GIF de Castor -->
+  <div class="row">
+    <div class="col-4">
+    </div>
+    <div class="col-4">
+    </div>
+    <div class="col-4">
+      <img class="rounded float-right" src="../assets/images/videoC.gif" alt="" width="100%" height="190px">
+    </div>
   </div>
-  <div class="col-4">
-    <img class="rounded float-right" src="../assets/images/videoC.gif" alt="" width="100%" height="190px">
+  <!-- GIF de Castor -->
+  <!--Footer-->
+  <footer class="footer">
+    <div class="item0">
+      <img class="item1 rounded mx-auto d-block" width="60xp" src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png" alt="" srcset="">
+      <img height="24px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt="">
+    </div>
+    <class class="item3 ">
+      <img width="60xp" src="https://www.clinicapronova.com/wp-content/uploads/2021/08/white-instagram-icon-png-14.png" alt="">
+      <img width="60xp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEUKg92Ak7tI8ni4LxAlIW7gzCwknHCmVFTUfZUs8fNo1T_vKbTTMIEPeHaKwmVpFV-ms&usqp=CAU" alt="">
+    </class>
+    <!-- Texto Footer -->
+    <div class="item text-white">
+      <strong>Contactanos</strong>
+      <br>
+      (55) 3428 6213
+    </div>
+    <div class="itemubicacion text-white ">
+      <strong> Ubicación</strong>
+      <br>
+      <p>Calle Palmas 32, La Condesa, CDMX</p>
+    </div>    
+  </footer>
+  <!-- Footer -->
+  <!-- Copyright -->
+  <div class="container2 bg-secondary">
+    <p>© 2022 Todos los derechos reservados | Dientes Limpios</p>
   </div>
-</div>
-
-<!--Footer-->
-<footer class="footer">
-  <div class="item0">
-    <img class="item1 rounded mx-auto d-block" width="60xp" src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png" alt="" srcset="">
-    <img height="24px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt="">
-  </div>
-  <class class="item3 ">
-  <img width="60xp" src="https://www.clinicapronova.com/wp-content/uploads/2021/08/white-instagram-icon-png-14.png" alt="">
-    <img width="60xp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEUKg92Ak7tI8ni4LxAlIW7gzCwknHCmVFTUfZUs8fNo1T_vKbTTMIEPeHaKwmVpFV-ms&usqp=CAU" alt="">
-  </class>
-  <div class="item text-white">
-    <strong>Contactanos</strong>
-    <br>
-    (55) 3428 6213
-  </div>
-  <div class="itemubicacion text-white ">
-    <strong> Ubicación</strong>
-    <br>
-    <p>Calle Palmas 32, La Condesa, CDMX</p>
-  </div>    
-     </footer>
-     <!-- Fin del Footer -->
-         <div class="container2 bg-secondary">
-          <p>© 2022 Todos los derechos reservados | Dientes Limpios</p>
-         </div>
+  <!-- Copyright -->
+  <!-- JavaScripts -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <!-- Script Agendar -->
   <script src="../assets/js/agendar.js"></script>
+  <!-- JavaScripts -->
 </body>
 </html>

@@ -26,7 +26,7 @@ Rafael Andony Argote  <br>
 + MySQL. <br>
 
 ## Herramientas de Trabajo: <br>
-+ Trello. >> <br>
++ Trello. | [Trello](https://trello.com/b/JfQCNK26/proyecto-integrador) <br>
 + Figma. | [Figma](https://www.figma.com/file/NpWaUIG01IXOen62y9Q2Ss/Proyecto) <br>
 + Discord. 
 
