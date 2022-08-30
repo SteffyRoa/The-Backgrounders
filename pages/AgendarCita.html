@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/main.css">
     <!-- CSS Style -->
     <link rel="stylesheet" href="../assets/css/style.css">
+  
     <!-- Font Awesome -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
@@ -55,16 +56,16 @@
             <div class="form-group col-sm-6">
               <!-- Icono -->
               <i class="fas fa-user"></i>
-              <label for="inputEmail4">Nombre(s):</label>
+              <label for="inputEmail4">Nombre(s):</label><div class="users">
               <input type="email" class="form-control" id="inputEmail4" placeholder="Juan Carlos">
-            </div>
+            </div></div>
             <!-- Campo Apellido -->
             <div class="form-group col-md-6">
               <!-- Icono -->
               <i class="far fa-user"></i>
-              <label for="inputPassword4">Apellido(s):</label>
+              <label for="inputPassword4">Apellido(s):</label><div class="users">
               <input type="password" class="form-control" id="inputPassword4" placeholder="Vasquez Mota">
-            </div>
+            </div></div>
           </div>
           <!-- Segunda Fila del form -->
           <div class="form-row">
@@ -74,7 +75,7 @@
               <i class="fas fa-tooth"></i>
               <label for="inputAddress">Servicio</label>
               <!-- Lista de Servicios -->
-              <select id="inputState" class="form-control">
+              <select id="inputState" class="users coloruser form-control">
                 <option selected>Escoge una...</option>
                 <option selected>Amalgamas/Resinas</option>
                 <option selected>Limpieza dental</option>
@@ -89,7 +90,7 @@
               <i class="far fa-calendar-alt"></i>
               <label for="inputState">Fechas disponibles</label>
               <!-- Lista de Fechas -->
-              <select id="inputState" class="form-control">
+              <select id="inputState" class="users coloruser form-control">
                 <option selected>Escoge una...</option>
                 <option selected>Septiembre</option>
                 <option selected>Octubre</option>
@@ -104,19 +105,19 @@
             <div class="form-group col-md-6">
               <!-- Icono -->
               <i class="far fa-envelope"></i>
-              <label for="inputCity">Correo Electrónico </label>
+              <label for="inputCity">Correo Electrónico </label><div class="users">
               <input type="text" class="form-control" id="inputCity" placeholder="hola@gmail.com">
-            </div>
+            </div></div>
             <!-- Campo Telefono -->
             <div class="form-group col-md-6">
               <!-- Icono -->
               <i class="fas fa-mobile-alt"></i>
-              <label for="inputZip">Teléfono</label>
+              <label for="inputZip">Teléfono</label><div class="users">
               <input type="text" class="form-control" id="inputZip" placeholder="(52)5555555">
-            </div>
+            </div></div>
           </div>
           <!-- Boton de Agendar -->
-          <button type="button" class="btn btn-agendar text-white aling-center" data-toggle="modal" data-target="#confirmaModal">
+          <button type="button" class="btn btn-agendar text-white aling-center btncita" data-toggle="modal" data-target="#confirmaModal">
             Agendar Cita
           </button>
           <!-- Modal -->
@@ -132,7 +133,7 @@
                 </div>
                 <!-- Texto del Modal -->
                 <div class="modal-body">
-                  Su cita ha sido, confimada receibira un correo con los datos de su cita.
+                  Su cita ha sido, confimada recibira un correo con los datos de su cita.
                 </div>
                 <div class="modal-footer">
                   <!-- Boton del Nodal -->
