@@ -4,14 +4,14 @@
 
 
 function validar(){
-    window.location.href ='../pages/paginaSesionInicio.html';
+    window.location.href ='./paginaSesionInicio.html';
 
 var user = document.getElementsById("username").value;
 var pass= document.getElementsById("password").value;
   
     if(user == "hola" && pass == "hola"){
        function hola(){
-        window.location.href ='../pages/paginaSesionInicio.html';
+        window.location.href ='./paginaSesionInicio.html';
        } 
       
     }else{
