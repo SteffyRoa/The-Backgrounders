@@ -1,4 +1,4 @@
 function ir() {
-    location.href="/pages/paginaSesionInicio.html";
+    location.href="./paginaSesionInicio.html";
 
 }
