@@ -53,7 +53,7 @@
           <img src="../assets/images/welcome.png" alt="">
         </div>
         <!-- Logotipo de Incio de Sesion-->
-        <form th:action="@{/logout}" method="post"><!-- Supongo que es un elemento de Spring -->
+        <form id="formLogin" class="needs-validation" th:action="@{/logout}" method="post" novalidate><!-- Supongo que es un elemento de Spring -->
           <div class="title">
             Inicia Sesión
           </div>
@@ -62,24 +62,24 @@
             <div class="username">
               <i class="far fa-envelope"></i>
 
-              <input type="username" class="user-input" placeholder="Correo Electronico" id="inputEmail">
+              <!-- <input type="username" class="user-input" placeholder="Correo Electronico" id="inputEmail"> -->
 
-              <input type="username" class="user-input" id="inputEmail" placeholder="Correo Electronico">
-
+              <input type="email" class="form-control" id="inputEmail" placeholder="Correo Electronico" required>
+ 
             </div>
             <!-- Campo Contraseña -->
             <div class="password">
               <i class="fas fa-lock"></i>
 
-              <input type="password" class="pass-input" placeholder="Contraseña" id="inputContraseña">
+              <!-- <input type="password" class="pass-input" placeholder="Contraseña" id="inputContraseña"> -->
 
-              <input type="password" class="form-control" id="inputContraseña" placeholder="Contraseña">
+              <input type="password" class="form-control" id="inputContraseña" placeholder="Contraseña" required>
 
             </div>
           </div>
           <!-- Boton de Inicio de Sesion -->
           <div class="btnsesion">
-            <button class="signin-button">
+            <button type="submit" class="signin-button">
               Iniciar Sesión
             </button>
           </div>
