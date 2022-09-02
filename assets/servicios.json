@@ -1,8 +1,8 @@
 [
     {
         "nombre": "Resinas y amalgamas",
-        "descripcion": "des",
-        "imagen": "../assets/images/obturacion_con_resina1.jpg",
+        "descripcion": "Una obturación dental es una restauración de una pieza dental que ha sido dañado por caries, lo que comúnmente se conoce como «empastar», consiste en limpiar la cavidad dental resultante de una caries para luego rellenarla con algún material.",
+        "imagen": "../assets/images/amalgama_animado_new.png",
         "masInformacion": "url",
         "beneficios": "beneficios",
         "causas": "causas",
@@ -10,31 +10,31 @@
     },
     {  
         "nombre": "Coronas de porcelana",
-        "descripcion": "des",
-        "imagen": "../assets/images/obturacion_con_resina2.jpg",
+        "descripcion": "Una corona (o casquillo) es una funda que cubre el diente entero superficialmente restaurándolo a su forma y tamaño originales. Una corona protege y consolida la estructura del diente que no se puede restaurar con los rellenos u otros tipos de restauraciones.",
+        "imagen": "../assets/images/corona_animado1.jpg",
         "masInformacion": "url",
         "beneficios": "beneficios",
         "causas": "causas",
-        "precio":0
+        "precio":"$ 1500.00"
     },
    
     {
         "nombre": "Blanqueamiento dental",
-        "descripcion": "des",
-        "imagen": "url",
+        "descripcion": "El blanqueamiento dental es un tratamiento de odontología estética que tiene por objetivo eliminar las manchas dentales y hacer que la dentición adquiera una tonalidad más blanca y brillante.",
+        "imagen": "../assets/images/blanqueamiento_animado1.jpg",
         "masInformacion": "url",
         "beneficios": "beneficios",
         "causas": "causas",
-        "precio":0
+        "precio":"$ 650.00"
     },
     {
         "nombre": "Limpieza dental",
-        "descripcion": "des",
-        "imagen": "url",
+        "descripcion": "La limpieza dental, también llamada profilaxis dental, se hace para eliminar la placa y el cálculo (sarro) que se acumula en los dientes durante el paso del tiempo. Esta acumulación de placa y sarro se va depositando en los dientes.",
+        "imagen": "../assets/images/limpieza_dental_animado1.jpg",
         "masInformacion": "url",
         "beneficios": "beneficios",
         "causas": "causas",
-        "precio":0
+        "precio":"$ 600.00"
     },
     {
         "nombre": "Prótesis dental",
