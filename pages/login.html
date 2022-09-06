@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <!-- CSS Logn de Steffy -->
     <link rel="stylesheet" href="../assets/css/loginstyle.css">
+    <!--CSS login-->
+    <link rel="stylesheet" href="../assets/css/estiloLogin.css">
     <!-- Font Awesome -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
@@ -44,45 +46,22 @@
       </div>
     </div>
   </div>
-  <!-- Banner de Inicion de Sesion -->
-  <div class="contenedorlogin">
-    <div class="hey">
-      <div class="login-div">
-        <!-- Logotipo de Inicio de Sesion -->
-        <div class="logo">
-          <img src="../assets/images/welcome.png" alt="">
-        </div>
-        <!-- Logotipo de Incio de Sesion-->
-        <form th:action="@{/logout}" method="post"><!-- Supongo que es un elemento de Spring -->
-          <div class="title">
-            Inicia Sesión
-          </div>
-          <div class="fields">
-            <!-- Campo Correo -->
-            <div class="username">
-              <i class="far fa-envelope"></i>
-              <input type="username" class="user-input" placeholder="Correo Electronico">
-            </div>
-            <!-- Campo Contraseña -->
-            <div class="password">
-              <i class="fas fa-lock"></i>
-              <input type="password" class="pass-input" placeholder="Contraseña">
-            </div>
-          </div>
-          <!-- Boton de Inicio de Sesion -->
-          <div class="btnsesion">
-            <button class="signin-button">
-              Iniciar Sesión
-            </button>
-          </div>
-          <!-- Link de Contraseña -->
-          <div class="link">
-            <a href="#">Olvidaste tu Contraseña?</a> o <a href="#">Registrate</a>
-          </div>
-        </form>
-      </div>
-    </div>  
-  </div>
+
+<form action="" id="formulario">
+<div class="cuadroLogin">
+<div class="contenedorLogin">
+  <div class="brand-logo"></div>
+  <div class="brand-title">Iniciar Sesion</div>
+  <div class="inputs">
+    <label>EMAIL</label>
+    <input type="email" placeholder="example@test.com" />
+    <label>PASSWORD</label>
+    <input type="password" placeholder="Min 6 charaters long" />
+    <button type="submit" onclick ='enviarform()' value="enviar">LOGIN</button>
+  </div></form>
+  <a href="https://twitter.com/prathkum">Olvidaste tu Contraseña</a>
+</div>
+</div>
   <!-- Footer -->
   <footer class="footer">
     <div class="item0">

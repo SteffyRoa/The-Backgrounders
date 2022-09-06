@@ -156,3 +156,9 @@ a {cursor:url(../images/imgs/teeth-brushing.png), auto;
     box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
 
 }
+
+@media only screen and (max-width: 600px) {
+    .mainItems {
+      grid-template-columns: auto;
+    }
+  }
