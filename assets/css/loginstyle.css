@@ -76,17 +76,7 @@ html {
     -13px -13px 20px #fff;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-}
 
-.logo img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
 
 .title {
     text-align: center;

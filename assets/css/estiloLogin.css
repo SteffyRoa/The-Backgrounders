@@ -19,14 +19,16 @@ input {
  
 }
 
-.brand-logo {
-  height: 100px;
+.logos {
   width: 100px;
-  background: url("/assets/images/icono/4.png");
+    height: 100px;
+    margin: 0 auto;
   margin: auto;
   border-radius: 90%;
   box-sizing: border-box;
-  box-shadow: 7px 7px 10px #c6c6c6, -7px -7px 10px white;
+
+  border-radius: 10px;
+  
 }
 
 .brand-title {
