@@ -25,12 +25,12 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav textonav">
-        <a class="nav-link text-white" href="/index.html">Inicio</a>
-        <a class="nav-link text-white" href="/pages/servicios.html">Servicios </a>
-        <a class="nav-link text-white" href="/pages/AgendarCita.html">Agendar cita</a>
-        <a class="nav-link text-white" href="/pages/contactos.html">Contacto</a>
-        <a class="nav-link text-white" href="/pages/Registro.html">Registrarse</a>
-        <a class="nav-link text-white" href="/pages/login.html">Login</a>
+        <a class="nav-link text-white" href="../index.html">Inicio</a>
+        <a class="nav-link text-white" href="./servicios.html">Servicios </a>
+        <a class="nav-link text-white" href="./AgendarCita.html">Agendar cita</a>
+        <a class="nav-link text-white" href="./contactos.html">Contacto</a>
+        <a class="nav-link text-white" href="./Registro.html">Registrarse</a>
+        <a class="nav-link text-white" href="./login.html">Login</a>
       </div> 
     </div>
   </nav>
@@ -49,22 +49,22 @@
       <!-- Container -->
       <div class="container col-8 agendador rounded">
         <!-- Form -->
-        <form>
+        <form id="formAgendar" class="needs-validation" novalidate>
           <!-- Primera Fila del Form -->
           <div class="form-row">
             <!-- Campo Nombre -->
             <div class="form-group col-sm-6">
               <!-- Icono -->
               <i class="fas fa-user"></i>
-              <label for="inputEmail4">Nombre(s):</label><div class="users">
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Juan Carlos">
+              <label for="inputNombre">Nombre(s):</label><div class="users">
+              <input type="text" class="form-control" id="inputNombre" placeholder="Juan Carlos" required>
             </div></div>
             <!-- Campo Apellido -->
             <div class="form-group col-md-6">
               <!-- Icono -->
               <i class="far fa-user"></i>
-              <label for="inputPassword4">Apellido(s):</label><div class="users">
-              <input type="password" class="form-control" id="inputPassword4" placeholder="Vasquez Mota">
+              <label for="inputApellido">Apellido(s):</label><div class="users">
+              <input type="text" class="form-control" id="inputApellido" placeholder="Vasquez Mota" required>
             </div></div>
           </div>
           <!-- Segunda Fila del form -->
@@ -105,19 +105,19 @@
             <div class="form-group col-md-6">
               <!-- Icono -->
               <i class="far fa-envelope"></i>
-              <label for="inputCity">Correo Electrónico </label><div class="users">
-              <input type="text" class="form-control" id="inputCity" placeholder="hola@gmail.com">
+              <label for="inputEmail" >Correo Electrónico </label><div class="users" >
+              <input type="email" class="form-control" id="inputEmail" placeholder="hola@gmail.com" required>
             </div></div>
             <!-- Campo Telefono -->
             <div class="form-group col-md-6">
               <!-- Icono -->
               <i class="fas fa-mobile-alt"></i>
-              <label for="inputZip">Teléfono</label><div class="users">
-              <input type="text" class="form-control" id="inputZip" placeholder="(52)5555555">
+              <label for="inputCeluar">Teléfono</label><div class="users">
+              <input type="text" class="form-control" id="inputCeluar" placeholder="(52)5555555" required>
             </div></div>
           </div>
           <!-- Boton de Agendar -->
-          <button type="button" class="btn btn-agendar text-white aling-center btncita" data-toggle="modal" data-target="#confirmaModal">
+          <button type="submit" class="btn btn-agendar text-white aling-center btncita" data-toggle="modal" data-target="#confirmaModal">
             Agendar Cita
           </button>
           <!-- Modal -->
