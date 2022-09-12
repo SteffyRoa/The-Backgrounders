@@ -6,7 +6,7 @@ Generation-CH16
 # Consultorio Dental Dientes Limpios
 ## Equipo:
 
-Tammy Gutierrez <br>
+Tamara Sarai Gutierrez Flores<br>
 Rosalba Serrano <br>
 Steffany Roa  <br>
 David Castellanos Guzman  <br>
