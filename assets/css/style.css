@@ -214,8 +214,9 @@ header{
 }
 
 
-.agendador{
-    margin-top: 3%;
+.cuadroAgendarCita{
+    min-height: 50vh;
+    margin-top: 4%;
     margin-bottom: 20%;
     padding: 2%;
     padding: 25px;

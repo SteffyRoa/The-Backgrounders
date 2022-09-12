@@ -46,14 +46,15 @@
   <!-- Banner de Agendar Cita -->
  
     <div class="fields">
-      <!-- Container -->
-      <div class="container col-8 agendador rounded">
         <!-- Form -->
-        <form id="formAgendar" class="needs-validation" novalidate>
-          <!-- Primera Fila del Form -->
+        <form id="formAgendar" class="needs-validation row-4" novalidate>
+          <div class="cuadroAgendarCita col-sm-6 col-md-10 col-lg-8 mx-auto">
+            <!-- Container -->
+          <div class="containerAgendarCita">
+            <!-- Primera Fila del Form -->
           <div class="form-row">
             <!-- Campo Nombre -->
-            <div class="form-group col-sm-6">
+            <div class="form-group col-md-6">
               <!-- Icono -->
               <i class="fas fa-user"></i>
               <label for="inputNombre">Nombre(s):</label><div class="users">
@@ -105,21 +106,32 @@
             <div class="form-group col-md-6">
               <!-- Icono -->
               <i class="far fa-envelope"></i>
-              <label for="inputEmail" >Correo Electrónico </label><div class="users" >
+              <label for="inputEmail" >Correo Electrónico </label><div class="users input-group has-validation">
               <input type="email" class="form-control" id="inputEmail" placeholder="hola@gmail.com" required>
+              <div class="invalid-feedback">
+                Por favor, ingresa un correo válido.
+              </div>
             </div></div>
             <!-- Campo Telefono -->
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-6 ">
               <!-- Icono -->
               <i class="fas fa-mobile-alt"></i>
               <label for="inputCeluar">Teléfono</label><div class="users">
               <input type="text" class="form-control" id="inputCeluar" placeholder="(52)5555555" required>
+              <div class="invalid-feedback">
+                Por favor, ingresa un número de teléfono.
+              </div>
             </div></div>
           </div>
           <!-- Boton de Agendar -->
-          <button type="submit" class="btn btn-agendar text-white aling-center btncita" data-toggle="modal" data-target="#confirmaModal">
-            Agendar Cita
-          </button>
+          <div class="col-12">
+            <button type="submit" class="btn btn-agendar text-white aling-center btncita" data-toggle="modal" data-target="#confirmaModal">
+              Agendar Cita
+            </button>
+          </div>
+          </div>
+          </div>
+          
           <!-- Modal -->
           <div class="modal fade" id="confirmaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -145,8 +157,6 @@
         <!-- Modal -->
         </form>
         <!-- Form Registro -->
-      </div>
-      <!-- Container -->
     </div>
   </div>
   <!-- GIF de Castor -->
