@@ -52,79 +52,82 @@
         <!-- Form -->
 
         <form id="formRegistro" class="needs-validation" novalidate>
+<div class="formularioRegistro">
+  <div class="container">
+    <!-- Primera Fila del Form -->
+    <div class="form-row">
+      <!-- Campo Nombre -->
+      <div class="form-group col-sm-6">
+        <!-- Icono -->
+        <i class="fas fa-user"></i>
+        <label for="inputNombre">Nombre:</label> <div class="users">
+        <input type="text" class="form-control" id="inputNombre" placeholder="Juan Carlos" required>
+      </div>
+      <p id="mensajeNombre"></p>
+    </div>
 
-          <!-- Primera Fila del Form -->
-          <div class="form-row">
-            <!-- Campo Nombre -->
-            <div class="form-group col-sm-6">
-              <!-- Icono -->
-              <i class="fas fa-user"></i>
-              <label for="inputNombre">Nombre:</label> <div class="users">
-              <input type="text" class="form-control" id="inputNombre" placeholder="Juan Carlos" required>
-            </div>
-            <p id="mensajeNombre"></p>
-          </div>
-
-            <!-- Campo Apellido -->
-            <div class="form-group col-md-6">
-              <!-- Icono -->
-              <i class="far fa-user"></i>
-              <label for="inputApellido">Apellido:</label><div class="users">
-              <input type="text" class="form-control" id="inputApellido" placeholder="Vasquez Mota" required>
-            </div>
-            <p id="mensajeApellido"></p>
-          </div>   
-          </div>
-          <!-- Segunda Fila del Form -->
-          <div class="form-row">
-            <!-- Campo Fecha de Nacimiento -->
-            <div class="form-group col-md-6">
-              <!-- Icono -->
-              <i class="far fa-calendar-alt"></i>
-              <label for="inputFecha">Fecha de Nacimiento</label>
-              <div class="users">  <input type="date" class="form-control" placeholder="DD/MM/AAAA" required>
-                <p id="mensajeFecha"></p>
-              </div>
-            </div>
-             <!-- Campo Telefono -->
-            <div class="form-group col-md-6">
-              <!-- Icono -->
-              <i class="fas fa-mobile-alt"></i>
-              <label for="inputCeluar">Numero de Celular</label><div class="users">
-              <input class="form-control" type="tel" id="inputCelular" placeholder="(52)55555555" required>
-            </div>
-            <p id="mensajeNumero"></p>
-          </div>
-          </div>
-          <!-- Tercera Fila del Form -->
-          <div class="form-row">
-            <!-- Campo Correo -->
-            <div class="form-group col-md-6">
-              <!-- Icono -->
-              <i class="far fa-envelope"></i>
-              <label for="inputEmail">Email</label><div class="users">
-              <input type="email" class="form-control" id="inputEmail" placeholder="hola@gmail.com" required>
-            </div>
-            <p id="mensajeEmail"></p>
-            </div>
-            <!-- Campo Contraseña -->
-            <div class="form-group col-md-6">
-              <!-- Icono -->
-              <i class="fas fa-lock"></i>
-              <label for="inputContraseña">Contraseña</label><div class="users">
-              <input type="password" class="form-control" id="inputContraseña" required>
-              <p id="mensajePassword"></p>
-            </div>
-                <!-- Texto de Recomendacion -->
-                <small id="passwordHelpBlock" class="form-text text-muted">
-                  Te recomendamos tener una contraseña de 8 o 20 caracteres, conteniendo letras y numeros, no debe contener espacios, emojis o carateres especiales.
-                </small>
-            </div>
-          </div>
-          <!-- Boton de Registro -->
-          <button type="submit" id="boton" class="btn btn-agendar text-white aling-center registrobtn">
-            Registrarse
-          </button></div>
+      <!-- Campo Apellido -->
+      <div class="form-group col-md-6">
+        <!-- Icono -->
+        <i class="far fa-user"></i>
+        <label for="inputApellido">Apellido:</label><div class="users">
+        <input type="text" class="form-control" id="inputApellido" placeholder="Vasquez Mota" required>
+      </div>
+      <p id="mensajeApellido"></p>
+    </div>   
+    </div>
+    <!-- Segunda Fila del Form -->
+    <div class="form-row">
+      <!-- Campo Fecha de Nacimiento -->
+      <div class="form-group col-md-6">
+        <!-- Icono -->
+        <i class="far fa-calendar-alt"></i>
+        <label for="inputFecha">Fecha de Nacimiento</label>
+        <div class="users">  <input type="date" class="form-control" placeholder="DD/MM/AAAA" required>
+          <p id="mensajeFecha"></p>
+        </div>
+      </div>
+       <!-- Campo Telefono -->
+      <div class="form-group col-md-6">
+        <!-- Icono -->
+        <i class="fas fa-mobile-alt"></i>
+        <label for="inputCeluar">Numero de Celular</label><div class="users">
+        <input class="form-control" type="tel" id="inputCelular" placeholder="(52)55555555" required>
+      </div>
+      <p id="mensajeNumero"></p>
+    </div>
+    </div>
+    <!-- Tercera Fila del Form -->
+    <div class="form-row">
+      <!-- Campo Correo -->
+      <div class="form-group col-md-6">
+        <!-- Icono -->
+        <i class="far fa-envelope"></i>
+        <label for="inputEmail">Email</label><div class="users">
+        <input type="email" class="form-control" id="inputEmail" placeholder="hola@gmail.com" required>
+      </div>
+      <p id="mensajeEmail"></p>
+      </div>
+      <!-- Campo Contraseña -->
+      <div class="form-group col-md-6">
+        <!-- Icono -->
+        <i class="fas fa-lock"></i>
+        <label for="inputContraseña">Contraseña</label><div class="users">
+        <input type="password" class="form-control" id="inputContraseña" required>
+        <p id="mensajePassword"></p>
+      </div>
+          <!-- Texto de Recomendacion -->
+          <small id="passwordHelpBlock" class="form-text text-muted">
+            Te recomendamos tener una contraseña de 8 o 20 caracteres, conteniendo letras y numeros, no debe contener espacios, emojis o carateres especiales.
+          </small>
+      </div>
+    </div>
+    <!-- Boton de Registro -->
+    <button type="submit" id="boton" class="btn btn-agendar text-white aling-center registrobtn">
+      Registrarse
+    </button></div>
+  </div>
+</div>
           <!-- Modal -->
           <div class="modal fade" id="confirmaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">

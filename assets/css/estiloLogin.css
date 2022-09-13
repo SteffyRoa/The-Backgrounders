@@ -5,30 +5,56 @@ input {
 }
 
 
+body{
+  display: grid;
+  min-width: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 .contenedorLogin {
-  position: relative;
-  width: 350px;
-  height: 500px;
-  border-radius: 20px;
-  padding: 40px;
-  box-sizing: border-box;
-  background: #ecf0f3;
+  margin-top: -2px;
+  top: 0%;
+}
+
+.login{
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-weight: 10;
+  display: flex;
   align-items: center;
-  margin:0px auto;
- 
+  justify-content: center;
+}
+
+.login-div {
+  width: 430px;
+  height: 390px;
+  padding: 25px;
+  border-radius: 10px;
+  background: #ecf0f3;
+  box-sizing: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
 }
 
 .logos {
   width: 100px;
-    height: 100px;
-    margin: 0 auto;
-  margin: auto;
-  border-radius: 90%;
-  box-sizing: border-box;
+  height: 100px;
+  margin: 0 auto;
+}
 
-  border-radius: 10px;
-  
+.logos img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* box-sizing: border-box;
+  border-radius:75px;
+  border-radius: 10px; */
+
 }
 
 .brand-title {
@@ -90,5 +116,12 @@ button:hover {
   box-shadow: none;
 }
 
-
+.footer{
+  background-color: black;
+  display: flex;
+  justify-items: space-around;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-family: 'Roboto';
+}
 

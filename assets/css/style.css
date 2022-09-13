@@ -215,7 +215,6 @@ header{
 
 
 .cuadroAgendarCita{
-
     min-height: 50vh;
     margin-top: 4%;
     margin-bottom: 20%;
@@ -223,8 +222,18 @@ header{
     padding: 25px;
     border-radius: 10px;
     box-shadow: 13px 13px 20px #cbced1,
-    -13px -13px 20px #fff; 
-    
+    -13px -13px 20px #fff;  
+}
+
+.formularioRegistro{
+    min-height: 50vh;
+    margin-top: 4%;
+    margin-bottom: 20%;
+    padding: 2%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff;
 }
 
 .castor-background{
