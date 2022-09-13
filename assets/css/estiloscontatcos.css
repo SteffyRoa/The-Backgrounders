@@ -148,3 +148,26 @@ body{
     font-size: 17px;
     font-family: 'Nunito', sans-serif;
 }
+
+/* caja de comentario */
+.cuadroComentarioTestimonios{
+    min-height: 25vh;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 2%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff;
+}
+/* caja de formulario de comentario  */
+.formularioComentarioTestimonios{
+    min-height: 25vh;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    padding: 2%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff;
+}
