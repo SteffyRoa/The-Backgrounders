@@ -57,14 +57,14 @@
             <div class="form-group col-md-6">
               <!-- Icono -->
               <i class="fas fa-user"></i>
-              <label for="inputNombre">Nombre(s):</label><div class="users">
+              <label for="inputNombre">Nombre</label><div class="users">
               <input type="text" class="form-control" id="inputNombre" placeholder="Juan Carlos" required>
             </div></div>
             <!-- Campo Apellido -->
             <div class="form-group col-md-6">
               <!-- Icono -->
               <i class="far fa-user"></i>
-              <label for="inputApellido">Apellido(s):</label><div class="users">
+              <label for="inputApellido">Apellido</label><div class="users">
               <input type="text" class="form-control" id="inputApellido" placeholder="Vasquez Mota" required>
             </div></div>
           </div>
@@ -117,7 +117,7 @@
               <!-- Icono -->
               <i class="fas fa-mobile-alt"></i>
               <label for="inputCeluar">Teléfono</label><div class="users">
-              <input type="text" class="form-control" id="inputCeluar" placeholder="(52)5555555" required>
+              <input type="number" class="form-control" id="inputCelular" placeholder="(52)5555555" required>
               <div class="invalid-feedback">
                 Por favor, ingresa un número de teléfono.
               </div>
@@ -125,7 +125,7 @@
           </div>
           <!-- Boton de Agendar -->
           <div class="col-12">
-            <button type="submit" class="btn btn-agendar text-white aling-center btncita" data-toggle="modal" data-target="#confirmaModal">
+            <button type="submit" id="boton" class="btn btn-agendar text-white aling-center btncita">
               Agendar Cita
             </button>
           </div>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="modal-footer">
                   <!-- Boton del Nodal -->
-                  <button type="button" class="btn btn-secondary"   data-dismiss="modal" onclick="ir()">Cerrar</button>
+                  <button type="button" class="btn btn-secondary"   data-dismiss="modal" >Cerrar</button>
                 </div>
               </div>
             </div>

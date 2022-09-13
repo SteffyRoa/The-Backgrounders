@@ -37,6 +37,7 @@
       </div> 
     </div>
   </nav>
+ 
   <!-- Barra de Navegacion -->
   <!-- Banner de Inicio de Sesión -->
   <div class="container-fluid">
@@ -46,32 +47,45 @@
       </div>
     </div>
   </div>
-  <div class="contenedorlogin">
-    <div class="login">
-      <div class="login-div">
-        <div class="logos">
-          <img src="../assets/images/welcome.png" alt="" class='mx-auto shadow logos'>
-        </div>
-      <form action="" id="formulario">
-      <div class="cuadroLogin">
-      <div class="contenedorLogin">
-        <div class="brand-logo"></div>
-        <div class="brand-title">Iniciar Sesion</div>
-        <div class="inputs">
-          <label>Email</label>
-          <input type="email" placeholder="example@test.com" />
-          <label>Password</label>
-          <input type="password" placeholder="Min 6 charaters long" />
-          <button type="submit" onclick ='enviarform()' value="enviar">Login</button>
-        </div>
-        <div class="link">
-          <a href="https://twitter.com/prathkum">Olvidaste tu Contraseña</a>
-        </div>
-      </form>
-      </div>
-    </div>
+  <div class="logos">
+    <img src="../assets/images/welcome.png" alt="">
   </div>
-  
+<form action="" id="formulario" class="needs-validation" novalidate>
+<div class="cuadroLogin">
+<div class="contenedorLogin">
+  <div class="brand-logo"></div>
+  <div class="brand-title">Iniciar Sesion</div>
+  <div class="inputs">
+    <label>Email</label>
+    <input type="email" id="inputEmail" placeholder="example@test.com" required/>
+    <p id="mensajeEmail"></p>
+    <label>Password</label>
+    <input type="password" id="inputContraseña" placeholder="Min 6 charaters long" required />
+    <p id="mensajeContraseña"></p>
+    <button type="submit" id= "boton"onclick ='enviarform()' value="enviar">Login</button>
+    <!-- Modal -->
+    <div class="modal fade" id="confirmaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- Titulo del Modal -->
+            <h5 class="modal-title" id="exampleModalLabel">Sesión iniciada</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- Texto del Modal -->
+          <div class="modal-body">
+            Gracias por iniciar sesión 
+          </div>
+          <div class="modal-footer">
+            <!-- Boton del Modal -->
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="ir()">Cerrar</button>
+  </div></form>
+  <a href="https://twitter.com/prathkum">Olvidaste tu Contraseña</a>
+</div>
+</div>
+
     
   <!-- Footer -->
   <footer class="footer">
