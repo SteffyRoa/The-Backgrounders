@@ -1,57 +1,15 @@
-/*
-var nombre = document.getElementById('nombre');
-var password = document.getElementById('password');
-var error = document.getElementById('error');
-
-function enviarForm(){
-    console.log("Enviando formulario");
-    
-
-    error.innerHTML =  mensajesError.join(', ');
-    return false;
-}*/
-var form = document.getElementById('formulario');
-form.addEventListener('submit',function(evt)){
-evt.preventDefault();
-var mensajesError=[];
-var mensajesError =[];
-    if(nombre.value===null || nombre.value==='' || nombre.value===' '){
-        mensajesError.push('Ingresa tu usuario');
-    }
-    if(password.value===null || password.value ===''){
-        mensajesError.push('Ingresa tu Password');
-    }
-console.log('Enviando Formulario...')
+function ir() {
+  location.href="../../pages/paginaSesionInicio.html";
 }
 
+var nombre = document.getElementById('inputEmail');
+var password = document.getElementById('inputContraseña');
+// var error = document.getElementById('error');
 
-
-//var button = document.getElementById('button')
-
-
-//Funcion Steffy
-
-
-// function validar(){
-//     window.location.href ='./paginaSesionInicio.
-
-// function validar(){
-//     window.location.href ='./paginaSesionInicio.html';
-
-
-// var user = document.getElementsById("username").value;
-// var pass= document.getElementsById("password").value;
-  
-//     if(user == "hola" && pass == "hola"){
-//        function hola(){
-//         window.location.href ='./paginaSesionInicio.html';
-//        } 
-      
-//     }else{
-//         alert("verifique los datos")
-//     }
-// }
-
+function enviarform(){
+    console.log("Enviando formulario");
+    
+}
 
 (function() {
     'use strict';
@@ -70,3 +28,42 @@ console.log('Enviando Formulario...')
       });
     }, false);
   })();
+
+  const btn = document.getElementById("formulario")
+  btn.addEventListener ("submit", (e) => {
+    console.log("gatos");
+      e.preventDefault()
+      vamosAValidar()} )
+
+function vamosAValidar () {
+  const email1 = document.getElementById("inputEmail")
+  const password1 = document.getElementById("inputContraseña")
+
+  const mnsemail = document.getElementById("mensajeEmail")
+  const mnspassword = document.getElementById("mensajeContraseña")
+ mnsemail.innerHTML = ""
+ mnspassword.innerHTML = ""
+
+ const password = /^.{4,12}$/ /* 4 a 12 digitos.*/
+ const email = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+
+ let validar1 = email.test(email1.value)
+ let validar2 = password.test(password1.value)
+ const btn = document.getElementById("boton")
+
+ if (validar1 == true && (validar2 == true )){
+  btn.setAttribute( "data-toggle", "modal")
+                btn.setAttribute( "data-target","#confirmaModal")
+                btn.click()
+
+} if (validar1 == false){
+  mnsemail.innerHTML = "completa el campo adecuadamente"
+  mnsemail.style.color = "#e71414"
+  console.log("nombre");
+}if (validar2 == false){
+  mnspassword.innerHTML = "completa el campo adecuadamente"
+  mnspassword.style.color = "#e71414"
+}
+
+
+}
