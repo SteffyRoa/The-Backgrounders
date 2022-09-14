@@ -24,7 +24,6 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/main.css" />
   </head>
 
 
@@ -52,24 +51,33 @@
 <!--Carrusel-->
 <div class="container">
   <div class="row">
-      <div id="carouselExampleFade" class="carousel slide carousel-fade col-md-8 col-sm-12" data-ride="carousel">
+      <div id="carouselExampleFade" class="carousel slide col-md-8 col-sm-12" data-ride="carousel"><!-- carousel-fade quite -->
         <div class="carousel-inner">
+          
           <div class="carousel-item active">
             <div class="embeded-responsive">
-            <video autoplay loop muted class="embed-responsive-item carousel-img" src="assets/images/imagenes-proyecto/Video-dientes-amarillo-2.mp4"></video>
+            <video id="1"  autoplay  muted class="embed-responsive-item carousel-img" src="assets/images/imagenes-proyecto/Video-dientes-amarillo-2.mp4"></video>
           </div>
           </div>
           <div class="carousel-item">
             <div class="embeded-responsive">
-            <video autoplay loop muted class="embed-responsive-item carousel-img" src="assets/images/imagenes-proyecto/Video-dientes-azul.mp4"></video>
+            <video  id="2"   muted class="embed-responsive-item carousel-img" src="assets/images/imagenes-proyecto/Video-dientes-azul.mp4"></video>
           </div>
           </div>
           <div class="carousel-item">
             <div class="embeded-responsive">
-            <video autoplay loop muted class="embed-responsive-item carousel-img" src="assets/images/imagenes-proyecto/Video-dientes-verde.mp4"></video>
+            <video id="3"   muted class="embed-responsive-item carousel-img" src="assets/images/imagenes-proyecto/Video-dientes-verde.mp4"></video>
           </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev" onclick="time(-1)">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next" onclick="time(1)">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
       </div>
 
 <!--Tarjetas promociones-->
@@ -254,5 +262,6 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/inicio.js"></script>
   </body>
 </html>

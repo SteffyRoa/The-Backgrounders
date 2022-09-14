@@ -71,7 +71,7 @@
           </thead>
           <!-- Contenido -->
           <tbody>
-            <tr>
+            <tr id="1">
               <!-- Contenido Fila 1 -->
               <th scope="col">1</th>
                 <td>Muela</td>
@@ -79,7 +79,7 @@
                 <td>4</td>
               <td class="bg-success text-white">Pendiente</td>
             </tr>
-            <tr>
+            <tr id="2">
               <!-- Contenido Fila 2 -->
               <th scope="col">2</th>
                 <td>Limpieza</td>
@@ -122,19 +122,20 @@
             <div class="row">
               <div class="col-12">
                 <div class="list-group" id="list-tab" role="tablist">
-                  <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Muela</a>
-                  <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Limpieza</a>
+                  <a class="list-group-item list-group-item-action active"  data-toggle="list" href="#list-home" role="tab" aria-controls="home" id="1">Muela</a>
+                  <a class="list-group-item list-group-item-action"  data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" id="2">Limpieza</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="borrar()">Borrar</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="eliminarCita()">Borrar</button>
           </div>
         </div>
       </div>
     </div>
     <!-- Modal Cancelar -->
+
     <!-- Modal  Seleccionar Foto Perfil -->
     <div class="modal fade" id="modalFondo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">

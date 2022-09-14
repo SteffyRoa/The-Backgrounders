@@ -79,6 +79,31 @@ function obtenerDatos(){
     })
 }
 
+function eliminarCita() {
+
+    //Recupera elemento a eliminar
+    const idSeleccionado = document.querySelector('.active')
+
+    //Hacemos petición Http de tipo DELETE
+    fetch('http://localhost:8080/cita/' + idSeleccionado.id, { method: 'DELETE', mode: 'cors'})
+    .then(res => {
+        return res.json()
+     })
+     .then(res => {
+
+        console.log(res);
+
+        //Verificamos la respuesta
+        if (res === "ok") {
+            //Eliminar elemento de la vista usuario
+            document.getElementById(idSeleccionado.id).remove();
+        }else{
+            //Avisar que no se pudo eliminar correctamente
+            alert("No se pudo eliminar cita");
+        }            
+     })  
+}
+
 function borrar() {
     const active = document.querySelector('.active')
     console.log(active.textContent);
@@ -90,4 +115,4 @@ function actualizar(){
     imgIcono.src = select.src
 }
 obtenerSugerencias(url);
-//obtenerDatos();
+obtenerDatos();

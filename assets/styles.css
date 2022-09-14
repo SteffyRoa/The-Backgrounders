@@ -1,11 +1,207 @@
-.btn-agendar {
-    background-color:  rgba(35, 54, 84, 1);
 
+.carousel-item {
+
+    height: 400px;
+    margin: 2%;
+  }
+
+.carousel-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+.tarjeta {
+    display: inline-block;
 }
+
+
+.card-img{
+    object-fit: scale-down;
+}
+
+#carouselExampleFade{
+    display: inline-block;
+}
+.imgvision{
+    width: 85%;
+}
+.contenido{
+    margin-top: 2%;
+    text-align: justify;
+}
+
+.EncabezadosHome{
+    background-color: #8ed1fc;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    color: white;
+    padding: 1%;
+}
+
+
+.fondos {
+    background-color: #8ed1fc;
+    animation: gradient 15s ease infinite;
+}
+
+.div_testi {
+    margin-top: 20px;
+}
+
+
+
+.section_header_h {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 36px;
+    overflow-wrap: break-word;
+}
+
+.section_header.align-center {
+    text-align: center;
+}
+
+.section_header.align-center
+.section_header_h>span::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section_header_h>span::before {
+    background-color: #fff !important;
+}
+
+.section_header_h>span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+    padding-bottom: 2px;
+}
+
+::before {
+    box-sizing: border-box;
+}
+
+.TarjetasTestimonios {
+    position: relative;
+    padding: 2;
+    width: 250px;
+    height: 250px;
+    color: rgb(0, 0, 0); 
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.card-1{
+    background: url(../images/imagenes-proyecto/Testi-1.png);
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-2{
+    background: url(../images/imagenes-proyecto/Testi-2.png);
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-3{
+    background: url(../images/imagenes-proyecto/Testi-3.png);
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-4{
+    background: url(../images/imagenes-proyecto/Testi-4.png);
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card_content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: transform .25s;
+}
+
+.card_content::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px rgb(255, 255, 255);
+}
+
+.card_title {
+    color: rgb(0, 0, 0);
+    line-height: 15px;
+}
+
+.card_subtitle {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.card_description {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card:hover .card_content {
+    transform: translateY(0);
+}
+
+.card:hover .card_description {
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+.card-grid-space {
+    font-size: 3em;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+}
+
+.link{
+    text-align: center;
+}
+
 
 .agendador{
     margin-top: 3%;
-    margin-bottom: 3%;
+    margin-bottom: 20%;
     padding: 2%;
-    background-color: rgba(138, 176, 220, 1);
+    width: 600px;
+    height: 430px;
+    padding: 25px;
+    border-radius: 10px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff;
 }
+
+.btn-agendar {
+    background-color:  rgba(35, 54, 84, 1);
+}
+
