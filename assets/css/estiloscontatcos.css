@@ -56,39 +56,10 @@
         background: #ecf0f3;
 }
 
-/* clases de imag doctores*/
-.imagenDoct{
-    width: 20rem;
-}
-.imagenDoct1{
-    width: 23rem;
-}
-.imagenDoct2{
-width: 22rem;
-}
-.imagenDoct2{
-    width: 22rem;
-}
-.imagenDoct3{
-    height: 22rem;
-    width: 22rem;
-}
+
 /* colores para separar secciones */
 .color-div{
     background-color: #8ed1fc;
-}
-
-/* .margin{
-    margin-left: 40rem;
-} */
-
-.margin-doct-rigth{
- margin-right: 10px;
- margin-top: 3%;
-}
-.margin-doct-left{
-    margin-left: 10px;
-    margin-top: 3%;
 }
 
 
@@ -97,18 +68,7 @@ width: 22rem;
 }
 
 
-/* .margin{
-    margin-left: 40rem;
-} */
 
-.margin-doct-rigth{
- margin-right: 10px;
- margin-top: 3%;
-}
-.margin-doct-left{
-    margin-left: 10px;
-    margin-top: 3%;
-}
 /* estilos de cards informacion imagenes*/
 .imagen-instagram{
     width: 300px;
@@ -142,10 +102,6 @@ width: 22rem;
    
 }
 
-
-/* .sombra-caja{
-    box-shadow: 0 0 4px 2px rgb(7, 93, 106);
-} */
 /* footer */
 .footer{
     background-color: black;
@@ -163,12 +119,7 @@ body{
 .contactanostxt{
     font-size: 25px;
 }
-/* googleMaps */
-/*  .map {
-    text-align-last: justify;
-    height: 200px;
-    /* The height is 400 pixels */
-    /* The width is the width of the web page */
+
 .textonav{
     font-size: 17px;
     font-family: 'Nunito', sans-serif;
@@ -195,4 +146,19 @@ body{
     border-radius: 10px;
     box-shadow: 13px 13px 20px #cbced1,
     -13px -13px 20px #fff;
+}
+/* caja de comentario 
+  mensaje de error formulario */
+.error{
+    background-color: #8ed1fc;
+    text-align: center;
+    padding: 1 rem;
+    text-transform: uppercase;
+}
+.correcto{
+    background-color: #84dc92;
+    
+    text-align: center;
+    padding: 1 rem;
+    text-transform: uppercase;
 }

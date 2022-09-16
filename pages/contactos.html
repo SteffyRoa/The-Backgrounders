@@ -132,17 +132,19 @@
   <!-- Caja Comentarios -->
 
   <div class="container formularioComentarioTestimonios" >
-    <form>
-        <div class="form-group ">
+    <form class="formulario">
+        <div class="form-group campo">
           <label for="nombre"class="font-weight-bold">Nombre</label>
-          <input type="texto" class="form-control input" id="" placeholder="Tu Nombre">
+          <input type="texto" class="form-control input" id="nombre" placeholder="Tu Nombre">
         </div>
        
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1" class="font-weight-bold">Escribe tu comentario</label>
-          <textarea class="form-control input" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="form-group campo">
+          <label for="mensaje" class="font-weight-bold">Escribe tu comentario</label>
+          <textarea class="form-control input" id="mensaje" rows="3"></textarea>
         </div>
-        <button type="button" class="btn btn-primary" onclick="mandarComentario()">Enviar</button>
+        <div class="campo">
+          <input type="submit" value="Enviar" class="boton">
+        </div>
       </form>
 
     </div>
