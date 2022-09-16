@@ -1,5 +1,7 @@
 {
     "githubPullRequests.ignoredPullRequestBranches": [
         "main"
-    ]
+    ],
+    "editor.suggest.localityBonus": false,
+    "liveServer.settings.port": 5503
 }

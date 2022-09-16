@@ -1,34 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/main.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+
+
 <body>
-    
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark navbar-custom">
+<!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-expand-md sticky-top navbar-dark navbar-custom">
         <a class="navbar-brand" href="#"><img width="90px" src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png" alt="Logo dientes limpios"></a>
-        <a class="navbar-brand"><img height="28px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt=""></a>
+        <a class="navbar-brand"><img height="28px" src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png" alt="" href="/index.html"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link text-white" href="#">Inicio</a>
-            <a class="nav-link text-white" href="#">Servicios </a>
-            <a class="nav-link text-white" href="#">Agendar cita</a>
-            <a class="nav-link text-white" href="#">Contacto</a>
-            <a class="nav-link text-white" href="#">Login</a>
+          <div class="navbar-nav textonav">
+            <a class="nav-link text-white" href="./index.html">Inicio</a>
+            <a class="nav-link text-white" href="./pages/servicios.html">Servicios </a>
+            <a class="nav-link text-white" href="./pages/AgendarCita.html">Agendar cita</a>
+            <a class="nav-link text-white" href="./pages/contactos.html">Contacto</a>
+            <a class="nav-link text-white" href="./pages/Registro.html">Registrarse</a>
+            <a class="nav-link text-white" href="./pages/login.html">Login</a>
+          </div> 
+        </div>
+      </div>
+    </nav>
+
+<!--Carrusel-->
+<div class="container">
+  <div class="row">
+      <div id="carouselExampleFade" class="carousel slide col-md-8 col-sm-12" data-ride="carousel"><!-- carousel-fade quite -->
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active">
+            <div class="embeded-responsive">
+            <video id="1"  autoplay  muted class="embed-responsive-item carousel-img" src="assets/images/imagenes-proyecto/Video-dientes-amarillo-2.mp4"></video>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="embeded-responsive">
+            <video  id="2"   muted class="embed-responsive-item carousel-img" src="assets/images/imagenes-proyecto/Video-dientes-azul.mp4"></video>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="embeded-responsive">
+            <video id="3"   muted class="embed-responsive-item carousel-img" src="assets/images/imagenes-proyecto/Video-dientes-verde.mp4"></video>
+          </div>
           </div>
         </div>
-      </nav>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev" onclick="time(-1)">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next" onclick="time(1)">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+
+<!--Tarjetas promociones-->
+
+<div class="col-md-4 col-sm-12 aling-self-center">
+  <a href="servicios.html"><div class="card text-white bg-info aling-self-center promociones"style="width: 23rem; margin: 4% auto">
+    <div class="card-header"><h2>Promociones</h2></div>
+
+    <div class="card-body">
+      <img class="card-img" src="assets/images/imagenes-proyecto/carrusel-img4.jpg" alt="">
+    </div>
+  </div>
+</a>
+
+  <a href="servicios.html"><div class="card text-white aling-self-center promociones" style="width: 23rem; margin: 4% auto; background-color: rgba(181, 232, 243, 1);">
+    <div class="card-header"><h3>Promociones</h3></div>
+    <div class="card-body">
+      <img class="card-img" src="assets/images/imagenes-proyecto/carrusel-img5.jpg" alt="">
+    </div>
+  </div>
+</a>
+</div>
+</div>
+</div>
+      
+<!--Contenido-->
+<header class="EncabezadoCuidados"><h2>Nuestra misión</h2></header>
+<div class="container contenido">
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <img class="imgvision" src="assets/images/imagenes-proyecto/gif-1.gif" alt=""></div>
+    <div class="col-md-6 col-sm-12">
+      <h3>Misión</h3>
+      <p>Implantar y desarrollar un nuevo concepto de odontología multidisciplinar, capaz de ofertar y realizar todo tipo de tratamientos dentales, y teniendo como objetivos principales:
+        <ul>
+          <li>Solucionar los problemas bucodentales de nuestros pacientes.</li>
+          <li>Concienciar a la sociedad de la importancia y necesidad de cuidar la salud bucodental, a través del seguimiento y la prevención.</li>
+          <li>Investigar y desarrollar nuevas técnicas y materiales que permitan dar soluciones a todos los tratamientos que se realizan en nuestra clínica.</li>
+        </ul>
+        </p>
+    </div>
+  </div>
+  </div>
+  
+  <header class="EncabezadoCuidados"><h2>¿Por qué cuidar nuestros dientes?</h2></header>
+  <div class="container castor">
+    <div class="row">
+      <div class="col-md-6 contenido col-sm-12 mb-4">
+        <p>La <b>boca</b> es una parte de nuestro cuerpo que <b>cumple funciones de vital importancia</b> para la alimentación, la respiración y la comunicación entre nosotros o con otras especies, entre muchas cosas más. Es un reflejo de la salud de todo el cuerpo e higiene. El estado de salud de nuestra boca se proyecta en la apariencia que mostramos a los demás, es un factor importante en nuestras relaciones humanas.
+          <br>
+          <br>
+          La correcta higiene bucal mantiene sanos a todos los componentes de nuestra boca, un cepillo de dientes, la aplicación correcta de la técnica de cepillado después de cada alimento y el uso del hilo dental son los elementos principales en esta tarea.</p>
+      </div>
+        <div class="col-md-6 col-sm-12 castor1 mb-4">
+        <img class="imgvision" src="assets/images/imagenes-proyecto/gif-3.gif" alt="">
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Container Testimonios -->
+  <div class="container-fluid fondos">
+    <div class="caja">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center">
+        <!-- Testimonios -->
+        <div class="col-md-12">
+          <header class="section_header align-center">
+            <h2 class="section_header_h text-white div_testi">
+              <span> Testimonios </span>
+            </h2>
+          </header>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center">
+        <div class="section_header_h"></div>
+      </div>
+      <!-- Tarjetas de Testimonios -->
+      <div class="row align-items-center">
+        <div id="col" class="col mb-3 mr-3">
+          <article class="card card-1 TarjetasTestimonios">
+            <div class="card_content div_testi">
+              <h3 class="card_title">Luis Díaz</h3>
+              <span class="card_subtitle">Testimonio de Facebook</span>
+              <p class="card_description">
+                "Excelente atención e instalaciones, y además... son seguidores
+                del gordeo...
+              </p>
+            </div>
+          </article>
+        </div>
+        <div id="col" class="col mb-3 mr-3">
+          <article class="card card-2 TarjetasTestimonios">
+            <div class="card_content">
+              <h3 class="card_title">Efraín Canto</h3>
+              <span class="card_subtitle">Testimonio de Facebook</span>
+              <p class="card_description">
+                "Excelente atención e instalaciones, y además... son seguidores
+                del gordeo...
+              </p>
+            </div>
+          </article>
+        </div>
+        <div id="col" class="col mb-3 mr-3">
+          <article class="card card-3 TarjetasTestimonios">
+            <div class="card_content">
+              <h3 class="card_title">Rosalba</h3>
+              <span class="card_subtitle">Testimonio de Facebook</span>
+              <p class="card_description">
+                "Excelente atención e instalaciones, y además... son seguidores
+                del gordeo...
+              </p>
+            </div>
+          </article>
+        </div>
+        <div id="col" class="col mb-3 mr-3">
+          <article class="card card-4 TarjetasTestimonios">
+            <div class="card_content">
+              <h3 class="card_title">Rafael Argote</h3>
+              <span class="card_subtitle">Testimonio de Facebook</span>
+              <p class="card_description">
+                "Excelente atención e instalaciones, y además... son seguidores
+                del gordeo...
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+  
+      <!-- Link para agregar reseña -->
+      <div class="row align-items-center">
+        <div class="col-md-12 link">
+          <h5>
+            <a href="pages/contactos.html" class="text-white">Comparte tu reseña con nosotros...</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-</body>
+
+<!--Footer-->
+    <footer class="footer">
+      <div class="item0">
+        <img
+          class="item1 rounded mx-auto d-block"
+          width="60xp"
+          src="https://media.discordapp.net/attachments/1004787136437952597/1008507395040870590/logo_dientes_limpios_blanco_mod.png"
+          alt=""
+          srcset=""
+        />
+        <img
+          height="24px"
+          src="https://media.discordapp.net/attachments/1004787136437952597/1008508846295224440/logo_dientes_limpios_blanco_texto.png"
+          alt=""
+        />
+      </div>
+      <class class="item3">
+        <img
+          width="60xp"
+          src="https://www.clinicapronova.com/wp-content/uploads/2021/08/white-instagram-icon-png-14.png"
+          alt=""
+        />
+        <img
+          width="60xp"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEUKg92Ak7tI8ni4LxAlIW7gzCwknHCmVFTUfZUs8fNo1T_vKbTTMIEPeHaKwmVpFV-ms&usqp=CAU"
+          alt=""
+        />
+      </class>
+      <div class="item text-white">
+        <strong>Contactanos</strong>
+        <br />
+        (55) 3428 6213
+      </div>
+      <div class="itemubicacion text-white">
+        <strong> Ubicación</strong>
+        <br />
+        <p>Calle Palmas 32, La Condesa, CDMX</p>
+      </div>
+    </footer>
+    <div class="container2 bg-secondary">
+      <p>© 2022 Todos los derechos reservados | Dientes Limpios</p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/inicio.js"></script>
+  </body>
 </html>

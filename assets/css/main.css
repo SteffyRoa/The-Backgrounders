@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+    background-size: 100%;
+  }
+
+.navbar-custom {
+    background-color:#020381;
+}
+
+
+
+.contenedor{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+padding-bottom: 5px;
+}
+.item1{
+    background-color: black;
+}
+
+
+.itemubicacion{
+    text-align: center;
+    
+}
+
+.container2{
+    background-color: black;
+    text-align: center;
+}
+
+.container2 p{
+    margin-bottom: 0
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: 'Roboto';
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background: #eee;
+    cursor:url(../images/imgs/brush-teeth\ \(1\).png), auto;
+}
+
+a {cursor:url(../images/imgs/teeth-brushing.png), auto;
+}
+
+.container{
+    
+    min-height: 38vh;
+    
+
+}
+.textocita{
+    font-size: 25px;
+}
+
+.formulario{
+    background-color: blue;
+}
+.promociones{
+    font-family: 'Roboto';
+}
+
+.fields {
+    width: 100%;
+    padding: 25px 5px 5px 5px;
+}
+
+.textonav{
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+}
+.fields input {
+    font-size: 16px;
+    color: rgba(35, 54, 84, 1);
+    padding: 20px 10px 20px 5px;
+    font-family: 'Nunito';
+}
+.botonregistro1{
+   
+    width: 200px;       
+        height: 200px;
+        margin: 0 auto;
+}
+.botonregistro{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background: #162055;
+    box-shadow: 3px 3px 8px #b1b1b1,
+        -3px -3px 8px #fff;
+    transition: 0.5s;
+    align-items: center;
+
+}
+
+.botonregistro:hover {
+    background: rgb(5, 86, 215);
+}
+
+.botonregistro:active {
+    background: rgba(35, 54, 84, 1);
+}
+
+.imgRedonda {
+    width:150px;
+    height:150px;
+    border-radius:75px;
+
+}
+
+.cambio{
+    position: absolute;
+    transform: translate(-45px,85px) ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   
+}
+
+.img{
+    object-fit: cover;
+    opacity: .6;
+    transition: 1s; 
+}
+
+.img:hover{
+    opacity: 1;
+}
+
+.seleccionado{
+    opacity: 1 !important;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+
+}
+
+@media only screen and (max-width: 600px) {
+    .mainItems {
+      grid-template-columns: auto;
+    }
+  }

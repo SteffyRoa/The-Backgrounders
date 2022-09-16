@@ -1,0 +1,96 @@
+[
+    {
+        "nombre": "Resinas y amalgamas",
+        "descripcion": "Una obturación dental es una restauración de una pieza dental que ha sido dañado por caries, lo que comúnmente se conoce como «empastar», consiste en limpiar la cavidad dental resultante de una caries para luego rellenarla con algún material.",
+        "imagen": "../assets/images/amalgama_animado_new.png",
+        "masInformacion": "url",
+        "beneficios": "beneficios",
+        "causas": "causas",
+        "precio":"$ 1250.00"
+    },
+    {  
+        "nombre": "Coronas de porcelana",
+        "descripcion": "Una corona (o casquillo) es una funda que cubre el diente entero superficialmente restaurándolo a su forma y tamaño originales. Una corona protege y consolida la estructura del diente que no se puede restaurar con los rellenos u otros tipos de restauraciones.",
+        "imagen": "../assets/images/corona_animado1.jpg",
+        "masInformacion": "url",
+        "beneficios": "beneficios",
+        "causas": "causas",
+        "precio":"$ 1500.00"
+    },
+   
+    {
+        "nombre": "Blanqueamiento dental",
+        "descripcion": "El blanqueamiento dental es un tratamiento de odontología estética que tiene por objetivo eliminar las manchas dentales y hacer que la dentición adquiera una tonalidad más blanca y brillante.",
+        "imagen": "../assets/images/blanqueamiento_animado1.jpg",
+        "masInformacion": "url",
+        "beneficios": "beneficios",
+        "causas": "causas",
+        "precio":"$ 650.00"
+    },
+    {
+        "nombre": "Limpieza dental",
+        "descripcion": "La limpieza dental, también llamada profilaxis dental, se hace para eliminar la placa y el cálculo (sarro) que se acumula en los dientes durante el paso del tiempo. Esta acumulación de placa y sarro se va depositando en los dientes.",
+        "imagen": "../assets/images/limpieza_dental_animado1.jpg",
+        "masInformacion": "url",
+        "beneficios": "beneficios",
+        "causas": "causas",
+        "precio":"$ 600.00"
+    },
+    {
+        "nombre": "Prótesis dental",
+        "descripcion": "Reconstruye nuevamente tu dentadura, ya sea que te falte un diente o varios, incluso todos",
+        "imagen": "../assets/images/protesis_animado.jpg",
+        "masInformacion": "url",
+        "beneficios": "beneficios",
+        "consecuencias": "Puede generar problemas de inflamación crónica, mal aliento, infecciones por bacterias y hongos, entre otros.",
+        "precio":"$ 9,000 a $ 20,000 pesos"
+    },
+    {
+        "nombre": "Ortodoncia",
+        "descripcion": "Se encarga de los problemas de los dientes y la mandíbula. La atención dental con ortodoncia incluye el uso de dispositivos, tales como los aparatos (frenos), para: Enderezar los dientes. Corregir problemas con la mordida.",
+        "imagen": "../assets/images/ortodoncia_animado.jpg",
+        "masInformacion": "url",
+        "beneficios": "beneficios",
+        "consecuencias": "Fractura dental.<br>Pérdida del diente.",
+        "precio":0
+    },
+    {
+        "nombre": "Periodoncia",
+        "descripcion": " El objetivo del tratamiento es limpiar exhaustivamente las bolsas alrededor de los dientes y prevenir daños en el hueso que las rodea",
+        "imagen": "../assets/images/periodoncia_animado.jpg",
+        "masInformacion": "url",
+        "beneficios": "beneficios",
+        "consecuencias": "Puede destruir el hueso que sostiene los dientes.",
+        "precio": "600 pesos a 1700 por cuadrante"
+
+    },
+    {
+        "nombre": "Extracción dental",
+        "descripcion": "Una extracción dental es un procedimiento para extraer un diente de la encía. Usualmente lo hace un dentista general, un cirujano bucal o un periodoncista.",
+        "imagen": "../assets/images/extraccion_animado.jpg",
+        "masInformacion": "url",
+        "beneficios": "beneficios",
+        "consecuencias": "El grupo de edad más afectado por alguna extracción de órgano dental fue el de 60-64 años de edad",
+        "precio":"Extracción de dientes simple: $75-$250. <br>Extracción de dientes quirúrgica: $180-$550.<br>Extracción de la muela del juicio: $120-$800."
+        
+    },
+    {
+        "nombre": "Brackets",
+        "descripcion": "Los brackets estéticos son un tipo de tratamiento de ortodoncia, los cuales están confeccionados con materiales como la porcelana y el zafiro, que los hacen prácticamente imperceptibles.",
+        "imagen": "../assets/images/brackets_animado_new.png",
+        "masInformacion": "url",
+        "beneficios": "Corregir la mala posición de uno o varios dientes Solucionar problemas de mordida incorrecta (maloclusión).",
+        "consecuencias": "Algunas de las consecuencias más graves son: Falta de coordinación de arcadas dentarias y aparición de maloclusiones. Aparición o falta de corrección de interferencias dentarias.",
+        "precio": "$14,000 a $18,000"
+
+    }
+]
+   
+   
+    
+    
+   
+    
+    
+    
+    

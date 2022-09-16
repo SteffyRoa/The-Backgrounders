@@ -1,0 +1,172 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&family=Lobster+Two:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+html{
+  background-size: 85%;
+}
+
+
+    
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+padding-bottom: 5px;
+font-family: 'Roboto';
+
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.textologin{
+    font-size: 25px;
+    font-family: Roboto;
+}
+
+
+html {
+    font-size: 85%;
+} 
+    
+* {
+    box-sizing: border-box;
+}
+
+.contenedorlogin{
+    margin-top: -2px;
+    top:0%;
+}
+
+.hey {
+    margin:auto;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-weight: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    background: #ecf0f3;
+}
+
+.login-div {
+    width: 430px;
+    height: 390px;
+    padding: 25px;
+    border-radius: 10px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 3px;
+}
+
+.fields {
+    width: 100%;
+    padding: 25px 5px 5px 5px;
+    
+}
+
+.fields input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 12px;
+    color: rgb(85, 85, 85);
+    padding: 20px 10px 20px 5px;
+}
+
+.username, .password {
+    margin-bottom: 20px;
+    border-radius: 18px;
+    box-shadow: 
+        inset 8px 8px 8px #cbced1,
+        inset -4px -4px 8px #fff;
+}
+
+.fields i {
+    height: 16px;
+    margin: 0 10px -2px 18px;
+}
+
+.signin-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    height: 35px;
+    
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background: #18245d;
+    box-shadow: 3px 3px 8px #b1b1b1,
+        -3px -3px 8px #fff;
+    transition: 0.5s;
+}
+
+.signin-button:hover {
+    background: #8ED1FC;
+}
+
+.signin-button:active {
+    background: #020381;
+}
+
+.link {
+    padding-top: 17px;
+    text-align: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: rgb(5, 54, 138);
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+.textonav{
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.btnsesion{
+    display: flex;
+    justify-content: center;
+    margin: -17px 0 0 -10px;
+}
+
