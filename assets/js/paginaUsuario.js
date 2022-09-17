@@ -79,6 +79,20 @@ function obtenerDatos(){
     })
 }
 
+function obtenerCitas(){
+
+    fetch("http://localhost:8080/citas/1")
+    .then(respuesta => {
+       return respuesta.json()
+    })
+    .then(data => {
+       
+       console.log(data);
+          
+    })
+}
+
+
 function eliminarCita() {
 
     //Recupera elemento a eliminar
@@ -116,3 +130,4 @@ function actualizar(){
 }
 obtenerSugerencias(url);
 obtenerDatos();
+obtenerCitas();
