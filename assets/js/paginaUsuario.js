@@ -129,5 +129,5 @@ function actualizar(){
     imgIcono.src = select.src
 }
 obtenerSugerencias(url);
-obtenerDatos();
-obtenerCitas();
+//obtenerDatos();
+//obtenerCitas();

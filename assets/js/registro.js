@@ -40,12 +40,19 @@ function vamosAValidar () {
     const celular1 = document.getElementById("inputCelular")
     const email1 = document.getElementById("inputEmail")
     const password1 = document.getElementById("inputContraseña")
+    const fecha = document.getElementById("inputFecha")
     
     const mnsNombre = document.getElementById('mensajeNombre');
     const mnsApell = document.getElementById("mensajeApellido")
     const mnsCel = document.getElementById("mensajeNumero")
     const mnsEma = document.getElementById("mensajeEmail")
     const mnsPass = document.getElementById("mensajePassword")
+
+    let max = 10;
+    let min = 1;
+    let icono = Math.random() * (max-min) + min;
+
+icono = parseInt(icono);
 
     mnsNombre.innerHTML = ""
     mnsApell.innerHTML = ""
@@ -72,25 +79,48 @@ function vamosAValidar () {
        
                 
     }if (validar1 == false){
-        mnsNombre.innerHTML = "completa el campo adecuadamente"
+        mnsNombre.innerHTML = "Completa el campo adecuadamente"
         mnsNombre.style.color = "#e71414"
-        console.log("nombre");
+        //console.log("nombre");
     }if (validar2 == false){
-        mnsApell.innerHTML = "completa el campo adecuadamente"
+        mnsApell.innerHTML = "Completa el campo adecuadamente"
         mnsApell.style.color = "#e71414"
-        console.log("apellido");
+        //console.log("apellido");
     }if (validar3 == false){
-        mnsCel.innerHTML = "completa el campo adecuadamente"
+        mnsCel.innerHTML = "Completa el campo adecuadamente"
         mnsCel.style.color = "#e71414"
-        console.log("celular");
+        //console.log("celular");
     }if (validar4 == false){ 
-        mnsEma.innerHTML =="completa el campo adecuadamente"
+        mnsEma.innerHTML =="Completa el campo adecuadamente"
         mnsEma.style.color == "#e71414"
-        console.log("email");
+        //console.log("email");
     }if (validar5 == false){
-        mnsPass.innerHTML == "completa el campo adecuadamente"
+        mnsPass.innerHTML == "Completa el campo adecuadamente"
         mnsPass.style.color = "#e71414"
-        console.log("password");
+        //console.log("password");
     }
+
+    fetch('http://localhost:8080/pacientesR', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+          nombre: nombre1.value,
+          apellido: apellido1.value,
+          correo: email1.value,
+          fecha: fecha.value,
+          telefono: celular1.value ,
+          contrasena: password1.value,
+          icono: icono
+      }),
+    })
+      .then(response => response.json())
+      .then(data => {
+          console.log('Success:', data);
+      })
+      .catch((error) => {
+          console.error('Error:', error);
+      }); 
 
 }
