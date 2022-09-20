@@ -10,12 +10,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class EnvioEmail {
 
-	//Importante hacer la inyección de dependencia de JavaMailSender:
+	//Importante hacer la inyecciï¿½n de dependencia de JavaMailSender:
     @Autowired
-    private JavaMailSender mailSender;
+    JavaMailSender mailSender;
+    @Autowired
+    PdfService pdfService;
 
     //Pasamos por parametro: destinatario, asunto y el mensaje
-    public void sendEmail(String to, String subject, String content) {
+    public void sendEmail(String to, String subject, String content, String emailTo ) {
 
     	 SimpleMailMessage message = new SimpleMailMessage();
          	

@@ -1,5 +1,6 @@
 package com.proyecto_Dientes_Limpios.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,13 +28,31 @@ public class PacienteRService implements IpacienteRService{
 		mensaje();
 		 return pacienteRepository.save(usuario);	
 	}
-	
-	public void mensaje() {
-		System.out.println("envio de mail");
-		mailService.sendEmail("com2173047251@gmail.com", "Hola", "Esto es una prueba");
+
+	private void mensaje() {
+		// TODO Auto-generated method stub
+		
 	}
        
-    
+	public PacienteRModel getUserId(String correo, String contra){
+
+        ArrayList<PacienteRModel> lista = (ArrayList<PacienteRModel>) pacienteRepository.findAll();
+
+        PacienteRModel persona = new PacienteRModel(); 
+
+        for (int i = 0; i < lista.size(); i++) {
+
+            if(correo.equals(lista.get(i).getCorreo())) {
+                if( contra.equals(lista.get(i).getContrasena()) ) {
+                    persona = lista.get(i);
+                }
+            }
+
+        }
+
+        return persona;
+
+    }
 	
 
 }

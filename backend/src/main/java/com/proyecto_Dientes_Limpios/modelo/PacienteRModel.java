@@ -43,6 +43,12 @@ public class PacienteRModel {
 	@OneToMany(mappedBy = "cita")
 	private List<CitaModel> citas;
 
+	
+	public PacienteRModel() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+	
 	/**
 	 * @return the id
 	 */
@@ -58,21 +64,21 @@ public class PacienteRModel {
 	}
 
 	/**
-	 * @return the nombre
+	 * @return the nombreP
 	 */
 	public String getNombre() {
 		return nombre;
 	}
 
 	/**
-	 * @param nombre the nombre to set
+	 * @param nombre the nombreP to set
 	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
 	/**
-	 * @return the apellido
+	 * @return the apellidoP
 	 */
 	public String getApellido() {
 		return apellido;
