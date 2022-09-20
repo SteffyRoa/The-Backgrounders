@@ -29,11 +29,13 @@ function enviarform(){
     }, false);
   })();
 
-  const btn = document.getElementById("formulario")
-  btn.addEventListener ("submit", (e) => {
+const btn = document.getElementById("formulario")
+ 
+btn.addEventListener ("submit", (e) => {
     console.log("gatos");
       e.preventDefault()
-      vamosAValidar()} )
+      vamosAValidar()
+} )
 
 function vamosAValidar () {
   const email1 = document.getElementById("inputEmail")
@@ -41,29 +43,42 @@ function vamosAValidar () {
 
   const mnsemail = document.getElementById("mensajeEmail")
   const mnspassword = document.getElementById("mensajeContraseña")
- mnsemail.innerHTML = ""
- mnspassword.innerHTML = ""
+  mnsemail.innerHTML = ""
+  mnspassword.innerHTML = ""
 
- const password = /^.{4,12}$/ /* 4 a 12 digitos.*/
- const email = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+  const password = /^.{4,12}$/ /* 4 a 12 digitos.*/
+  const email = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
 
- let validar1 = email.test(email1.value)
- let validar2 = password.test(password1.value)
- const btn = document.getElementById("boton")
+  let validar1 = email.test(email1.value)
+  let validar2 = password.test(password1.value)
+  const btn = document.getElementById("boton")
 
- if (validar1 == true && (validar2 == true )){
-  btn.setAttribute( "data-toggle", "modal")
-                btn.setAttribute( "data-target","#confirmaModal")
-                btn.click()
+  if (validar1 == true && (validar2 == true )){
+    btn.setAttribute( "data-toggle", "modal")
+    btn.setAttribute( "data-target","#confirmaModal")
+    btn.click()
 
-} if (validar1 == false){
-  mnsemail.innerHTML = "completa el campo adecuadamente"
-  mnsemail.style.color = "#e71414"
-  console.log("nombre");
-}if (validar2 == false){
-  mnspassword.innerHTML = "completa el campo adecuadamente"
-  mnspassword.style.color = "#e71414"
-}
+  } if (validar1 == false){
+    mnsemail.innerHTML = "completa el campo adecuadamente"
+    mnsemail.style.color = "#e71414"
+    console.log("nombre");
+  }if (validar2 == false){
+    mnspassword.innerHTML = "completa el campo adecuadamente"
+    mnspassword.style.color = "#e71414"
+  }
+
+  fetch(`http://localhost:8080/pacientesR/login?correo=${email1.value}&contrasena=${password1.value}`, {method: 'GET'})
+  .then(respuesta => {
+     return respuesta.json()
+  })
+  .then(data => {
+     
+     console.log(data.id);
+     localStorage.setItem('id', data.id);
+     localStorage.setItem('nombre', data.nombre);
+     ir();
+        
+  })
 
 
 }

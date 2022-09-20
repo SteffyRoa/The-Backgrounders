@@ -128,6 +128,36 @@ function actualizar(){
     const imgIcono = document.getElementById("img-icono");
     imgIcono.src = select.src
 }
+
+
+
+function isUsuario(){
+    const id = localStorage.getItem('id');
+    console.log(id);
+     if (id != null){
+        
+        document.getElementById("id_registro").remove();
+        
+        document.getElementById("id_login").remove();
+        const nav = document.getElementById("navbar");
+        nav.innerHTML += `<a id="id_salir" class="nav-link text-white">Salir</a>`
+        const btn = document.getElementById("id_salir")
+ 
+        btn.addEventListener ("click", (e) => {
+            e.preventDefault()
+            localStorage.clear();
+            location.href="../../pages/login.html";
+        } )
+     }else{
+        const nav = document.getElementById("navbar");
+        const registro =  document.getElementById("id_registro")
+        if (registro == null) {
+            nav.innerHTML += `<a class="nav-link text-white" href="./Registro.html">Registrarse</a>
+        <a class="nav-link text-white" href="./login.html">Login</a>` 
+        }
+       
+     }
+}
 obtenerSugerencias(url);
-//obtenerDatos();
+isUsuario();
 //obtenerCitas();

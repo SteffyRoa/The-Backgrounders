@@ -40,3 +40,33 @@ function mostrarInformacion(id) {
 function regresar() {
   window.location.reload();
 }
+
+function isUsuario(){
+  const id = localStorage.getItem('id');
+  console.log(id);
+   if (id != null){
+      
+      try {
+        document.getElementById("id_registro").remove();
+        document.getElementById("id_login").remove();
+      } catch (error) {
+        
+      }
+     
+      const nav = document.getElementById("navbar");
+      nav.innerHTML += `<a id="id_salir" class="nav-link text-white">Salir</a>`
+      const btn = document.getElementById("id_salir")
+
+      btn.addEventListener ("click", (e) => {
+          e.preventDefault()
+          localStorage.clear();
+          location.href="../../pages/login.html";
+      } )
+   }else{
+      const nav = document.getElementById("navbar");
+      
+      nav.innerHTML += `<a class="nav-link text-white" href="./Registro.html">Registrarse</a>
+      <a class="nav-link text-white" href="./login.html">Login</a>`
+   }
+}
+isUsuario();
