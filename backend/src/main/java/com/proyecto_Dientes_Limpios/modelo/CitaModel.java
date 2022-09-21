@@ -1,5 +1,8 @@
 package com.proyecto_Dientes_Limpios.modelo;
 
+import java.sql.Date;
+import java.sql.Time;
+
 import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -8,31 +11,37 @@ import com.fasterxml.jackson.annotation.JsonProperty.Access;
 @Entity
 @Table(name = "cita")
 public class CitaModel {
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	@Column(name = "fechaC", nullable = false)
+	private Date fechaC;
+	@Column(name = "horaC", nullable = false)
+	private Time horaC;
+	@Column(name = "servicio", columnDefinition = "varchar(15)", nullable = false)
+	private String servicio;
+	@Column(name = "confirmacionC", nullable = false)
+	private int confirmacionC;
 
 	@ManyToOne
 	@JoinColumn(name = "id_paciente")
 	@JsonProperty(access = Access.WRITE_ONLY)
 	private PacienteRModel cita;
 
-	@Column(name = "fechaC", nullable = false)
-	private int fechaC;
-
-	@Column(name = "horaC", nullable = false)
-	private int horaC;
-
-
-	@Column(name = "id_odontologo", nullable = false)
-	private int id_odontologo;
-
-	@Column(name = "servicio", nullable = false)
-	private String servicio;
-
-	@Column(name = "confirmacionC", nullable = false)
-	private boolean confirmacionC;
+	/*
+	 * @ManyToOne
+	 * 
+	 * @JoinColumn( name = "id_invitado")
+	 * 
+	 * @JsonProperty(access = Access.WRITE_ONLY) private InvitadoModel invitado;
+	 * 
+	 * @ManyToOne
+	 * 
+	 * @JoinColumn( name = "id_odontologo")
+	 * 
+	 * @JsonProperty(access = Access.WRITE_ONLY) private OdontologoModel
+	 * odontologos;
+	 */
 
 	public int getId() {
 		return id;
@@ -42,29 +51,20 @@ public class CitaModel {
 		this.id = id;
 	}
 
-	public int getFechaC() {
+	public Date getFechaC() {
 		return fechaC;
 	}
 
-	public void setFechaC(int fechaC) {
+	public void setFechaC(Date fechaC) {
 		this.fechaC = fechaC;
 	}
 
-	public int getHoraC() {
+	public Time getHoraC() {
 		return horaC;
 	}
 
-	public void setHoraC(int horaC) {
+	public void setHoraC(Time horaC) {
 		this.horaC = horaC;
-	}
-
-	
-	public int getId_odontologo() {
-		return id_odontologo;
-	}
-
-	public void setId_odontologo(int id_odontologo) {
-		this.id_odontologo = id_odontologo;
 	}
 
 	public String getServicio() {
@@ -75,28 +75,28 @@ public class CitaModel {
 		this.servicio = servicio;
 	}
 
-	public boolean isConfirmacionC() {
+	public int getConfirmacionC() {
 		return confirmacionC;
 	}
 
-	public void setConfirmacionC(boolean confirmacionC) {
+	public void setConfirmacionC(int confirmacionC) {
 		this.confirmacionC = confirmacionC;
 	}
 
-	public CitaModel() {
-		super();
+	/**
+	 * @param cita
+	 * @param cita the cita to set
+	 */
+	public void setCita(PacienteRModel citaP, PacienteRModel cita) {
+		this.cita = cita;
 	}
 
-	public CitaModel(int id, PacienteRModel cita, int fechaC, int horaC, int id_paciente, int id_odontologo,
-			String servicio, boolean confirmacionC) {
-		super();
-		this.id = id;
-		this.fechaC = fechaC;
-		this.horaC = horaC;
-		this.id_odontologo = id_odontologo;
-		this.servicio = servicio;
-		this.confirmacionC = confirmacionC;
+	/**
+	 * @return the cita
+	 */
+	public PacienteRModel getCita() {
+		return cita;
 	}
 
-	
 }
+	

@@ -19,7 +19,10 @@ public class CitaService implements IcitaService {
 	public List<CitaModel> getCitaByID(Integer id) {
 		return  (List<CitaModel>) citaRepository.findAll();
 	}
-
+	
+	public List<CitaModel> getCitas() {
+		return  (List<CitaModel>) citaRepository.findAll();
+	}
 
 	public CitaModel guardarCita(CitaModel cita){
 		 return citaRepository.save(cita);	

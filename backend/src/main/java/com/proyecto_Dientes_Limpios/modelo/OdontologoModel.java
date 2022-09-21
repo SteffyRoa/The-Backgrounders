@@ -89,5 +89,4 @@ import javax.persistence.Table;
 			this.id_especialidad = id_especialidad;
 		}
 	    
-	    
 }

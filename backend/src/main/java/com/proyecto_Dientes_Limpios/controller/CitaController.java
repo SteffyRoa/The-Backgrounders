@@ -27,7 +27,8 @@ public class CitaController {
 	@Autowired
 	CitaService citaService;
 	
-	@GetMapping( path = "/citas/{id}")
+	//Buscar por Id
+	@GetMapping( path = "/{id}")
 	public ResponseEntity<List<CitaModel>> obtenerUsuarioPorId(@PathVariable("id") int id) {
 		List<CitaModel> citas = null;
 		try {
@@ -39,6 +40,18 @@ public class CitaController {
 		return ResponseEntity.status(HttpStatus.OK).body(citas);
 	}
 	
+	@GetMapping()
+	public ResponseEntity<List<CitaModel>> obtenerCitas() {
+		List<CitaModel> citas = null;
+		try {
+			citas = citaService.getCitas();
+			System.out.println(citas);
+		}catch(Exception ex) {
+			ex.getMessage();
+		}
+		return ResponseEntity.status(HttpStatus.OK).body(citas);
+	}
+
 	@PostMapping()
 	public CitaModel guardarUsuario(@RequestBody CitaModel cita){
         return this.citaService.guardarCita(cita);

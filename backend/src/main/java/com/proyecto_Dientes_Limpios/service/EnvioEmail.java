@@ -13,8 +13,7 @@ public class EnvioEmail {
 	//Importante hacer la inyecci�n de dependencia de JavaMailSender:
     @Autowired
     JavaMailSender mailSender;
-   // @Autowired
-   // PdfService pdfService;
+
 
     //Pasamos por parametro: destinatario, asunto y el mensaje
     public void sendEmail(String to, String subject, String content, String emailTo ) {
