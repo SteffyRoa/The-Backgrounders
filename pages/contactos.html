@@ -34,13 +34,11 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-      <div class="navbar-nav textonav">
+      <div class="navbar-nav textonav" id="navbar">
         <a class="nav-link text-white" href="../index.html">Inicio</a>
         <a class="nav-link text-white" href="./servicios.html">Servicios </a>
         <a class="nav-link text-white" href="./AgendarCita.html">Agendar cita</a>
         <a class="nav-link text-white" href="./contactos.html">Contacto</a>
-        <a class="nav-link text-white" href="./Registro.html">Registrarse</a>
-        <a class="nav-link text-white" href="./login.html">Login</a>
       </div>
     </div>
   </nav>
@@ -143,25 +141,13 @@
           <textarea class="form-control input" id="mensaje" rows="3"></textarea>
         </div>
         <div class="campo">
-          <input type="submit" value="Enviar" class="boton">
+          <input type="button" value="Enviar" class="boton" onclick="agendar()">
         </div>
       </form>
 
     </div>
-    <div class="caja-comentarios">
-
-      <div class="container p-5 cuadroComentarioTestimonios" >
-        <h4>Efrain Leon</h4>
-         
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, culpa laudantium deserunt nemo numquam laboriosam minus, autem eius quasi qui nihil rerum atque ipsam possimus in nesciunt dolores totam animi.
-        
-       </div>
-      <div class="container p-5 cuadroComentarioTestimonios" >
-        <h4>Tamara Flores</h4>
-         
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, culpa laudantium deserunt nemo numquam laboriosam minus, autem eius quasi qui nihil rerum atque ipsam possimus in nesciunt dolores totam animi.
-        
-       </div>
+    <div class="caja-comentarios" id="caja-comentarios">
+      
        
       
     </div>
