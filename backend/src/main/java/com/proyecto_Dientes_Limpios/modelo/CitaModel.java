@@ -28,13 +28,15 @@ public class CitaModel {
 	@JsonProperty(access = Access.WRITE_ONLY)
 	private PacienteRModel cita;
 
-	/*
-	 * @ManyToOne
-	 * 
-	 * @JoinColumn( name = "id_invitado")
-	 * 
-	 * @JsonProperty(access = Access.WRITE_ONLY) private InvitadoModel invitado;
-	 * 
+	
+	 @ManyToOne
+	  
+	 @JoinColumn( name = "id_invitado")
+	 
+	 @JsonProperty(access = Access.WRITE_ONLY) 
+	 
+	 private InvitadoModel invitado;
+	 /* 
 	 * @ManyToOne
 	 * 
 	 * @JoinColumn( name = "id_odontologo")
@@ -42,9 +44,21 @@ public class CitaModel {
 	 * @JsonProperty(access = Access.WRITE_ONLY) private OdontologoModel
 	 * odontologos;
 	 */
-
+	 
 	public int getId() {
 		return id;
+	}
+
+	public InvitadoModel getInvitado() {
+		return invitado;
+	}
+
+	public void setInvitado(InvitadoModel invitado) {
+		this.invitado = invitado;
+	}
+
+	public void setCita(PacienteRModel cita) {
+		this.cita = cita;
 	}
 
 	public void setId(int id) {

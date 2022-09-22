@@ -29,6 +29,7 @@
         <a class="nav-link text-white" href="./servicios.html"><b>Servicios</b> </a>
         <a class="nav-link text-white" href="./AgendarCita.html"><b>Agendar Cita</b></a>
         <a class="nav-link text-white" href="./contactos.html"><b>Contacto</b></a>
+
       </div> 
     </div>
   </nav>
@@ -87,44 +88,31 @@
             <div class="form-group col-md-6">
               <!-- Icono -->
               <i class="far fa-calendar-alt"></i>
-              <label for="inputState">Fechas disponibles</label>
-              <!-- Lista de Fechas -->
+              <!--Calendario-->
+              <label for="inputFCita">Fecha de su Cita</label>
+              <div class="users">
+                <input id="inputFCita" type="date" class="form-control" placeholder="DD/MM/AA" required>
+              </div>
+              <!--<label for="inputState">Fechas disponibles</label>
+               Lista de Fechas 
               <select id="inputState" class="users coloruser form-control">
                 <option selected>Escoge una...</option>
                 <option selected>Septiembre</option>
                 <option selected>Octubre</option>
                 <option selected>Noviembre</option>
                 <option>...</option>
-              </select>
+              </select> -->
             </div>
           </div>
           <!-- Tercera Fila del Form -->
-          <div class="form-row">
-            <!-- Campo Correo -->
-            <div class="form-group col-md-6">
-              <!-- Icono -->
-              <i class="far fa-envelope"></i>
-              <label for="inputEmail" >Correo Electrónico </label><div class="users input-group has-validation">
-              <input type="email" class="form-control" id="inputEmail" placeholder="hola@gmail.com" required>
-              <div class="invalid-feedback">
-                Por favor, ingresa un correo válido.
-              </div>
-            </div></div>
-            <!-- Campo Telefono -->
-            <div class="form-group col-md-6 ">
-              <!-- Icono -->
-              <i class="fas fa-mobile-alt"></i>
-              <label for="inputCeluar">Teléfono</label><div class="users">
-              <input type="number" class="form-control" id="inputCelular" placeholder="(52)5555555" required>
-              <div class="invalid-feedback">
-                Por favor, ingresa un número de teléfono.
-              </div>
-            </div></div>
+          <div class="form-row" id="opciones">
+            
+              
           </div>
           
           <!-- Boton de Agendar -->
           <div class="col-12">
-            <button type="submit" id="boton" class="btn btn-agendar text-white aling-center btncita">
+            <button type="button" id="botonAgendar" class="btn btn-agendar text-white aling-center btncita" onclick="agendarCita()">
               Agendar Cita
             </button>
           </div>

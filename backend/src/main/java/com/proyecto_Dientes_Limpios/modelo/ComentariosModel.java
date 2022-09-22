@@ -14,12 +14,12 @@ public class ComentariosModel {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
-	@Column(name = "nombrep")
-	private String nombreP;
+	@Column(name = "nombreP")
+	private String nombre;
 
 	@Column(name = "texto")
-	private String texto;
-	
+	private String text;
+
 	public int getId() {
 		return id;
 	}
@@ -27,26 +27,22 @@ public class ComentariosModel {
 	public void setId(int id) {
 		this.id = id;
 	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
 	
-	public String getnombreP() {
-		return nombreP;
-	}
 
-	public String getTexto() {
-		return texto;
-	}
-	
-	public void setnombreP(String nombreP) {
-		this.nombreP  = texto;
-	}
-
-	public void setTexto(String texto) {
-		this.texto = texto;
-	}
-
-	public ComentariosModel(String nombreP, String texto) {
-		super();
-		this.nombreP = nombreP;
-		this.texto = texto;
-	}
 }
