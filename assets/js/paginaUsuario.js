@@ -87,18 +87,22 @@ function obtenerCitas(id) {
         })
         .then(data => {
 
-            console.log(data[0].fechaC);
+            console.log(data);
+            const list = document.getElementById("list-tab");
+            const productList = document.getElementById('tabla');
 
-            
+
+            let index=1;
+            productList.innerHTML=""
+            list.innerHTML = "";
             data.forEach(el => {
                 if (el === null) {
                     el = ""
                 } else {
-                    const productList = document.getElementById('tabla');
+                    
                     const element = document.createElement('tr');
-                    const list = document.getElementById("list-tab");
                    
-                    let index=1;
+                    console.log(el.id);
                     element.innerHTML = `
                     <tr id=${el.id}>
                     <th scope="col">${index}</th>
@@ -109,13 +113,14 @@ function obtenerCitas(id) {
                     </tr>
                     `;
 
-                    list.innerHTML = "";
+                    
                     list.innerHTML +=`
-                    <a class="list-group-item list-group-item-action active"  data-toggle="list"  role="tab"  id=${el.id}>${el.servicio}</a>
+                    <a class="list-group-item list-group-item-action "  data-toggle="list"  role="tab"  id=${el.id}>${el.servicio}</a>
                     `;
 
                     productList.appendChild(element);
                 }
+                index++;
             })
 
         })
@@ -125,26 +130,20 @@ function obtenerCitas(id) {
 function eliminarCita() {
 
     //Recupera elemento a eliminar
-    const idSeleccionado = document.querySelector('.active')
+    const idSeleccionado = document.querySelector('.active');
 
-    //Hacemos petición Http de tipo DELETE
-    fetch('http://localhost:8080/cita/' + idSeleccionado.id, { method: 'DELETE', mode: 'cors' })
+    console.log(idSeleccionado.id);
+
+     //Hacemos petición Http de tipo DELETE
+    fetch('http://localhost:8080/citas/eliminar/' + idSeleccionado.id, { method: 'DELETE', mode: 'cors' })
         .then(res => {
-            return res.json()
-        })
-        .then(res => {
 
-            console.log(res);
-
-            //Verificamos la respuesta
-            if (res === "ok") {
-                //Eliminar elemento de la vista usuario
-                document.getElementById(idSeleccionado.id).remove();
-            } else {
-                //Avisar que no se pudo eliminar correctamente
-                alert("No se pudo eliminar cita");
-            }
-        })
+            const id = localStorage.getItem('id');
+            //Eliminar elemento de la vista usuario
+            document.getElementById(idSeleccionado.id).remove();
+            obtenerCitas(id);
+            
+        }) 
 }
 
 
