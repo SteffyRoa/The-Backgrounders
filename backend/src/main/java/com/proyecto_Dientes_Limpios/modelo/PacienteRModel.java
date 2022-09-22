@@ -2,13 +2,8 @@ package com.proyecto_Dientes_Limpios.modelo;
 
 import java.sql.Date;
 import java.util.List;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
+
 
 @Entity
 @Table(name= "pacienteR")
@@ -17,68 +12,69 @@ public class PacienteRModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id")
-	private int id;
-
+	private Long id;
+	
 	@Column(name="nombreP")
-	private String nombre;
-	
-	@Column(name="apellidoP")
-	private String apellido;
-	
-	@Column(name="correoP")
-	private String correo;
-	
-	@Column(name="fecha_nacimientoP")
-	private Date fecha;
-	
-	@Column(name="telefonoP")
-	private String telefono;
-	
-	@Column(name="contrasenaP")
-	private String contrasena;
-	
-	@Column(name="iconoP")
-	private int icono;
+    private String nombre;
+
+    @Column(name="apellidoP")
+    private String apellido;
+
+    @Column(name="correoP")
+    private String correo;
+
+    @Column(name="fecha_nacimientoP")
+    private Date fecha;
+
+    @Column(name="telefonoP")
+    private String telefono;
+
+    @Column(name="contrasenaP")
+    private String contrasena;
+
+    @Column(name="iconoP")
+    private int icono;
 	
 	@OneToMany(mappedBy = "cita")
 	private List<CitaModel> citas;
 
 	
-	public PacienteRModel() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 	
+	public PacienteRModel() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	/**
 	 * @return the id
 	 */
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
 	/**
-	 * @return the nombreP
+	 * @return the nombre
 	 */
 	public String getNombre() {
 		return nombre;
 	}
 
 	/**
-	 * @param nombre the nombreP to set
+	 * @param nombre the nombre to set
 	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
 	/**
-	 * @return the apellidoP
+	 * @return the apellido
 	 */
 	public String getApellido() {
 		return apellido;
@@ -174,5 +170,7 @@ public class PacienteRModel {
 	public void setCitas(List<CitaModel> citas) {
 		this.citas = citas;
 	}
+
+	
 	
 }

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.proyecto_Dientes_Limpios.modelo.CitaModel;
+import com.proyecto_Dientes_Limpios.modelo.PacienteRModel;
 import com.proyecto_Dientes_Limpios.service.CitaService;
 
 
@@ -27,17 +29,12 @@ public class CitaController {
 	@Autowired
 	CitaService citaService;
 	
-	//Buscar por Id
 	@GetMapping( path = "/{id}")
-	public ResponseEntity<List<CitaModel>> obtenerUsuarioPorId(@PathVariable("id") int id) {
-		List<CitaModel> citas = null;
-		try {
-			citas = citaService.getCitaByID(id);
-			System.out.println(citas);
-		}catch(Exception ex) {
-			ex.getMessage();
-		}
-		return ResponseEntity.status(HttpStatus.OK).body(citas);
+	public Object obtenerUsuarioPorId(@PathVariable("id") Long id) {
+		PacienteRModel citas = citaService.getCitaByID(id);
+		
+       return citas.getCitas();
+
 	}
 	
 	@GetMapping()
@@ -51,9 +48,20 @@ public class CitaController {
 		}
 		return ResponseEntity.status(HttpStatus.OK).body(citas);
 	}
-
-	@PostMapping()
-	public CitaModel guardarUsuario(@RequestBody CitaModel cita){
+	
+	@PostMapping("/usuarios")
+	public CitaModel agendarPacienteR(@RequestBody CitaModel cita){
         return this.citaService.guardarCita(cita);
     }
+	
+	@PostMapping("/invitados")
+	public CitaModel agendarInvitado(@RequestBody CitaModel cita){
+        return this.citaService.guardarCita(cita);
+    }
+	
+	// Eliminar usuario
+	@DeleteMapping(path = "eliminar/{id}") 
+	public void eliminar(@PathVariable Long id) {
+		citaService.eliminar(id);
+	}
 }
