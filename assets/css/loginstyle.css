@@ -126,7 +126,8 @@ html {
     border: none;
     cursor: pointer;
     width: 70%;
-    height: 50px;
+    height: 35px;
+    margin-top: 10px;
     
     border-radius: 30px;
     font-size: 20px;
