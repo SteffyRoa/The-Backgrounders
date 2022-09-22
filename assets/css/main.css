@@ -226,7 +226,7 @@ a {cursor:url(../images/imgs/teeth-brushing.png), auto;
     font-weight: 700;
     color: #fff;
     text-align: center;
-    background: #18245d;
+    background: #00507D;
     box-shadow: 3px 3px 8px #b1b1b1,
         -3px -3px 8px #fff;
     transition: 0.5s;
@@ -236,5 +236,5 @@ a {cursor:url(../images/imgs/teeth-brushing.png), auto;
 }
 
 .btn-agn-reg:active {
-    background: #020381;
+    background: #00507D;
 }
