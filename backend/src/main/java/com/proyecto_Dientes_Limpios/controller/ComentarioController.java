@@ -10,12 +10,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
+import org.springframework.web.bind.annotation.RequestMethod;
+
 import com.proyecto_Dientes_Limpios.modelo.ComentariosModel;
 import com.proyecto_Dientes_Limpios.service.ComentarioService;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE,
+        RequestMethod.PUT })
 @RestController
-@RequestMapping("/coment")
+@RequestMapping("/comentario")
 public class ComentarioController {
 	@Autowired
 	private ComentarioService postService;
