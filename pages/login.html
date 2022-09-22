@@ -59,24 +59,40 @@
           <div class="fields">
             <!-- Campo Correo -->
             <div class="username">
+              <div class="row">
+                <div class="col-2 colemail">
               <i class="far fa-envelope"></i>
+            </div>
+            <div class="col-10 colcorreo">
               <!-- <input type="username" class="user-input" placeholder="Correo Electronico" id="inputEmail"> -->
               <input type="email" class="form-control" id="inputEmail" placeholder="Correo Electronico" required>
               <p id="mensajeEmail"></p>
             </div>
+          </div>
+          </div>
             <!-- Campo Contraseña -->
             <div class="password">
+              <div class="row">
+                <div class="col-2 colemail">
               <i class="fas fa-lock"></i>
+            </div>
               <!-- <input type="password" class="pass-input" placeholder="Contraseña" id="inputContraseña"> -->
+              <div class="col-10 colcorreo">
               <input type="password" class="form-control" id="inputContraseña" placeholder="Contraseña" required>
               <p id="mensajeContraseña"></p>
             </div>
+            </div>
           </div>
+        </div>
           <!-- Boton de Inicio de Sesion -->
           <div class="btnsesion">
             <button type="submit" id="boton" onclick ='enviarform()' value="enviar" class="signin-button">
               Iniciar Sesión
             </button>
+          </div>
+          <!-- Link de Contraseña -->
+          <div class="link">
+            <a href="#" >Olvidaste tu Contraseña?</a> o <a href="#">Registrate</a>
           </div>
           <!-- Modal -->
           <div class="modal fade" id="confirmaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -95,10 +111,6 @@
                 <div class="modal-footer">
                 <!-- Boton del Modal -->
                 <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="ir()">Cerrar</button>
-                <!-- Link de Contraseña -->
-              <div class="link">
-                <a href="#">Olvidaste tu Contraseña?</a> o <a href="#">Registrate</a>
-              </div>
             </div>
           </div>  
         </div>
