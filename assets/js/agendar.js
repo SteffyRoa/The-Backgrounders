@@ -76,6 +76,9 @@ function agendarCita() {
         confirmacionC: 1,
         cita:{
             id: idU
+        },
+        invitado:{
+          id:0
         }
       }),
     })
@@ -90,7 +93,7 @@ function agendarCita() {
 
   }else{
 
-    const mail = document.getElementById("inputApellido");
+    const mail = document.getElementById("inputEmail");
     const celular = document.getElementById("inputApellido");
 
     fetch('http://localhost:8080/nueva', {
@@ -130,6 +133,9 @@ function agendarCita() {
         horaC: "00:00:00",
         servicio: servicio.value,
         confirmacionC: 1,
+        cita:{
+          id:0
+        },
         invitado:{
             id: idI
         }

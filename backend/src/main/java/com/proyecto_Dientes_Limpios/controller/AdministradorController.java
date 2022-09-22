@@ -15,24 +15,23 @@ import com.proyecto_Dientes_Limpios.service.AdministradorService;
 
 
 
-	@CrossOrigin(origins = "*")
-	@RestController
-	@RequestMapping("/administrador")
-	public class AdministradorController {
-		
-		@Autowired
-		private AdministradorService service;
-		
-		@GetMapping()
-		public ResponseEntity<List<AdministradorModel>> getAllUsers(){
-			List<AdministradorModel> pacientesR = null;
-			try {
-				pacientesR = service.getUser();
-				System.out.println(pacientesR);
-			}catch(Exception ex) {
-				ex.getMessage();
-			}
-			return ResponseEntity.status(HttpStatus.OK).body(pacientesR);
+@CrossOrigin(origins = "*")
+@RestController
+@RequestMapping("/administrador")
+public class AdministradorController {
+
+	@Autowired
+	private AdministradorService service;
+
+	@GetMapping()
+	public ResponseEntity<List<AdministradorModel>> getAllUsers(){
+		List<AdministradorModel> pacientesR = null;
+		try {
+			pacientesR = service.getUser();
+			System.out.println(pacientesR);
+		}catch(Exception ex) {
+			ex.getMessage();
 		}
-		
+		return ResponseEntity.status(HttpStatus.OK).body(pacientesR);
+	}
 }

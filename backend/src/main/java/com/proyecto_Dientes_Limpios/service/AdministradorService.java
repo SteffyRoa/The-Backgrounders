@@ -12,11 +12,10 @@ import com.proyecto_Dientes_Limpios.repository.AdministradorRepository;
 
 @Service
 public class AdministradorService {
-	
-	
+
 	@Autowired
 	private AdministradorRepository AdministradorRepository;
-	
+
 	public ArrayList<AdministradorModel> obtenerComentarios(){
 		return(ArrayList<AdministradorModel>) AdministradorRepository.findAll();
 	}
@@ -25,5 +24,4 @@ public class AdministradorService {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 }

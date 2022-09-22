@@ -1,4 +1,4 @@
- package com.proyecto_Dientes_Limpios.repository;
+package com.proyecto_Dientes_Limpios.repository;
 
 
 import org.springframework.data.repository.CrudRepository;

@@ -11,14 +11,11 @@ import com.proyecto_Dientes_Limpios.repository.OdontologoRepository;
 
 @Service
 public class OdontologoService {
+
 	@Autowired
 	private OdontologoRepository OdontologoRepository;
-	
+
 	public ArrayList<OdontologoModel> obtenerOdontologo(){
 		return(ArrayList<OdontologoModel>) OdontologoRepository.findAll();
 	}
-
-
-
-	}
-
+}

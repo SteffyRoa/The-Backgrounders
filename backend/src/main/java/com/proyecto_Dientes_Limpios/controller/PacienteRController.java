@@ -26,6 +26,7 @@ public class PacienteRController {
 	
 	@GetMapping()
 	public ResponseEntity<List<PacienteRModel>> getAllUsers(){
+
 		List<PacienteRModel> pacientesR = null;
 		try {
 			pacientesR = service.getUser();
@@ -43,6 +44,8 @@ public class PacienteRController {
 	
 	@GetMapping("/login") 
     public PacienteRModel getPost(@RequestParam("correo") String correo, @RequestParam("contrasena") String contrasena) {
-        return this.service.getUserId(correo, contrasena);} 
+        return this.service.getUserId(correo, contrasena);
+    }
+		
 
 }
