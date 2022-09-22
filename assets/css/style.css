@@ -1,16 +1,13 @@
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(235, 193, 194);
-    
-  }
-.carousel-item {
+.linea {
+    background-color: #1A9FDA;
+    width: 50%;
+}
 
+.carousel-item {
     height: 400px;
     margin: 2%;
-    
-  }
+    margin-bottom: auto;
+}
 
 .carousel-img{
     width: 100%;
@@ -18,6 +15,14 @@ hr {
     object-fit: contain;
   }
 
+.card-promo{
+    /* display: grid; */
+        grid-template-rows: 6rem 3rem 3rem 8rem;
+        grid-template-columns: 1fr;
+        margin-bottom: 4%;
+        box-shadow: 13px 13px 20px #cbced1,
+        -13px -13px 20px #fff;
+}
 .tarjeta {
     display: inline-block;
 }
@@ -38,7 +43,6 @@ hr {
     text-align: justify;
 }
 .EncabezadoCuidados{
-    background-color: rgba(210, 157, 51, 1);
     margin-top: 2%;
     margin-bottom: 2%;
     text-align: center;
@@ -46,12 +50,11 @@ hr {
     padding: 1%;
 }
 
+
 .EncabezadoCuidados{
-    background-color: #8ed1fc;
     margin-top: 2%;
     margin-bottom: 2%;
     text-align: center;
-    color: white;
     padding: 1%;
 }
 
@@ -64,7 +67,7 @@ hr {
 
 
 .fondos {
-    background-color: #8ed1fc;
+    background-color:#1A9FDA;
     animation: gradient 15s ease infinite;
 }
 

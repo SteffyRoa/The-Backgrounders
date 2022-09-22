@@ -36,22 +36,19 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav textonav">
-            <a class="nav-link text-white" href="./index.html">Inicio</a>
-            <a class="nav-link text-white" href="./pages/servicios.html">Servicios </a>
-            <a class="nav-link text-white" href="./pages/AgendarCita.html">Agendar cita</a>
-            <a class="nav-link text-white" href="./pages/contactos.html">Contacto</a>
-            <a class="nav-link text-white" href="./pages/Registro.html">Registrarse</a>
-            <a class="nav-link text-white" href="./pages/login.html">Login</a>
+          <div id="navbar" class="navbar-nav textonav">
+            <a class="nav-link text-white" href="./index.html"><b>Inicio</b></a>
+            <a class="nav-link text-white" href="./pages/servicios.html"><b>Servicios</b> </a>
+            <a class="nav-link text-white" href="./pages/AgendarCita.html"><b>Agendar Cita</b></a>
+            <a class="nav-link text-white" href="./pages/contactos.html"><b>Contacto</b></a>
           </div> 
         </div>
       </div>
     </nav>
-
 <!--Carrusel-->
 <div class="container">
   <div class="row">
-      <div id="carouselExampleFade" class="carousel slide col-md-8 col-sm-12" data-ride="carousel"><!-- carousel-fade quite -->
+      <div id="carouselExampleFade" class="carousel slide col-md-8 col-sm-12 position-relative" data-ride="carousel"><!-- carousel-fade quite -->
         <div class="carousel-inner">
           
           <div class="carousel-item active">
@@ -83,7 +80,7 @@
 <!--Tarjetas promociones-->
 
 <div class="col-md-4 col-sm-12 aling-self-center">
-  <a href="servicios.html"><div class="card text-white bg-info aling-self-center promociones"style="width: 23rem; margin: 4% auto">
+  <a class="card-promo" href="servicios.html"><div class="card text-white aling-self-center card-promo"style="width: 23rem; margin: 4% auto; background-color: rgb(224, 125, 237);">
     <div class="card-header"><h2>Promociones</h2></div>
 
     <div class="card-body">
@@ -91,8 +88,8 @@
     </div>
   </div>
 </a>
-
-  <a href="servicios.html"><div class="card text-white aling-self-center promociones" style="width: 23rem; margin: 4% auto; background-color: rgba(181, 232, 243, 1);">
+<br>
+  <a class="card-promo" href="servicios.html"><div class="card text-white aling-self-center card-promo" style="width: 23rem; margin: 4% auto; background-color: #B6E8F3">
     <div class="card-header"><h3>Promociones</h3></div>
     <div class="card-body">
       <img class="card-img" src="assets/images/imagenes-proyecto/carrusel-img5.jpg" alt="">
@@ -102,15 +99,17 @@
 </div>
 </div>
 </div>
+<hr>
+<hr>
+<hr class="linea">
       
 <!--Contenido-->
-<header class="EncabezadoCuidados"><h2>Nuestra misión</h2></header>
+<header class="EncabezadoCuidados" style="color: #1A9FDA;"><h2>Nuestra misión</h2></header>
 <div class="container contenido">
   <div class="row">
+    <div class="col-md-6 col-sm-12 mb-4">
+      <img class="imgvision" src="assets/images/Mision.png" alt=""></div>
     <div class="col-md-6 col-sm-12">
-      <img class="imgvision" src="assets/images/imagenes-proyecto/gif-1.gif" alt=""></div>
-    <div class="col-md-6 col-sm-12">
-      <h3>Misión</h3>
       <p>Implantar y desarrollar un nuevo concepto de odontología multidisciplinar, capaz de ofertar y realizar todo tipo de tratamientos dentales, y teniendo como objetivos principales:
         <ul>
           <li>Solucionar los problemas bucodentales de nuestros pacientes.</li>
@@ -121,8 +120,12 @@
     </div>
   </div>
   </div>
+  <hr>
+
+  <hr class="linea">
   
-  <header class="EncabezadoCuidados"><h2>¿Por qué cuidar nuestros dientes?</h2></header>
+  <header class="EncabezadoCuidados" style="color: #1A9FDA;"><h2>¿Por qué cuidar nuestros dientes?</h2></header>
+  <hr>
   <div class="container castor">
     <div class="row">
       <div class="col-md-6 contenido col-sm-12 mb-4">
@@ -132,11 +135,12 @@
           La correcta higiene bucal mantiene sanos a todos los componentes de nuestra boca, un cepillo de dientes, la aplicación correcta de la técnica de cepillado después de cada alimento y el uso del hilo dental son los elementos principales en esta tarea.</p>
       </div>
         <div class="col-md-6 col-sm-12 castor1 mb-4">
-        <img class="imgvision" src="assets/images/imagenes-proyecto/gif-3.gif" alt="">
+        <img class="imgvision" src="assets/images/Blue picture 2.png" alt="">
       </div>
     </div>
   </div>
-  
+  <br>
+
 
   <!-- Container Testimonios -->
   <div class="container-fluid fondos">
@@ -144,7 +148,7 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center">
         <!-- Testimonios -->
         <div class="col-md-12">
-          <header class="section_header align-center">
+          <header class="section_header align-center" style="color: #1A9FDA;">
             <h2 class="section_header_h text-white div_testi">
               <span> Testimonios </span>
             </h2>
@@ -215,8 +219,8 @@
         </div>
       </div>
     </div>
+    <hr>
   </div>
-  
 
 
 

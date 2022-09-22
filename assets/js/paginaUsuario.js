@@ -152,8 +152,8 @@ function isUsuario(){
         const nav = document.getElementById("navbar");
         const registro =  document.getElementById("id_registro")
         if (registro == null) {
-            nav.innerHTML += `<a class="nav-link text-white" href="./Registro.html">Registrarse</a>
-        <a class="nav-link text-white" href="./login.html">Login</a>` 
+            nav.innerHTML += `<a class="nav-link text-white" href="./Registro.html"><b>Registrarse</b></a>
+            <a class="nav-link text-white" href="./login.html"><b>Login</b></a>`
         }
        
      }
