@@ -161,3 +161,29 @@ a {cursor:url(../images/imgs/teeth-brushing.png), auto;
       grid-template-columns: auto;
     }
   }
+
+  .btn-agn-reg {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    height: 35px;
+    
+    margin-top: 5%;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background: #18245d;
+    box-shadow: 3px 3px 8px #b1b1b1,
+        -3px -3px 8px #fff;
+    transition: 0.5s;
+}
+.btn-agn-reg:hover {
+    background: #8ED1FC;
+}
+
+.btn-agn-reg:active {
+    background: #020381;
+}

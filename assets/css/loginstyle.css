@@ -59,7 +59,7 @@ html {
 
 .login-div {
     width: 430px;
-    height: 390px;
+    height: 420px;
     padding: 25px;
     border-radius: 10px;
     background: #ecf0f3;
@@ -127,6 +127,7 @@ html {
     cursor: pointer;
     width: 70%;
     height: 35px;
+    margin-top: 10px;
     
     border-radius: 30px;
     font-size: 20px;
