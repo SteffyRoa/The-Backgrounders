@@ -3,6 +3,10 @@
     width: 50%;
 }
 
+.banner{
+    background-color: #00507D;
+}
+
 .carousel-item {
     height: 400px;
     margin: 2%;

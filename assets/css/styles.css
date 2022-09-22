@@ -2,7 +2,11 @@
 
 html{
     background-size: 85%;
-  }
+}
+
+.banner{
+    background-color: #00507D;
+}
 
 .img-card {
     height: 250px;
@@ -21,16 +25,16 @@ html{
 
 .card:hover {
     height: 450px;
-    color: #ffffff;
-    background-color: #020381;
+    color: #000000;
+    background: linear-gradient(white, #d77ffa);
 }
 
 .enlace {
-    color: #ffffff;
+    color: #000000;
 }
 
 .enlace:hover {
-    color: rgb(219, 130, 27);
+    color: rgb(0, 0, 0);
 }
 
 .img-service {
@@ -51,8 +55,8 @@ html{
 
 .card-service:hover {
     height: 32.5rem;
-    color: #ffffff;
-    background-color: #020381;
+    color: #000000;
+    background: linear-gradient(white, #d77ffa);
 }
 
 

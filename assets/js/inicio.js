@@ -68,8 +68,8 @@ function isUsuario(){
      }else{
         const nav = document.getElementById("navbar");
         
-        nav.innerHTML += `<a class="nav-link text-white" href="./Registro.html"><b>Registrarse</b></a>
-        <a class="nav-link text-white" href="./login.html"><b>Login</b></a>`
+        nav.innerHTML += `<a class="nav-link text-white" href="./pages/Registro.html"><b>Registrarse</b></a>
+        <a class="nav-link text-white" href="./pages/login.html"><b>Login</b></a>`
      }
 }
 isUsuario();
