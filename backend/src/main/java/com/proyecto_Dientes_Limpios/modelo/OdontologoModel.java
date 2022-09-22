@@ -9,9 +9,9 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "odontologo")
-	public class OdontologoModel {
+public class OdontologoModel {
 
-	    @Id
+	 @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    private Integer idOdontologo;
 
@@ -23,7 +23,7 @@ import javax.persistence.Table;
 
 	    @Column(name = "telefonoO", nullable = false)
 	    private int telefonoO;
-	    
+
 	    @Column(name = "correoO", nullable = false)
 	    private String correo0;
 
@@ -88,5 +88,5 @@ import javax.persistence.Table;
 		public void setId_especialidad(int id_especialidad) {
 			this.id_especialidad = id_especialidad;
 		}
-	    
+
 }

@@ -1,0 +1,15 @@
+package com.proyecto_Dientes_Limpios.modelo;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+public class EspecialidadModel {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	@Table (name = "nombreE", nullable = false)
+	private String nombre;
+
+}

@@ -6,11 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.proyecto_Dientes_Limpios.modelo.OdontologoModel;
 
 @Repository
-public interface OdontologoRepository extends CrudRepository<OdontologoModel, Long> {
-
-
-	
-	
+public interface OdontologoRepository extends CrudRepository<OdontologoModel, Long>{
 
 }
-

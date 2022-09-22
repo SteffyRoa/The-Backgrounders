@@ -3,6 +3,10 @@
     width: 50%;
 }
 
+.banner{
+    background-color: #00507D;
+}
+
 .carousel-item {
     height: 400px;
     margin: 2%;
@@ -243,12 +247,6 @@ header{
     background-size: 100%;
 }
 
-
-.btn-agendar {
-    background-color:  rgba(35, 54, 84, 1);
-
-
-}
 
 .pie{
     background-color: black;

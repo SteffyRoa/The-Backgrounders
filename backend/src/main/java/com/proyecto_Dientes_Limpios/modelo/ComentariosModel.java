@@ -8,18 +8,20 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "comentario")
+@Table(name ="comentario")
 public class ComentariosModel {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="id")
 	private int id;
 
-	@Column(name = "nombreP")
+	@Column(name ="nombreP")
 	private String nombre;
 
-	@Column(name = "texto")
+	@Column(name ="texto")
 	private String text;
-
+	
 	public int getId() {
 		return id;
 	}
@@ -44,5 +46,5 @@ public class ComentariosModel {
 		this.text = text;
 	}
 	
-
+	
 }

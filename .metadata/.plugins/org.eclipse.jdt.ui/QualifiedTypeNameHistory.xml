@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.Column"/>
+    <fullyQualifiedTypeName name="com.proyecto_Dientes_Limpios.modelo.EspecialidadModel"/>
+    <fullyQualifiedTypeName name="com.proyecto_Dientes_Limpios.service.EspecialidadService"/>
+</qualifiedTypeNameHistroy>
