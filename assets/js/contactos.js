@@ -26,10 +26,12 @@ formulario.addEventListener('submit', function (evento) {
         return; //corta la ehjecucion del codigo
     }
 
+
     //crear alerta de envio correctp
     mostrarAlerta('Mensaje enviado correctamente')
     console.log('Enviando');
 });
+
 
 function leerTexto(e) {
     //con esto referencio al valor de los 

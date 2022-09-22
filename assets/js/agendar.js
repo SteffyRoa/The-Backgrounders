@@ -54,6 +54,100 @@ function vamosAValidar() {
   }
 }
 
+function agendarCita() {  
+
+  const idU = localStorage.getItem('id');
+  const nombre = document.getElementById("inputNombre");
+  const apellido = document.getElementById("inputApellido");
+  const servicio = document.getElementById("inputState");
+  const fecha = document.getElementById("inputFCita");
+
+  if (idU != null) {
+
+    fetch('http://localhost:8080/citas/usuarios', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        fechaC: fecha.value,
+        horaC: "00:00:00",
+        servicio: servicio.value,
+        confirmacionC: 1,
+        cita:{
+            id: idU
+        }
+      }),
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        location.href="../../pages/paginaSesionInicio.html";
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+
+  }else{
+
+    const mail = document.getElementById("inputApellido");
+    const celular = document.getElementById("inputApellido");
+
+    fetch('http://localhost:8080/nueva', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        nombre: nombre.value,
+        apellido: apellido.value,
+        correo: mail.value,
+        fecha: fecha.value,
+        telefono: celular.value,
+        
+      }),
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        localStorage.setItem('idI', data.id);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+
+      //Agendar cita
+
+      const idI = localStorage.getItem('idI');
+
+      fetch('http://localhost:8080/citas/invitados', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        fechaC: fecha.value,
+        horaC: "00:00:00",
+        servicio: servicio.value,
+        confirmacionC: 1,
+        invitado:{
+            id: idI
+        }
+      })
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        localStorage.clear();
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+
+
+  } 
+}
+
 function isUsuario() {
   const id = localStorage.getItem('id');
   console.log(id);

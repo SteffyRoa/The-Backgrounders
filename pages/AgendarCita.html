@@ -24,11 +24,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-      <div class="navbar-nav textonav" id="navbar">
-        <a class="nav-link text-white" href="../index.html">Inicio</a>
-        <a class="nav-link text-white" href="./servicios.html">Servicios </a>
-        <a class="nav-link text-white" href="./AgendarCita.html">Agendar cita</a>
-        <a class="nav-link text-white" href="./contactos.html">Contacto</a>
+      <div id="navbar" class="navbar-nav textonav">
+        <a class="nav-link text-white" href="../index.html"><b>Inicio</b></a>
+        <a class="nav-link text-white" href="./servicios.html"><b>Servicios</b> </a>
+        <a class="nav-link text-white" href="./AgendarCita.html"><b>Agendar Cita</b></a>
+        <a class="nav-link text-white" href="./contactos.html"><b>Contacto</b></a>
+
       </div> 
     </div>
   </nav>
@@ -87,15 +88,20 @@
             <div class="form-group col-md-6">
               <!-- Icono -->
               <i class="far fa-calendar-alt"></i>
-              <label for="inputState">Fechas disponibles</label>
-              <!-- Lista de Fechas -->
+              <!--Calendario-->
+              <label for="inputFCita">Fecha de su Cita</label>
+              <div class="users">
+                <input id="inputFCita" type="date" class="form-control" placeholder="DD/MM/AA" required>
+              </div>
+              <!--<label for="inputState">Fechas disponibles</label>
+               Lista de Fechas 
               <select id="inputState" class="users coloruser form-control">
                 <option selected>Escoge una...</option>
                 <option selected>Septiembre</option>
                 <option selected>Octubre</option>
                 <option selected>Noviembre</option>
                 <option>...</option>
-              </select>
+              </select> -->
             </div>
           </div>
           <!-- Tercera Fila del Form -->
@@ -103,6 +109,7 @@
             
               
           </div>
+          
           <!-- Boton de Agendar -->
           <br>
           <div class="col-12 btnsesion">

@@ -26,15 +26,14 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav textonav">
-        <a class="nav-link text-white" href="../index.html">Inicio</a>
-        <a class="nav-link text-white" href="./servicios.html">Servicios </a>
-        <a class="nav-link text-white" href="./AgendarCita.html">Agendar cita</a>
-        <a class="nav-link text-white" href="./contactos.html">Contacto</a>
-        <a class="nav-link text-white" href="./Registro.html">Registrarse</a>
-        <a class="nav-link text-white" href="./login.html">Login</a>
+        <a class="nav-link text-white" href="../index.html"><b>Inicio</b></a>
+        <a class="nav-link text-white" href="./servicios.html"><b>Servicios</b></a>
+        <a class="nav-link text-white" href="./AgendarCita.html"><b>Agendar Cita</b></a>
+        <a class="nav-link text-white" href="./contactos.html"><b>Contacto</b></a>
       </div> 
     </div>
   </nav>
+
   <!-- Barra de Navegacion -->
   <!-- Banner de Inicio de Sesión -->
   <div class="container-fluid">
@@ -53,9 +52,7 @@
           <img src="../assets/images/welcome.png" alt="">
         </div>
         <!-- Logotipo de Incio de Sesion-->
-
         <form id="formulario" class="needs-validation" th:action="@{/logout}" method="post" novalidate><!-- Supongo que es un elemento de Spring -->
-
           <div class="title">
             Inicia Sesión
           </div>
@@ -70,9 +67,7 @@
             <!-- Campo Contraseña -->
             <div class="password">
               <i class="fas fa-lock"></i>
-
               <!-- <input type="password" class="pass-input" placeholder="Contraseña" id="inputContraseña"> -->
-
               <input type="password" class="form-control" id="inputContraseña" placeholder="Contraseña" required>
               <p id="mensajeContraseña"></p>
             </div>
@@ -84,40 +79,43 @@
             </button>
           </div>
           <!-- Modal -->
-    <div class="modal fade" id="confirmaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <!-- Titulo del Modal -->
-            <h5 class="modal-title" id="exampleModalLabel">Sesión iniciada</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!-- Texto del Modal -->
-          <div class="modal-body">
-            Gracias por iniciar sesión 
-          </div>
-          <div class="modal-footer">
-            <!-- Boton del Modal -->
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="ir()">Cerrar</button>
-    </div>
-          <!-- Link de Contraseña -->
-          <div class="link">
-            <a href="#">Olvidaste tu Contraseña?</a> o <a href="#">Registrate</a>
-          </div>
-        </form>
+          <div class="modal fade" id="confirmaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                <!-- Titulo del Modal -->
+                <h5 class="modal-title" id="exampleModalLabel">Sesión iniciada</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- Texto del Modal -->
+                <div class="modal-body">
+                  Gracias por iniciar sesión 
+                </div>
+                <div class="modal-footer">
+                <!-- Boton del Modal -->
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="ir()">Cerrar</button>
+                <!-- Link de Contraseña -->
+              <div class="link">
+                <a href="#">Olvidaste tu Contraseña?</a> o <a href="#">Registrate</a>
+              </div>
+            </div>
+          </div>  
+        </div>
       </div>
-    </div>  
-  </div>
+    </div>
   <!-- GIF de Castor -->
-  <div class="container">
-  <div class="row">
-    <div class="col-6">
-    </div>
-    <div class="col-6 castor-background">
-      <img class="rounded float-right" src="../assets/images/videoC.gif" alt="" width="300px" height="300px">
-    </div>
+    </form>
+  </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-4">
+  </div>
+  <div class="col-4">
+  </div>
+  <div class="col-4">
+    <img class="rounded float-right" src="../assets/images/videoC.gif" alt="" width="100%" height="190px">
   </div>
 </div>
   <!-- GIF de Castor -->
@@ -145,7 +143,7 @@
   </footer>
   <!-- Footer -->
    <!-- Copyright -->
-   <div class="container2 bg-secondary">
+  <div class="container2 bg-secondary">
     <p>© 2022 Todos los derechos reservados | Dientes Limpios</p>
   </div>
   <!-- Copyright -->

@@ -22,12 +22,10 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav textonav" id="navbar">
-        <a class="nav-link text-white" href="../index.html">Inicio</a>
-        <a class="nav-link text-white" href="./servicios.html">Servicios </a>
-        <a class="nav-link text-white" href="./AgendarCita.html">Agendar cita</a>
-        <a class="nav-link text-white" href="./contactos.html">Contacto</a>
-        <a id="id_registro" class="nav-link text-white" href="./Registro.html">Registrarse</a>
-        <a id="id_login" class="nav-link text-white" href="./login.html">Login</a>
+        <a class="nav-link text-white" href="../index.html"><b>Inicio</b></a>
+        <a class="nav-link text-white" href="./servicios.html"><b>Servicios</b></a>
+        <a class="nav-link text-white" href="./AgendarCita.html"><b>Agendar Cita</b></a>
+        <a class="nav-link text-white" href="./contactos.html"><b>Contacto</b></a>
         </div> 
       </div>
   </nav>
@@ -58,35 +56,20 @@
       <!-- Titulo Tabla -->
       <h3>Citas</h3>
       <div class="col-12 col-sm-12 col-md-12 align-middle">
-        <table class="table table-hover table-bordered">
+        <table class="table table-hover table-bordered" id="tabla">
           <!-- Fila de la Tabla -->
           <thead>
             <tr>
               <th scope="col">id</th>
               <th scope="col">Servicio</th>
               <th scope="col">Fecha</th>
-              <th scope="col">Consultorio</th>
+              <th scope="col">Hora</th>
               <th scope="col">Estado</th>
             </tr>
           </thead>
           <!-- Contenido -->
           <tbody>
-            <tr id="1">
-              <!-- Contenido Fila 1 -->
-              <th scope="col">1</th>
-                <td>Muela</td>
-                <td>24/08/22</td>
-                <td>4</td>
-              <td class="bg-success text-white">Pendiente</td>
-            </tr>
-            <tr id="2">
-              <!-- Contenido Fila 2 -->
-              <th scope="col">2</th>
-                <td>Limpieza</td>
-                <td>22/08/22</td>
-                <td>5</td>
-              <td class="bg-danger text-white">No asistio</td>
-            </tr>
+            
           </tbody>
         </table>
       </div>
@@ -100,7 +83,7 @@
         <h3>Agendar cita</h3>
       </div>
       <!-- Boton de Cancelar -->
-      <div class="mx-auto">
+      <div class="mx-auto" id="cancelar">
         <a data-toggle="modal" data-target="#exampleModal"><img id="img-icono" src="../assets/images/icono/botonCancel.png" alt="Icono para usuario" width="150" height="150"></a> 
         <h3>Cancelar cita</h3>
       </div>
@@ -122,8 +105,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="list-group" id="list-tab" role="tablist">
-                  <a class="list-group-item list-group-item-action active"  data-toggle="list" href="#list-home" role="tab" aria-controls="home" id="1">Muela</a>
-                  <a class="list-group-item list-group-item-action"  data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" id="2">Limpieza</a>
+                  
                 </div>
               </div>
             </div>
