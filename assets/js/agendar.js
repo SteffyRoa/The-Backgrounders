@@ -64,7 +64,7 @@ function agendarCita() {
 
   if (idU != null) {
 
-    fetch('http://localhost:8080/citas/usuarios', {
+    fetch('https://consultorio-dienteslimpios.herokuapp.com/citas/usuarios', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -96,7 +96,7 @@ function agendarCita() {
     const mail = document.getElementById("inputEmail");
     const celular = document.getElementById("inputApellido");
 
-    fetch('http://localhost:8080/nueva', {
+    fetch('https://consultorio-dienteslimpios.herokuapp.com/nueva', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -123,7 +123,7 @@ function agendarCita() {
 
       const idI = localStorage.getItem('idI');
 
-      fetch('http://localhost:8080/citas/invitados', {
+      fetch('https://consultorio-dienteslimpios.herokuapp.com/citas/invitados', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

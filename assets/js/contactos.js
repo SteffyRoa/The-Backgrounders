@@ -84,7 +84,7 @@ function isUsuario() {
 }
 
 function ver_comentarios() {
-    fetch("http://localhost:8080/comentario", {method: 'GET', mode: 'cors'})
+    fetch("https://consultorio-dienteslimpios.herokuapp.com/comentario", {method: 'GET', mode: 'cors'})
     .then(respuesta => {
        return respuesta.json()
     })
@@ -111,7 +111,7 @@ function agendar() {
     const nombre = document.getElementById("nombre")
     const mensaje = document.getElementById("mensaje")
 
-    fetch('http://localhost:8080/comentario', {
+    fetch('https://consultorio-dienteslimpios.herokuapp.com/comentario', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

@@ -67,7 +67,7 @@ function vamosAValidar () {
     mnspassword.style.color = "#e71414"
   }
 
-  fetch(`http://localhost:8080/pacientesR/login?correo=${email1.value}&contrasena=${password1.value}`, {method: 'GET'})
+  fetch(`https://consultorio-dienteslimpios.herokuapp.com/pacientesR/login?correo=${email1.value}&contrasena=${password1.value}`, {method: 'GET'})
   .then(respuesta => {
      return respuesta.json()
   })

@@ -3,11 +3,13 @@ const url = "../assets/sugerencias.json"
 const url2 = "http://localhost:8080/pacientesR"
 
 const imgIcono = document.getElementById("img-icono");
+const nom = document.getElementById("nombreUsuario");
 let max = 10;
 let min = 1;
 let despliegue = true;
 let icono = Math.random() * (max - min) + min;
-
+const nombre = localStorage.getItem('nombre');
+nom.innerHTML = nombre;
 icono = parseInt(icono);
 imgIcono.src = `../assets/images/icono/${icono}.png`
 
@@ -68,7 +70,7 @@ async function obtenerSugerencias(url) {
 
 function obtenerDatos() {
 
-    fetch("http://localhost:8080/pacientesR", { method: 'GET', mode: 'cors' })
+    fetch("https://consultorio-dienteslimpios.herokuapp.com/pacientesR", { method: 'GET', mode: 'cors' })
         .then(respuesta => {
             return respuesta.json()
         })
@@ -81,7 +83,7 @@ function obtenerDatos() {
 
 function obtenerCitas(id) {
 
-    fetch("http://localhost:8080/citas/" + id)
+    fetch("https://consultorio-dienteslimpios.herokuapp.com/citas/" + id)
         .then(respuesta => {
             return respuesta.json()
         })
@@ -135,7 +137,7 @@ function eliminarCita() {
     console.log(idSeleccionado.id);
 
      //Hacemos petición Http de tipo DELETE
-    fetch('http://localhost:8080/citas/eliminar/' + idSeleccionado.id, { method: 'DELETE', mode: 'cors' })
+    fetch('https://consultorio-dienteslimpios.herokuapp.com/citas/eliminar/' + idSeleccionado.id, { method: 'DELETE', mode: 'cors' })
         .then(res => {
 
             const id = localStorage.getItem('id');
