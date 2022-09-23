@@ -101,7 +101,7 @@ function vamosAValidar() {
     //console.log("password");
   }
 
-  fetch('http://localhost:8080/pacientesR', {
+  fetch('https://consultorio-dienteslimpios.herokuapp.com/pacientesR', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
